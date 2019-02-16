@@ -22,3 +22,7 @@
 - Days 90–94: Jest
 - Days 95–97: TypeScript
 - Days 98–100: NextJS
+
+
+
+Thanks for article of __Nick Scialli__ - [A Timeboxed, Day-by-Day #100DaysOfCode Front-End Development Curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2)
