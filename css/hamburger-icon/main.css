@@ -66,6 +66,53 @@ svg:hover {
 }
 
 
+/* CSS pseudo-elements (::after and ::before) */
+.ps-burger {
+    border: 1px solid #888;
+    cursor: pointer;
+    display: inline-block;
+    height: 42px;
+    padding: 10px;
+    position: relative;
+    width: 50px;
+}
+
+.ps-burger__line {
+    background: #329;
+    height: 8px;
+    left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ps-burger__line::before,
+.ps-burger__line::after {
+    background-color: #329;
+    content: '';
+    height: 8px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.ps-burger__line::before {
+    top: -15px;
+}
+
+.ps-burger__line::after {
+    top: 15px;
+}
+
+.ps-burger:hover .ps-burger__line,
+.ps-burger:hover .ps-burger__line::before,
+.ps-burger:hover .ps-burger__line::after {
+    background-color: #32e;
+
+}
+
+
 /* CSS (repeating-linear-gradient) */
 .wrapper {
     border: 1px solid #888;
