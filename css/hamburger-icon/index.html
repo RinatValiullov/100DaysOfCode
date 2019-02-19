@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Hamburger icon</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <!-- SVG way -->
+    <section>
+        <h3>With help of svg</h3>
+        <svg viewBox="0 0 12 10" width="50" fill="#329">
+            <rect width="12" height="2" x="0" y="0" />
+            <rect width="12" height="2" x="0" y="4" />
+            <rect width="12" height="2" x="0" y="8" />
+        </svg>
+    </section>
+
+    <!-- CSS just 3 divs -->
+    <section>
+        <h3>With help of CSS</h3>
+        <div class="burger">
+            <div class="burger__line line1"></div>
+            <div class="burger__line line2"></div>
+            <div class="burger__line line3"></div>
+        </div>
+    </section>
+
+    <!-- CSS way (repeating-linear-gradient property) -->
+    <section>
+        <h3>With help of CSS<br> (repeating-linear-gradient)</h3>
+        <div class="wrapper">
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <!-- CSS Paint API way -->
+    <section>
+        <h3>With help of CSS Paint API<br>
+            <small>If you can't see anything then watch the log message in console tab in browser
+                devtools)</small>
+        </h3>
+        <div class="myBurger"></div>
+    </section>
+
+    <script>
+        if (location.protocol === 'file:' && location.hostname !== 'localhost') {
+            console.log(
+                'As with almost all new APIs, CSS Paint API is only available over HTTPS (or localhost)'
+            );
+        }
+
+        if ('paintWorklet' in CSS) {
+            CSS.paintWorklet.addModule('burger.js');
+        } else {
+            document.body.innerHTML =
+                'You need support for <a href="https://drafts.css-houdini.org/css-paint-api/">CSS Paint API</a> to view this demo :(';
+        }
+    </script>
+    <script src="./burger.js"></script>
+</body>
+
+</html>

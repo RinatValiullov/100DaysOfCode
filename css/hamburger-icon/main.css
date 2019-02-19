@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #22a;
+    text-align: center;
+}
+
+
+/* SVG */
+svg {
+    border: 1px solid #888;
+    cursor: pointer;
+    padding: 10px;
+}
+
+svg:hover {
+    fill: #32e;
+}
+
+/* CSS just 3 divs */
+.burger {
+    border: 1px solid #888;
+    cursor: pointer;
+    display: inline-block;
+    height: 42px;
+    padding: 10px;
+    position: relative;
+    width: 50px;
+}
+
+.burger:hover .burger__line {
+    background-color: #32e;
+}
+
+.burger__line {
+    background-color: #329;
+    position: absolute;
+    left: 10px;
+    height: 8px;
+    width: 50px;
+}
+
+.line1 {
+    top: 10px;
+}
+
+.line2 {
+    top: 26px;
+}
+
+.line3 {
+    top: 42px;
+}
+
+
+/* CSS (repeating-linear-gradient) */
+.wrapper {
+    border: 1px solid #888;
+    cursor: pointer;
+    display: inline-block;
+    height: 42px;
+    padding: 10px;
+    width: 50px;
+}
+
+.box {
+    background-image: repeating-linear-gradient(#329,
+        #329 8px,
+        transparent 8px,
+        transparent 16px);
+    height: 100%;
+    width: 50px;
+}
+
+.box:hover {
+    background-image: repeating-linear-gradient(#32e,
+        #32e 8px,
+        transparent 8px,
+        transparent 16px);
+}
+
+
+/* CSS Paint API */
+.myBurger {
+    border: 1px solid #888;
+    display: inline-block;
+    cursor: pointer;
+    height: 42px;
+    padding: 10px;
+    width: 50px;
+
+    --b-color: #329;
+    background-image: paint(burger);
+}
+
+.myBurger:hover {
+    --b-color: #32e;
+}
