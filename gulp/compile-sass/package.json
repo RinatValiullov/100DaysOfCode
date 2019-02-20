@@ -4,7 +4,8 @@
   "description": "starter simple project with hot reloading and supporting sass",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "gulp sass_compile",
+    "watch": "gulp watch"
   },
   "keywords": [
     "sass",
