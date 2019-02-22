@@ -17,7 +17,7 @@ function hex() {
     }
 
     let clockString = `${hours}:${minutes}:${seconds}`;
-    let colorString = `#${hours}${minutes}${seconds}`
+    let colorString = `#${hours}${minutes}${seconds}`;
 
     clock.textContent = clockString;
     color.textContent = colorString;
