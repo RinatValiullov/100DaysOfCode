@@ -26,7 +26,9 @@ function hex() {
     let clockString = `${hours}:${minutes}:${seconds}`;
 
     // deleted colons and commas from the string and get something like this: from "12:34:56" to "123456"
-    colorString = '#' + clockString.match(/\d/g).join().replace(/,/g, '');
+    colorString = clockString.match(/\d/g).join().replace(/,/g, '');
+
+    colorString = '#' + intToHex(colorString);
 
     // let colorString = `#${hours}${minutes}${seconds}`;
 
