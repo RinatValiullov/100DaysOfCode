@@ -1,5 +1,12 @@
 let [clock, color] = [document.querySelector('.clock'), document.querySelector('.color')];
 
+// convert decimal number to hexidecimal value
+function intToHex(integer) {
+    let number = (+integer).toString(16).toUpperCase();
+    number = (number.length % 2) > 0 ? "0" + number : number;
+    return number;
+}
+
 function hex() {
     let date = new Date(),
         hours = date.getHours().toString(),
@@ -17,7 +24,11 @@ function hex() {
     }
 
     let clockString = `${hours}:${minutes}:${seconds}`;
-    let colorString = `#${hours}${minutes}${seconds}`;
+
+    // deleted colons and commas from the string and get something like this: from "12:34:56" to "123456"
+    colorString = '#' + clockString.match(/\d/g).join().replace(/,/g, '');
+
+    // let colorString = `#${hours}${minutes}${seconds}`;
 
     clock.textContent = clockString;
     color.textContent = colorString;
