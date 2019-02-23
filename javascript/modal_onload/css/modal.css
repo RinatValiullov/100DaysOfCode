@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    color: #469;
+    height: 100vh;
+    margin: 0;
+    padding: 4em 1em 0;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 1em;
+}
+
+button[type="button"] {
+    border: none;
+}
+
+.reveal {
+    border: 0;
+    border-radius: 0.2em;
+    background-color: rgba(204, 221, 255, 1);
+    color: #469;
+    font-weight: bold;
+    left: 50%;
+    padding: 0.4em 1.4em;
+    position: relative;
+    transform: translateX(-50%);
+    transition: background-color 0.3s;
+}
+
+.reveal:hover {
+    background-color: rgba(195, 190, 210, 1);
+}
+
+.close {
+    background-color: rgba(0, 0, 0, 0);
+    color: #224;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal-wrapper {
+    background-color: rgba(0, 0, 80, 0.35);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal {
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 100, 0.3);
+    left: 50%;
+    top: -50%;
+    max-width: 50%;
+    opacity: 0;
+    padding: 1em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.8s 0.3s ease, top 0.5s 0.2s ease;
+    visibility: hidden;
+    width: 100%;
+    z-index: 10;
+}
+
+.show {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0 0.6em;
+    position: relative;
+}
+
+.modal-header__title {
+    margin: 0;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-end;
+    padding: 0.6em 0 0;
+}
+
+.button-group button {
+    border-radius: 0.1em;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 0.4em 1.6em;
+    transition: background-color 0.3s;
+}
+
+.button-ok {
+    background-color: rgba(68, 102, 153, 1);
+}
+
+.button-ok:hover {
+    background-color: rgba(68, 80, 164, 1);
+}
+
+.button-cancel {
+    background-color: rgba(238, 119, 85, 1);
+}
+
+
+.button-cancel:hover {
+    background-color: rgba(210, 100, 85, 1);
+}
