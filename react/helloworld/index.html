@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello, World!</title>
+    <style>
+        .deepBlue {
+            color: #42e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+
+        // stateless component
+        let App = () => {
+            return <h1>Hello, React!!!</h1>;
+        };
+
+        // stateful component
+        class ParentApp extends React.Component {
+            render() {
+                return (
+                    <React.Fragment>
+                        <App />
+                        <p className='deepBlue'>We can include components into another ones</p>
+                    </React.Fragment>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <ParentApp />,
+            document.querySelector('#root')
+        );
+
+    </script>
+</body>
+
+</html>
