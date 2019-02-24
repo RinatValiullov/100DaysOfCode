@@ -24,17 +24,25 @@
     <script type="text/babel">
 
         // stateless component
-        let App = () => {
-            return <h1>Hello, React!!!</h1>;
+        let App = (props) => {
+            return <h1>Hello, { props.name }!</h1>;
         };
 
         // stateful component
         class ParentApp extends React.Component {
+
+            state = {
+                name: 'React',
+                body: 'We can include components into another ones'
+            }
+
             render() {
+                let { name, body } = this.state;
+                
                 return (
                     <React.Fragment>
-                        <App />
-                        <p className='deepBlue'>We can include components into another ones</p>
+                        <App name={ name }/>
+                        <p className='deepBlue'>{ body }</p>
                     </React.Fragment>
                 );
             }
