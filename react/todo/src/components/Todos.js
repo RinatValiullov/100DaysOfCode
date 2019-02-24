@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class Todos extends Component {
     render() {
-        return (
-            <>
-                <h1>Todos</h1>
-            </>
-        );
+        let { todos } = this.props;
+
+        return todos.map((todo, index) => (
+            <h3>{ todo.title }</h3>
+        ));
     }
 }
 
