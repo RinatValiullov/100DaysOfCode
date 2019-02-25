@@ -7,11 +7,11 @@ class Todos extends Component {
         let { todos } = this.props;
 
         return (
-            <ul>
+            <div>
                 {todos.map((todo, index) => (
                     <TodoItem key={ todo.id } todo={ todo } />
                 ))}
-            </ul>
+            </div>
         );
     }
 }
