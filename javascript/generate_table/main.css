@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th,
+td {
+    border: 1px solid #adf;
+    padding: 12px;
+}
