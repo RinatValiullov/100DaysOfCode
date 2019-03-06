@@ -1,0 +1,9 @@
+#loader {
+    background: url('loader.gif') 50% no-repeat #f9f9f9;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
