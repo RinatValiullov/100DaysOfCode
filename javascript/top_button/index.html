@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top Button</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        #showScroll {
+            border: 1px solid #aaa;
+            height: 150px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+        }
+
+        .fixed {
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+
+        #updown {
+            cursor: pointer;
+            left: 30px;
+            position: fixed;
+            top: 30px;
+        }
+
+        #updown.up::before {
+            background: #456;
+            border-radius: 50%;
+            color: #fff;
+            content: 'UP';
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="showScroll">Hello, world</div>
+    <div id="updown"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
