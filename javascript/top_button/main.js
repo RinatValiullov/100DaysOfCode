@@ -20,7 +20,15 @@ btn.addEventListener("click", event => {
     let pageY = window.pageYOffset;
     switch (btn.className) {
         case "up":
-            window.scrollTo(0, 0);
+            if ('scroll' in window) {
+                window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                window.scrollTo(0, 0);
+            }
             btn.className = "";
             break;
     }
