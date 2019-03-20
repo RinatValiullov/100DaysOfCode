@@ -19,3 +19,20 @@ a {
   color: #444;
   text-decoration: none;
 }
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+}
+
+.btn:hover {
+  background-color: #666;
+}
