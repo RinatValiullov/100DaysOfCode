@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
 import Todos from './components/Todos';
@@ -61,13 +62,15 @@ class App extends Component {
     let { todos } = this.state;
 
     return (
-      <div className="App">
-        <div className="container">
-            <Header />
-            <AddTodo addTodo={this.addTodo} />
-            <Todos todos={ todos } markComplete={ this.markComplete } delTodo={ this.delTodo } />
+      <Router>
+        <div className="App">
+          <div className="container">
+              <Header />
+              <AddTodo addTodo={this.addTodo} />
+              <Todos todos={ todos } markComplete={ this.markComplete } delTodo={ this.delTodo } />
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }
