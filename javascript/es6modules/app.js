@@ -1,6 +1,5 @@
 import { uniq } from 'lodash';
 import insane from 'insane';
-import jsonp from 'jsonp';
 
 import { apiKey as key, myUrl, sample, myVar1, var2 } from './src/config';
 import def from './src/config';

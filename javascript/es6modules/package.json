@@ -11,10 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "base-64": "^0.1.0",
-    "flickity": "^2.2.0",
     "insane": "^2.6.2",
-    "jquery": "^3.4.1",
-    "jsonp": "^0.2.1",
     "lodash": "^4.17.11",
     "slug": "^1.1.0"
   },
