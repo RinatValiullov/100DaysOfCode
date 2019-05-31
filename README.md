@@ -5,7 +5,7 @@
 
 - Days 1–8: HTML
 - Days 9–16: CSS
-- Days 17–24: [JavaScript Basics](#JavaScript Basics)
+- Days 17–24: [JavaScript Basics](#JavaScript-Basics)
 - Days 25–27: jQuery
 - Days 28–33: Responsive Web Design
 - Days 34–36: Accessibility
