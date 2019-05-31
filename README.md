@@ -25,8 +25,11 @@
 
 
 
-### React
+### [React](#react/filter-search)
 Try to understand and have some practice with simple projects with React library
+
+
+
 
 
 Thanks for article to __Nick Scialli__ - [A Timeboxed, Day-by-Day #100DaysOfCode Front-End Development Curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2)
