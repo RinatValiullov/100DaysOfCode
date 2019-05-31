@@ -28,7 +28,7 @@
 
 Projects:
  - [color-clock](javascript/color-clock)
- - [compare_objects](javascript/compare_objects
+ - [compare_objects](javascript/compare_objects)
  - [equality_arrays](javascript/equality_arrays)
  - [es6modules](javascript/es6modules)
  - [generate_table](javascript/generate_table)
