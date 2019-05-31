@@ -29,9 +29,9 @@
 Try to understand and have some practice with simple projects on React library
 
 Projects:
- - [filter-search](filter-search/)
- - [helloworld](/helloworld/)
- - [todo](todo/)
+ - [filter-search](filter-search)
+ - [helloworld](helloworld)
+ - [todo](todo)
 
 
 
