@@ -23,11 +23,17 @@
 - Days 95–97: TypeScript
 - Days 98–100: NextJS
 
+
 ### [JavaScript Basics](javascript)
 
 Projects:
  - [color-clock](javascript/color-clock)
-
+ - [compare_objects](javascript/compare_objects
+ - [equality_arrays](javascript/equality_arrays)
+ - [es6modules](javascript/es6modules)
+ - [generate_table](javascript/generate_table)
+ - [modal_onload](javascript/modal_onload)
+ - [top_button](javascript/top_button)
 
 
 ### [React](react)
