@@ -25,7 +25,7 @@
 
 
 
-### [React](#react/filter-search)
+### [React](react/filter-search)
 Try to understand and have some practice with simple projects with React library
 
 
