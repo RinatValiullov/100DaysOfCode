@@ -1,8 +1,8 @@
-import slug from 'slug';
+import slug from '../node_modules/slug/slug';
 import {
     myUrl
 } from './config';
-import base64 from 'base-64';
+import base64 from '../node_modules/base-64/base64';
 
 export default function User(name, email, website) {
     return {

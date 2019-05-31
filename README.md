@@ -28,12 +28,13 @@
 
 Projects:
  - [color-clock](javascript/color-clock)
- - [compare_objects](javascript/compare_objects)
- - [equality_arrays](javascript/equality_arrays)
- - [es6modules](javascript/es6modules)
- - [generate_table](javascript/generate_table)
- - [modal_onload](javascript/modal_onload)
- - [top_button](javascript/top_button)
+ - [compare-objects](javascript/compare-objects)
+ - [equality-arrays](javascript/equality-arrays)
+ - [es6-modules](javascript/es6-modules)
+ - [generate-table](javascript/generate-table)
+ - [modal-onload](javascript/modal-onload)
+ - [top-button](javascript/top-button)
+ - [click-counter](javascript/click-counter)
 
 
 ### [React](react)
