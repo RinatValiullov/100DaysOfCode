@@ -25,9 +25,13 @@
 
 
 
-### [React](react/filter-search)
-Try to understand and have some practice with simple projects with React library
+### [React](react)
+Try to understand and have some practice with simple projects on React library
 
+Projects:
+ - [filter-search](filter-search/)
+ - [helloworld](/helloworld/)
+ - [todo](todo/)
 
 
 
