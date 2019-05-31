@@ -5,7 +5,7 @@
 
 - Days 1–8: HTML
 - Days 9–16: CSS
-- Days 17–24: JavaScript Basics
+- Days 17–24: [JavaScript Basics](#JavaScript)
 - Days 25–27: jQuery
 - Days 28–33: Responsive Web Design
 - Days 34–36: Accessibility
@@ -23,9 +23,14 @@
 - Days 95–97: TypeScript
 - Days 98–100: NextJS
 
+### Days 17–24: [JavaScript Basics](javascript)
+
+Projects:
+ - [color-clock](javascript/color-clock)
 
 
-### [React](react)
+
+### [Days 68–83: React](react)
 Try to understand and have some practice with simple projects on React library
 
 Projects:
