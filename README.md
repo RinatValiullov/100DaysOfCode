@@ -17,12 +17,16 @@
 - Days 57–61: Gulp
 - Days 62–65: Webpack
 - Day 66: ESLint
-- Days 68–83: React
+- Days 68–83: [React](#React)
 - Days 84–89: Redux
 - Days 90–94: Jest
 - Days 95–97: TypeScript
 - Days 98–100: NextJS
 
+
+
+### React
+Try to understand and have some practice with simple projects with React library
 
 
 Thanks for article to __Nick Scialli__ - [A Timeboxed, Day-by-Day #100DaysOfCode Front-End Development Curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2)
