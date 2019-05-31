@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Click counter</title>
+</head>
+<body>
+    <style>
+        button {
+            background: rgba(100,50,200,0.5);
+            border: none;
+            padding: 10px 20px;
+        }
+        button:hover {
+            background: rgba(100,50,200,1);
+        }
+    </style>
+    <button>0</button>
+    <button>0</button>
+    <button>0</button>
+    <button>0</button>
+    <button>0</button>
+    <button>0</button>
+    <script>
+    
+        let clickCounter = new Map();
+        let buttons = document.querySelectorAll('button');
+
+        buttons.forEach(button => {
+            clickCounter.set(button, 0);
+            button.addEventListener('click', function() {
+                // let value = clickCounter.get(this);
+                let value = +button.innerHTML;
+                clickCounter.set(this, value + 1);
+                this.innerHTML = ++value;
+                console.log(clickCounter);
+            });
+        });
+    
+    </script>
+</body>
+</html>
