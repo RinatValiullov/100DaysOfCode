@@ -1,0 +1,56 @@
+html, body {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.container {
+    align-items: center;
+    color: #18183a;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #ffeb3b;
+    border-radius: 5px;
+    line-height: 1.6;
+    padding: 30px;
+    width: 75%;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Serif', serif;
+    margin: 0 0 24px;
+}
+
+.card-body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.marked {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.marked::after {
+    border-bottom: 1px solid #444;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+}

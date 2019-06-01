@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Interview Question card UI</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./cardUI.css">
+    <script src="https://kit.fontawesome.com/0317bad7e8.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1 class="card-title">
+                <span class="marked question">Question</span>
+                <span>What are the differences between <code>==</code> and <code>===</code>?</span>
+            </h1>
+            <article class="card-body">
+                <span class="marked answer">Answer</span>
+                <p class="text">The simplest way of saying that, <code>==</code> will not check types and <code>===</code> will check whether both sides are of same type. So, <code>==</code> is tolerant. But under the hood it converts to its convenient type to have both in same type and then do the comparison. <code>===</code> compares the types and values. Hence, if both sides are not same type, answer is always false. For example, if you are comparing two strings, they must have identical character sets. For other primitives (number, boolean) must share the same value.</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>

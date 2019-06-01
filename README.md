@@ -4,7 +4,7 @@
 ### **The recommended day-by-day activities are as follows:**
 
 - Days 1–8: HTML
-- Days 9–16: CSS
+- Days 9–16: [CSS](#CSS)
 - Days 17–24: [JavaScript Basics](#JavaScript-Basics)
 - Days 25–27: jQuery
 - Days 28–33: Responsive Web Design
@@ -23,6 +23,11 @@
 - Days 95–97: TypeScript
 - Days 98–100: NextJS
 
+
+### [CSS](css)
+Projects:
+ - [hamburger-icon](css/hamburger-icon)
+ - [interviewQuestion-card](css/interviewQuestion-card)
 
 ### [JavaScript Basics](javascript)
 
