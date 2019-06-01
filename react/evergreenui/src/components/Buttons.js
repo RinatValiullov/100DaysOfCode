@@ -72,6 +72,17 @@ export default function Buttons(props) {
           Wow-button from evergreen UI
         </Button>
       </div>
+      <div className="row btns-bool">
+        <Button appearance="primary" marginRight={16} isActive={true}>
+          Simple button here
+        </Button>
+        <Button appearance="primary" disabled={true}>
+          Simple button here
+        </Button>
+        <Button appearance="primary" iconAfter="plus">
+          Simple button here
+        </Button>
+      </div>
       <div className="row" style={{ display: 'flex', justifyContent: 'space-around' }}>
         <IconButton icon="trash" intent="danger" height={40} />
         <IconButton icon="cross" intent="success" height={40} />
