@@ -57,10 +57,10 @@ body {
 .question .marked::after,
 .question .marked::before {
     cursor: pointer;
-    /* height: 24px; */
     position: absolute;
     right: 0;
     top: -10px;
+    transition: transform 0.3s ease;
     width: 24px;
 }
 
@@ -71,8 +71,15 @@ body {
 .question .marked::before {
     content: url('./assets/icons/thumbs-up-regular.svg');
     right: 38px;
-    /* height: 32px; */
     width: 30px;
+}
+
+.question .marked:hover::after {
+    transform: scale(1.1);
+}
+
+.question .marked:hover::before {
+    transform: scale(1.1);
 }
 
 .text {
