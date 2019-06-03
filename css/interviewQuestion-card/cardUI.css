@@ -1,3 +1,7 @@
+:root {
+    font-size: 18px;
+}
+
 html, body {
     box-sizing: border-box;
 }
@@ -24,33 +28,52 @@ body {
 .card {
     background-color: #ffeb3b;
     border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
     padding: 30px;
     width: 75%;
 }
 
-.card-title {
-    display: flex;
-    flex-direction: column;
+.title {
     font-family: 'Noto Serif', serif;
+    font-size: 1.3rem;
     margin: 0 0 24px;
 }
 
-.card-body {
-    font-family: 'Noto Sans', sans-serif;
+.answer {
 }
 
 .marked {
+    border-bottom: 2px solid currentColor;
     display: inline-block;
     font-size: 1rem;
+    font-style: italic;
     font-weight: bold;
+    position: relative;
     width: 100%;
 }
 
-.marked::after {
-    border-bottom: 1px solid #444;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 100%;
+.question .marked::after,
+.question .marked::before {
+    cursor: pointer;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 24px;
+}
+
+.question .marked::after {
+    content: url('./assets/icons/bookmark-regular.svg')
+}
+
+.question .marked::before {
+    content: url('./assets/icons/thumbs-up-regular.svg');
+    right: 38px;
+    height: 32px;
+    width: 32px;
+}
+
+.text {
+    margin: 0;
 }

@@ -12,13 +12,14 @@
     <script src="https://kit.fontawesome.com/0317bad7e8.js"></script>
 </head>
 <body>
+    <!-- http://www.thatjsdude.com/interview/js2.html#doubleVsTripleEqual -->
     <main class="container">
         <section class="card">
-            <h1 class="card-title">
+            <article class="question">
                 <span class="marked question">Question</span>
-                <span>What are the differences between <code>==</code> and <code>===</code>?</span>
-            </h1>
-            <article class="card-body">
+                <h1 class="title">What are the differences between <code>==</code> and <code>===</code>?</h1>
+            </article>
+            <article class="answer">
                 <span class="marked answer">Answer</span>
                 <p class="text">The simplest way of saying that, <code>==</code> will not check types and <code>===</code> will check whether both sides are of same type. So, <code>==</code> is tolerant. But under the hood it converts to its convenient type to have both in same type and then do the comparison. <code>===</code> compares the types and values. Hence, if both sides are not same type, answer is always false. For example, if you are comparing two strings, they must have identical character sets. For other primitives (number, boolean) must share the same value.</p>
             </article>
