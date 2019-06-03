@@ -36,7 +36,7 @@ body {
 
 .title {
     font-family: 'Noto Serif', serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0 0 24px;
 }
 
@@ -49,6 +49,7 @@ body {
     font-size: 1rem;
     font-style: italic;
     font-weight: bold;
+    margin-bottom: 10px;
     position: relative;
     width: 100%;
 }
@@ -56,7 +57,7 @@ body {
 .question .marked::after,
 .question .marked::before {
     cursor: pointer;
-    height: 24px;
+    /* height: 24px; */
     position: absolute;
     right: 0;
     top: -10px;
@@ -70,10 +71,42 @@ body {
 .question .marked::before {
     content: url('./assets/icons/thumbs-up-regular.svg');
     right: 38px;
-    height: 32px;
-    width: 32px;
+    /* height: 32px; */
+    width: 30px;
 }
 
 .text {
     margin: 0;
+}
+
+.text code {
+    background: #dac618;
+    padding: 0 5px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title .signs {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card {
+        padding: 30px 12px;
+        width: 100%;
+    }
 }
