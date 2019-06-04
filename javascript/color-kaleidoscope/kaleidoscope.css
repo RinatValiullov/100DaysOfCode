@@ -1,0 +1,24 @@
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Itim', cursive;
+    /*justify-content: center;*/
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.message {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.random-color-block {
+    border: 1px solid #a9a;
+    border-radius: 5px;
+    height: 130px;
+    margin-top: 20%;
+    width: 130px;
+}
