@@ -40,6 +40,7 @@ Projects:
  - [modal-onload](javascript/modal-onload)
  - [top-button](javascript/top-button)
  - [click-counter](javascript/click-counter)
+ - [color-kaleidoscope](javascript/color-kaleidoscope)
 
 
 ### [React](react)
