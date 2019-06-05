@@ -1,0 +1,78 @@
+html, body {
+    /* box-sizing: border-box; */
+    height: 100%;
+}
+
+/* *, *::after, *::before {
+    box-sizing: inherit;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: mediumpurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hamburger {
+    cursor: pointer;
+    height: 40px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.hamburger__btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    height: 8px;
+    outline: none;
+    position: relative;
+    width: 100%;
+}
+
+.hamburger:focus-within {
+    border: 3px solid #adf;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.hamburger__btn::after, .hamburger__btn::before {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    height: 8px;
+    left: 0;
+    position: absolute;
+    transition: transform 0.5s;
+    width: 100%;
+}
+
+.hamburger__btn::after {
+    top: 16px;
+}
+
+.hamburger__btn::before {
+    top: 32px;
+}
+
+.active.hamburger .hamburger__btn {
+    background-color: rgba(0,0,0,0);
+}
+
+.active.hamburger .hamburger__btn::after {
+    transform: rotate(45deg);
+}
+
+.active.hamburger .hamburger__btn::before {
+    top: 16px;
+    transform: rotate(-45deg);
+}
