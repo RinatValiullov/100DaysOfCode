@@ -1,0 +1,50 @@
+$bg-wrapper: #a9f;
+
+.Wrapper {
+    background-color: $bg-wrapper;
+    padding: 50px;
+}
+
+.Wrapper:not(:last-child) {
+    border-bottom: 2px dashed hsl(223, 77%, 26%);
+}
+
+.Wrapper button {
+    background-color: hsl(223, 77%, 26%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(60, 90%, 52%);
+    display: block;
+    line-height: 1.4;
+    font-weight: 900;
+    margin: 0 auto;
+    padding: 0.5em 1rem;
+}
+
+
+.tippy-tooltip.rock {
+    background-color: hsl(223, 47%, 40%);
+    color: hsl(123, 86%, 51%);
+  }
+  
+  .tippy-tooltip.rock[data-animatefill] {
+    background-color: transparent;
+  }
+  
+  .tippy-tooltip.rock .tippy-backdrop {
+    background-color: hsl(223, 47%, 40%);
+}
+.tippy-tooltip.rock[x-placement^='top'] .tippy-arrow {
+    border-top-color: hsl(223, 47%, 40%);
+  }
+  .tippy-tooltip.rock[x-placement^='bottom'] .tippy-arrow {
+    border-bottom-color: hsl(223, 47%, 40%);
+  }
+  .tippy-tooltip.rock[x-placement^='left'] .tippy-arrow {
+    border-left-color: hsl(223, 47%, 40%);
+  }
+  .tippy-tooltip.rock[x-placement^='right'] .tippy-arrow {
+    border-right-color: hsl(223, 47%, 40%);
+  }
+
+
