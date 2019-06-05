@@ -47,10 +47,11 @@ Projects:
 Try to understand and have some practice with simple projects on React library
 
 Projects:
+ - [evergreenui](react/evergreenui)
  - [filter-search](react/filter-search)
  - [helloworld](react/helloworld)
  - [todo](react/todo)
- - [evergreenui](react/evergreenui)
+ - [tooltips](react/tooltips)
 
 
 
