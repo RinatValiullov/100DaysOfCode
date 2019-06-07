@@ -44,7 +44,7 @@ Projects:
 
 
 ### [React](react)
-Try to understand and have some practice with simple projects on React library
+Trying to understand and have some practice with simple projects on React library
 
 Projects:
  - [evergreenui](react/evergreenui)
