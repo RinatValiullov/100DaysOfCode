@@ -52,6 +52,8 @@ Projects:
  - [helloworld](react/helloworld)
  - [todo](react/todo)
  - [tooltips](react/tooltips)
+ - [conditional-render](react/conditional-render)
+ - [table-rendering](react/table-rendering)
 
 
 
