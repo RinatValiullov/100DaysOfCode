@@ -28,6 +28,7 @@
 Projects:
  - [hamburger-icon](css/hamburger-icon)
  - [interviewQuestion-card](css/interviewQuestion-card)
+ - [bg-image-gradient](css/bg-image-gradient)
 
 ### [JavaScript Basics](javascript)
 
