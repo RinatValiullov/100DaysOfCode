@@ -1,0 +1,97 @@
+body {
+    font-family: 'Bree Serif', serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.deep-waves {
+    color: #1f358b;
+}
+
+.header h2 {
+    margin-bottom: 1.8rem;
+}
+
+.container {
+    margin-bottom: 4rem;
+}
+
+.container section {
+    height: 35rem;
+}
+
+h3 {
+    margin: 0 0 0.75rem;
+}
+
+.img {
+    height:100%;
+}
+
+.img-orig {
+    background: url('https://picsum.photos/id/770/800') no-repeat;
+   background-size: cover;
+}
+
+.img-grad {
+    background:
+        linear-gradient(
+          145deg,
+          rgba(10, 20, 230, 0.5) 20%,
+          rgba(45, 200, 20, 0.5) 70%
+        ) no-repeat center center,
+        url('https://picsum.photos/id/770/800') no-repeat;
+    background-size: cover;
+}
+
+.fa-heart {
+    color: #D50000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 1rem;
+}
+
+
+@media (max-width: 600px) {
+    .container section {
+        height: 25rem;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .container section {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .img {
+        height: 200px;
+        margin-top: auto;
+    }
+}
