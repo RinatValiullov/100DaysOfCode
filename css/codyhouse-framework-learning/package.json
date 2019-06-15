@@ -1,0 +1,74 @@
+{
+  "_from": "codyhouse-framework",
+  "_id": "codyhouse-framework@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-wQys7pgx8oVbtM9+G1xKvG1ZzfzhN9F7qQwCOGVi0gw+jTebDeiu4CSBW8rxCe4tbY2rrFsUdek4s5FDVN1bkw==",
+  "_location": "/codyhouse-framework",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "codyhouse-framework",
+    "name": "codyhouse-framework",
+    "escapedName": "codyhouse-framework",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/codyhouse-framework/-/codyhouse-framework-2.0.0.tgz",
+  "_shasum": "678c7ddf9b149706e7deeffda83211497478e498",
+  "_spec": "codyhouse-framework",
+  "_where": "e:\\PROJECTS\\100DaysOfCode\\css\\codyhouse-framework-learning",
+  "author": {
+    "name": "Amber Creative Lab",
+    "email": "info@ambercreative.co"
+  },
+  "bugs": {
+    "url": "https://github.com/CodyHouse/codyhouse-framework/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A lightweight front-end framework for building accessible, bespoke interfaces.",
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "postcss-calc": "^7.0.1",
+    "postcss-css-variables": "git+https://github.com/CodyHouse/postcss-css-variables.git"
+  },
+  "homepage": "https://github.com/CodyHouse/codyhouse-framework#readme",
+  "keywords": [
+    "scss",
+    "css",
+    "framework",
+    "design-system",
+    "html",
+    "front-end",
+    "buttons",
+    "colors",
+    "forms",
+    "grid",
+    "mixins",
+    "spacing",
+    "typography",
+    "codyhouse"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "codyhouse-framework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodyHouse/codyhouse-framework.git"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.0"
+}

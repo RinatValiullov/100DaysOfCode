@@ -1,0 +1,14 @@
+.container > div.grid {
+    padding: var(--space-sm);
+}
+
+.block {
+    background: var(--color-primary);
+    height: 3em;
+}
+
+.block-g {
+    background: var(--color-contrast-high);
+    height: 3em;
+}
+
