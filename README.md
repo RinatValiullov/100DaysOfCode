@@ -29,6 +29,7 @@ Projects:
  - [hamburger-icon](css/hamburger-icon)
  - [interviewQuestion-card](css/interviewQuestion-card)
  - [bg-image-gradient](css/bg-image-gradient)
+ - [codyhouse-framework-learning](css/codyhouse-framework-learning)
 
 ### [JavaScript Basics](javascript)
 
