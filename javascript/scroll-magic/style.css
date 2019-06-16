@@ -1,0 +1,40 @@
+html, body {
+    height: 200vh;
+}
+
+#container {
+    background: #add;
+    height: 70vh;
+    position: fixed;
+    width: 100%;
+}
+
+.target {
+    position: absolute;
+    left: 50%;
+    top: 110%; 
+    transform: translateX(-50%);
+    background: #333;
+    height: 100px;
+    width: 100px;
+}
+
+.target::after {
+    background: #ad4;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.target::before {
+    background: #f22;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    width: 100%;
+}
