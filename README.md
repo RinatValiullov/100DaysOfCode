@@ -43,10 +43,10 @@ Projects:
  - [top-button](javascript/top-button)
  - [click-counter](javascript/click-counter)
  - [color-kaleidoscope](javascript/color-kaleidoscope)
+ - [scroll-magic](javascript/scroll-magic)
 
 
 ### [React](react)
-Trying to understand and have some practice with simple projects on React library
 
 Projects:
  - [evergreenui](react/evergreenui)
