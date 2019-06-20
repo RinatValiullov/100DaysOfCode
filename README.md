@@ -44,6 +44,7 @@ Projects:
  - [click-counter](javascript/click-counter)
  - [color-kaleidoscope](javascript/color-kaleidoscope)
  - [scroll-magic](javascript/scroll-magic)
+ - [fibonacci-memoization](javascript/fibonacci-memoization)
 
 
 ### [React](react)

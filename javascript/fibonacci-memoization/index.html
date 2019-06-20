@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci</title>
+</head>
+<body>
+    
+    <script>
+        // without memoization
+        let fibonacciClassic = (number) => {
+            if(number > 1) {
+                return fibonacciClassic(number - 1) + fibonacciClassic(number - 2);
+            }
+            return number;
+        }
+
+        // with memoization
+        let fibonacciMemoization = (number) => {
+            if(!fibonacciMemoization.cache[number]) {
+                if(number > 1) {
+                    fibonacciMemoization.cache[number] = fibonacciMemoization(number - 1) + fibonacciMemoization(number - 2);
+                } else {
+                    fibonacciMemoization.cache[number] = number;
+                }
+            }
+            return fibonacciMemoization.cache[number];
+        }
+
+        fibonacciMemoization.cache = {};
+
+        // Let's try to compare
+        let tClassicStart = performance.now();
+
+        for(let i = 0; i < 25; i++) {
+            document.write(fibonacciClassic(i) + '<br>');
+        }
+        let tClassicFinish = performance.now();
+
+        console.log('The elapsed time to calculate the Fibonacci function without memoization: ' + (tClassicFinish - tClassicStart).toFixed(5) + ' calc 25 values');
+
+
+        let tMemozStart = performance.now();
+
+        for(let i = 0; i < 25; i++) {
+            document.write(fibonacciMemoization(i) + '<br>');
+        }
+        let tMemozFinish = performance.now();
+
+        console.log('The elapsed time to calculate the Fibonacci function with memoization: ' + (tMemozFinish - tMemozStart).toFixed(5) + ' calc 25 values');
+    </script>
+</body>
+</html>
