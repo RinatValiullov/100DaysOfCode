@@ -23,6 +23,9 @@
 - Days 95–97: TypeScript
 - Days 98–100: NextJS
 
+### **Extra activities:**
+ - Days 100-120: [Vue](#Vue)
+
 
 ### [CSS](css)
 Projects:
@@ -35,7 +38,8 @@ Projects:
 
 Projects:
  - [color-clock](javascript/color-clock)
- - [compare-objects](javascript/compare-objects)
+ - [compare-objects](
+ - javascript/compare-objects)
  - [equality-arrays](javascript/equality-arrays)
  - [es6-modules](javascript/es6-modules)
  - [generate-table](javascript/generate-table)
@@ -57,6 +61,12 @@ Projects:
  - [tooltips](react/tooltips)
  - [conditional-render](react/conditional-render)
  - [table-rendering](react/table-rendering)
+
+
+### [Vue](vue)
+
+Projects:
+ - [express-learning](vue/express-learning)
 
 
 

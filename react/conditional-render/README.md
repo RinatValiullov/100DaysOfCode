@@ -1,1 +1,1 @@
-## Creating conditional rendering project
+## Creating *conditional-rendering* project
