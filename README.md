@@ -14,7 +14,7 @@
 - Days 45–50: Sass
 - Days 51–54: Bootstrap
 - Day 55: BEM
-- Days 57–61: Gulp
+- Days 57–61: [Gulp](#Gulp)
 - Days 62–65: Webpack
 - Day 66: ESLint
 - Days 68–83: [React](#React)
@@ -49,6 +49,12 @@ Projects:
  - [color-kaleidoscope](javascript/color-kaleidoscope)
  - [scroll-magic](javascript/scroll-magic)
  - [fibonacci-memoization](javascript/fibonacci-memoization)
+
+
+### [Gulp](gulp)
+
+Projects:
+ - [compile-sass](gulp/compile-sass)
 
 
 ### [React](react)
