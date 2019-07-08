@@ -27,6 +27,7 @@
  - Days 100-120: [Vue](#Vue)
 
 
+
 ### [CSS](css)
 Projects:
  - [hamburger-icon](css/hamburger-icon)
@@ -34,12 +35,11 @@ Projects:
  - [bg-image-gradient](css/bg-image-gradient)
  - [codyhouse-framework-learning](css/codyhouse-framework-learning)
 
-### [JavaScript Basics](javascript)
 
+### [JavaScript Basics](javascript)
 Projects:
  - [color-clock](javascript/color-clock)
- - [compare-objects](
- - javascript/compare-objects)
+ - [compare-objects](javascript/compare-objects)
  - [equality-arrays](javascript/equality-arrays)
  - [es6-modules](javascript/es6-modules)
  - [generate-table](javascript/generate-table)
@@ -52,13 +52,12 @@ Projects:
 
 
 ### [Gulp](gulp)
-
 Projects:
  - [compile-sass](gulp/compile-sass)
+ - [gulp-1.01](gulp/gulp-1.01)
 
 
 ### [React](react)
-
 Projects:
  - [evergreenui](react/evergreenui)
  - [filter-search](react/filter-search)
@@ -70,7 +69,6 @@ Projects:
 
 
 ### [Vue](vue)
-
 Projects:
  - [express-learning](vue/express-learning)
 
