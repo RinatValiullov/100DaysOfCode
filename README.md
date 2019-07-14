@@ -34,6 +34,7 @@ Projects:
  - [interviewQuestion-card](css/interviewQuestion-card)
  - [bg-image-gradient](css/bg-image-gradient)
  - [codyhouse-framework-learning](css/codyhouse-framework-learning)
+ - [clip-path](css/clip-path)
 
 
 ### [JavaScript Basics](javascript)

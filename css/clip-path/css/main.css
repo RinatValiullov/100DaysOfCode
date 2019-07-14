@@ -1,0 +1,105 @@
+body {
+    align-items: center;
+    background-color: #d2caf1;
+    display: grid;
+    font-family: 'Lora', serif;
+    justify-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 30%;
+}
+
+.inner {
+    align-items: center;
+    display: flex;
+    background: #646de7;
+    border-radius: 10px;
+    clip-path: inset(0% 0% 0% 95%);
+    cursor: pointer;
+    padding: 1rem;
+    transition: all 0.4s ease-in-out;
+    width: calc(100% - 2em);
+}
+
+/* .inner:hover {
+    background-color: #00b6ff;
+    clip-path: circle(75%);
+}
+
+.inner:hover span {
+    color: rgba(255, 255, 255, 0);
+}
+*/
+
+.container:hover span {
+    left: 75% !important;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 50%;
+    transition: all 0.3s ease 0.1s;
+    transform: translateY(-50%);
+}
+
+.link {
+    color:#495057;
+    display: inline-block;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* .link:not(:last-child) {
+    margin-bottom: 1rem;
+} */
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin-right: 2rem;
+    flex-basis: 70%;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    margin: 0 0 2rem;
+}
+
+p {
+    color: #fff;
+    /* margin: 1rem 5rem 1rem 0; */
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    border-radius: 5px;
+    max-width: 50%;
+}
+
+.container:hover .inner {
+    clip-path: inset(0% 25% 0% 0%);
+}
