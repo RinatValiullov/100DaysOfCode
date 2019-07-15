@@ -28,16 +28,6 @@ body {
     width: calc(100% - 2em);
 }
 
-/* .inner:hover {
-    background-color: #00b6ff;
-    clip-path: circle(75%);
-}
-
-.inner:hover span {
-    color: rgba(255, 255, 255, 0);
-}
-*/
-
 .container:hover span {
     left: 75% !important;
 }
@@ -65,10 +55,6 @@ span {
     text-decoration: underline;
 }
 
-/* .link:not(:last-child) {
-    margin-bottom: 1rem;
-} */
-
 a {
     color: #fff;
     text-decoration: none;
@@ -88,7 +74,6 @@ h1 {
 
 p {
     color: #fff;
-    /* margin: 1rem 5rem 1rem 0; */
 }
 
 figure {
