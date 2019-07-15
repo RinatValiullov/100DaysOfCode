@@ -17,6 +17,19 @@ body {
     z-index: 5;
 }
 
+
+.container::after {
+    animation: fadeIn 1s 0.4s ease-in backwards;
+    color: #646de7;
+    content: "hover";
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .inner {
     align-items: center;
     display: flex;
