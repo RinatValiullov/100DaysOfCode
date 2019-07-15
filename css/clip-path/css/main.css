@@ -14,6 +14,7 @@ body {
     overflow: hidden;
     position: relative;
     width: 300px;
+    z-index: 5;
 }
 
 .inner {
@@ -61,18 +62,23 @@ a {
 }
 
 section {
+    color: #fff;
     margin-right: 1rem;
 }
 
 h1 {
-    color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     margin: 0;
 }
 
-p {
+.solo-profile {
     color: #fff;
+    text-decoration: none;
+}
+
+.solo-profile:hover {
+    text-decoration: underline;
 }
 
 figure {
@@ -84,6 +90,46 @@ img {
     max-width: 50%;
 }
 
+.container:hover::after {
+    animation: slideLeft 0.4s ease-in-out;
+    z-index: -5;
+}
+
 .container:hover .inner {
     clip-path: inset(0% 25% 0% 0%);
 }
+
+@-webkit-keyframes slideLeft {
+    100% {
+        -webkit-transform: translateX(-300px);
+                transform: translateX(-300px);
+    }
+}
+
+@keyframes slideLeft {
+    100% {
+        -webkit-transform: translateX(-300px);
+                transform: translateX(-300px);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
