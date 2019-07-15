@@ -13,7 +13,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    width: 30%;
+    width: 300px;
 }
 
 .inner {
@@ -37,7 +37,7 @@ span {
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    left: 100%;
+    left: 105%;
     position: absolute;
     right: 0;
     text-align: center;
