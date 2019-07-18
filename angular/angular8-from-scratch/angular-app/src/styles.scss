@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+$primary: rgb(111, 0, 255);
+
+body {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 18px;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    background-color: $primary;
+    padding: 1em 0;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a.logo {
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+
+            li a {
+                padding: 1em;
+
+                &:hover {
+                    background-color: darken($primary, 10%);
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    margin-top: 2em;
+}

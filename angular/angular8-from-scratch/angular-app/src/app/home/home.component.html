@@ -1,0 +1,32 @@
+<h1>Welcome</h1>
+
+<div class="play-container">
+    <p>Increase clickCounter: <span (click)="countClickUp()">this</span></p>
+    <p>Reduce clickCounter: <span (click)="countClickDown()">this</span></p>
+    <output>{{ clickCounter }}</output>
+</div>
+
+<div class="play-container">
+    <p>
+        <input type="text" [(ngModel)]="name">
+        <br>
+        <strong>You said: </strong>{{ name }}
+    </p>
+</div>
+
+<div
+    class="play-container"
+    [ngClass]="setClasses()"
+    [ngStyle]="{
+        'background-color': clickCounter >= 4 ? '#df2532' : '#998669',
+        'border':           clickCounter >= 4 ? '4px dotted yellow' : 'none'
+    }"
+>
+    <ng-template [ngIf]="clickCounter >= 4" [ngIfElse]="less">
+        <p>clickCounter <span>is greater or equal</span> 4.</p>
+    </ng-template>
+
+    <ng-template #less>
+        <p>clickCounter <span>is less</span> than 4.</p>
+    </ng-template>
+</div>
