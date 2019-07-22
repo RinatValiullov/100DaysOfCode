@@ -50,6 +50,7 @@ Projects:
  - [color-kaleidoscope](javascript/color-kaleidoscope)
  - [scroll-magic](javascript/scroll-magic)
  - [fibonacci-memoization](javascript/fibonacci-memoization)
+ - [eslint-prettier-airbnb](javascript/eslint-prettier-airbnb)
 
 
 ### [Gulp](gulp)
