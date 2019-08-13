@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scroll animated</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section></section>
+
+    <section class=content>
+        <div class="left">
+            <img src="https://picsum.photos/id/155/500" alt="first" class="first anim" data-delay="0s">
+            <p class="anim" data-delay="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ea?</p>
+            <img src="./duck.svg" alt="second" class="duck anim" data-delay="2s">
+        </div>
+        <div class="right">
+            <div class="anim" data-delay="3s">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt, eos culpa minus similique in ab praesentium aliquid totam assumenda ducimus harum? Nesciunt, reprehenderit? Soluta?</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let images = document.querySelectorAll('.anim');
+
+        let observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+                console.log(entry)
+                if(entry.intersectionRatio > 0) {
+                    entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
+                } else {
+                    entry.target.style.animation = `none`;
+                }
+            });
+
+        });
+        images.forEach(image => observer.observe(image));
+    </script>
+</body>
+</html>
