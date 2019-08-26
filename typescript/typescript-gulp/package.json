@@ -1,0 +1,17 @@
+{
+  "name": "typescript_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "tscompile": "tsc --outFile built/greeting.js src/**/*.ts --sourceMap"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^5.0.1",
+    "typescript": "^3.5.3"
+  }
+}

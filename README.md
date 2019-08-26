@@ -20,7 +20,7 @@
 - Days 68–83: [React](#React)
 - Days 84–89: Redux
 - Days 90–94: Jest
-- Days 95–97: TypeScript
+- Days 95–97: [TypeScript](#TypeScript)
 - Days 98–100: NextJS
 
 ### **Extra activities:**
@@ -68,6 +68,10 @@ Projects:
  - [tooltips](react/tooltips)
  - [conditional-render](react/conditional-render)
  - [table-rendering](react/table-rendering)
+
+### [TypeScript](TypeScript)
+Projects:
+ - [typescript-gulp](typescript/typescript-gulp)
 
 
 ### [Vue](vue)
