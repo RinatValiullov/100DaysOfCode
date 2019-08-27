@@ -1,4 +1,5 @@
 # 100DaysOfCode
+
 ## My 100DaysOfCode process of learning web development
 
 ### **The recommended day-by-day activities are as follows:**
@@ -24,65 +25,71 @@
 - Days 98–100: NextJS
 
 ### **Extra activities:**
- - Days 100-120: [Vue](#Vue)
 
-
+- Days 100-120: [Vue](#Vue)
 
 ### [CSS](css)
-Projects:
- - [hamburger-icon](css/hamburger-icon)
- - [interviewQuestion-card](css/interviewQuestion-card)
- - [bg-image-gradient](css/bg-image-gradient)
- - [codyhouse-framework-learning](css/codyhouse-framework-learning)
- - [clip-path](css/clip-path)
 
+Projects:
+
+- [hamburger-icon](css/hamburger-icon)
+- [interviewQuestion-card](css/interviewQuestion-card)
+- [bg-image-gradient](css/bg-image-gradient)
+- [codyhouse-framework-learning](css/codyhouse-framework-learning)
+- [clip-path](css/clip-path)
 
 ### [JavaScript Basics](javascript)
-Projects:
- - [color-clock](javascript/color-clock)
- - [compare-objects](javascript/compare-objects)
- - [equality-arrays](javascript/equality-arrays)
- - [es6-modules](javascript/es6-modules)
- - [generate-table](javascript/generate-table)
- - [modal-onload](javascript/modal-onload)
- - [top-button](javascript/top-button)
- - [click-counter](javascript/click-counter)
- - [color-kaleidoscope](javascript/color-kaleidoscope)
- - [scroll-magic](javascript/scroll-magic)
- - [fibonacci-memoization](javascript/fibonacci-memoization)
- - [eslint-prettier-airbnb](javascript/eslint-prettier-airbnb)
 
+Projects:
+
+- [color-clock](javascript/color-clock)
+- [compare-objects](javascript/compare-objects)
+- [equality-arrays](javascript/equality-arrays)
+- [es6-modules](javascript/es6-modules)
+- [generate-table](javascript/generate-table)
+- [modal-onload](javascript/modal-onload)
+- [top-button](javascript/top-button)
+- [click-counter](javascript/click-counter)
+- [color-kaleidoscope](javascript/color-kaleidoscope)
+- [scroll-magic](javascript/scroll-magic)
+- [fibonacci-memoization](javascript/fibonacci-memoization)
+- [eslint-prettier-airbnb](javascript/eslint-prettier-airbnb)
 
 ### [Gulp](gulp)
-Projects:
- - [compile-sass](gulp/compile-sass)
- - [gulp-1.01](gulp/gulp-1.01)
 
+Projects:
+
+- [compile-sass](gulp/compile-sass)
+- [gulp-1.01](gulp/gulp-1.01)
 
 ### [React](react)
+
 Projects:
- - [evergreenui](react/evergreenui)
- - [filter-search](react/filter-search)
- - [helloworld](react/helloworld)
- - [todo](react/todo)
- - [tooltips](react/tooltips)
- - [conditional-render](react/conditional-render)
- - [table-rendering](react/table-rendering)
+
+- [evergreenui](react/evergreenui)
+- [filter-search](react/filter-search)
+- [helloworld](react/helloworld)
+- [todo](react/todo)
+- [tooltips](react/tooltips)
+- [conditional-render](react/conditional-render)
+- [table-rendering](react/table-rendering)
 
 ### [TypeScript](TypeScript)
-Projects:
- - [typescript-gulp](typescript/typescript-gulp)
 
+Projects:
+
+- [typescript-gulp](typescript/typescript-gulp)
 
 ### [Vue](vue)
-Projects:
- - [express-learning](vue/express-learning)
 
+Projects:
+
+- [express-learning](vue/express-learning)
 
 ### [Angular](angular)
+
 Projects:
- - [angular8-from-scratch](angular/angular8-from-scratch/angular-app)
 
-
+- [angular8-from-scratch](angular/angular8-from-scratch/angular-app)
 
 Thanks for article to [__Nick Scialli__](https://twitter.com/nas5w) - [A Timeboxed, Day-by-Day #100DaysOfCode Front-End Development Curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2)
