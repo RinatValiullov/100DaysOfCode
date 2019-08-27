@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "tscompile": "tsc --outFile built/greeting.js src/**/*.ts --sourceMap"
+    "tscompile": "tsc --outFile built/greeting.js --sourceMap src/main.ts --sourceMap",
+    "build": "npm run tscompile -- -w"
   },
   "keywords": [],
   "author": "",
