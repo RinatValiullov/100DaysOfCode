@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+div {
+    background: #457;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: center;
+    height: 240px;
+    margin: 2rem;
+    padding: 0.4rem;
+    position: relative;
+    vertical-align: bottom;
+    width: 240px;
+    
+    -webkit-filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(255,0,0,1));
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(255,0,0,1));
+}
+
+.quote {
+    border-radius: 10px;
+}
+
+.dots {
+    background: rgba(0,0,0,0);
+    border: 14px dotted #457;
+}
+
+.angles {
+    background: inherit;
+    background:
+        linear-gradient(135deg, transparent 15px, #457 0) top left,
+        linear-gradient(-135deg, transparent 15px, #457 0) top right,
+        linear-gradient(-45deg, transparent 15px, #457 0) bottom right,
+        linear-gradient(45deg, transparent 15px, #457 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.quote::after {
+    background: inherit;
+    content: '';
+    height: 50px;
+    position: absolute;
+    right: -1.57rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 50px;
+}
+
