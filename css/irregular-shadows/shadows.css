@@ -1,6 +1,7 @@
 body {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 div {
@@ -15,9 +16,8 @@ div {
     position: relative;
     vertical-align: bottom;
     width: 240px;
-    
-    -webkit-filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(255,0,0,1));
-    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(255,0,0,1));
+    -webkit-filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(255, 0, 0, 1));
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(255, 0, 0, 1));
 }
 
 .quote {
@@ -25,18 +25,14 @@ div {
 }
 
 .dots {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     border: 14px dotted #457;
 }
 
 .angles {
     background: inherit;
-    background:
-        linear-gradient(135deg, transparent 15px, #457 0) top left,
-        linear-gradient(-135deg, transparent 15px, #457 0) top right,
-        linear-gradient(-45deg, transparent 15px, #457 0) bottom right,
-        linear-gradient(45deg, transparent 15px, #457 0) bottom left;
-    background-size: 50% 50%;
+    background: linear-gradient(135deg, transparent 15px, #457 0) top left, linear-gradient(-135deg, transparent 15px, #457 0) top right, linear-gradient(-45deg, transparent 15px, #457 0) bottom right, linear-gradient(45deg, transparent 15px, #457 0) bottom left;
+    background-size: 55% 55%;
     background-repeat: no-repeat;
 }
 
@@ -50,4 +46,3 @@ div {
     transform: translateY(-50%) rotate(45deg);
     width: 50px;
 }
-
