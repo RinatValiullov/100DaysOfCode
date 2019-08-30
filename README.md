@@ -4,7 +4,7 @@
 
 ### **The recommended day-by-day activities are as follows:**
 
-- Days 1–8: [HTML](html)
+- Days 1–8: [HTML](#HTML)
 - Days 9–16: [CSS](#CSS)
 - Days 17–24: [JavaScript Basics](#JavaScript-Basics)
 - Days 25–27: jQuery
