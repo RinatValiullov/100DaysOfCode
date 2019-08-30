@@ -28,6 +28,12 @@
 
 - Days 100-120: [Vue](#Vue)
 
+### [HTML](html)
+
+Projects:
+
+- [custom-elements](html/custom-elements)
+
 ### [CSS](css)
 
 Projects:
@@ -37,7 +43,7 @@ Projects:
 - [bg-image-gradient](css/bg-image-gradient)
 - [codyhouse-framework-learning](css/codyhouse-framework-learning)
 - [clip-path](css/clip-path)
-- [css/irregular-shadows](css/irregular-shadows)
+- [irregular-shadows](css/irregular-shadows)
 
 ### [JavaScript Basics](javascript)
 

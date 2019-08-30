@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Make a custom element(counter)</title>
+</head>
+
+<body>
+
+  <style>
+    num-counter {
+      background: #788;
+      border-radius: 10q;
+      color: #ef2;
+      cursor: default;
+      display: block;
+      font-size: 2rem;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      user-select: none;
+      width: 50px;
+    }
+  </style>
+
+  <num-counter></num-counter>
+
+  <script>
+    class Counter extends HTMLElement {
+      clicked() {
+        this.x++;
+        window.requestAnimationFrame(this.render.bind(this));
+      }
+
+      constructor() {
+        super();
+        this.onclick = this.clicked.bind(this);
+        this.x = 0;
+      }
+
+      connectedCallback() {
+        this.render();
+      }
+
+      render() {
+        this.textContent = this.x.toString();
+      }
+    }
+    window.customElements.define('num-counter', Counter);
+  </script>
+</body>
+
+</html>
