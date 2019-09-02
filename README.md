@@ -20,7 +20,7 @@
 - Day 66: ESLint
 - Days 68–83: [React](#React)
 - Days 84–89: Redux
-- Days 90–94: Jest
+- Days 90–94: [Jest](#Jest)
 - Days 95–97: [TypeScript](#TypeScript)
 - Days 98–100: NextJS
 
@@ -81,6 +81,12 @@ Projects:
 - [tooltips](react/tooltips)
 - [conditional-render](react/conditional-render)
 - [table-rendering](react/table-rendering)
+
+### [Jest](Jest)
+
+Projects:
+
+- [first-test](jest/first-test)
 
 ### [TypeScript](TypeScript)
 
