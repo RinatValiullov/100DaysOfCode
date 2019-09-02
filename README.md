@@ -44,6 +44,7 @@ Projects:
 - [codyhouse-framework-learning](css/codyhouse-framework-learning)
 - [clip-path](css/clip-path)
 - [irregular-shadows](css/irregular-shadows)
+- [color-tinting](css/color-tinting)
 
 ### [JavaScript Basics](javascript)
 
