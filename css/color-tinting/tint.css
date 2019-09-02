@@ -1,12 +1,24 @@
 section {
   display: flex;
+  flex-wrap: wrap;
+
+}
+
+.pict {
+  flex-basis: 300px;
+  margin: 1rem;
 }
 
 img {
-  height: auto;
-  max-width: 300px;
+  max-width: 100%;
 }
 
-.flash {
+img:hover,
+img:focus {
+  filter: none;
+}
+
+img {
   filter: sepia() saturate(4) hue-rotate(295deg);
+  transition: filter 0.5s linear;
 }
