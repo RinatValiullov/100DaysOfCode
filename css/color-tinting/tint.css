@@ -1,0 +1,12 @@
+section {
+  display: flex;
+}
+
+img {
+  height: auto;
+  max-width: 300px;
+}
+
+.flash {
+  filter: sepia() saturate(4) hue-rotate(295deg);
+}
