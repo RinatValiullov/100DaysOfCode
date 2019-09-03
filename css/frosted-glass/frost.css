@@ -1,0 +1,35 @@
+body, main::before {
+    background: url('https://picsum.photos/id/1074/1200') 0 / cover fixed;
+}
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: hsla(0, 0%, 50%, 0.2);
+    border-radius: 5px;
+    color: #ffd;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+    width: 60%;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    filter: blur(10px);
+    left: 0;
+    margin: -30px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}

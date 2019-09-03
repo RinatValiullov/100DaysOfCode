@@ -46,6 +46,7 @@ Projects:
 - [irregular-shadows](css/irregular-shadows)
 - [color-tinting](css/color-tinting)
 - [blend-mode](css/blend-mode)
+- [frosted-glass](css/frosted-glass)
 
 ### [JavaScript Basics](javascript)
 
