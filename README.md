@@ -11,7 +11,7 @@
 - Days 28–33: Responsive Web Design
 - Days 34–36: Accessibility
 - Days 37–39: Git
-- Days 40–44: Node and NPM
+- Days 40–44: [Node and NPM](#Node-and-NPM)
 - Days 45–50: Sass
 - Days 51–54: Bootstrap
 - Day 55: BEM
@@ -69,6 +69,12 @@ Projects:
 Projects:
 
 - [loading-image](jQuery/loading-image)
+
+### [Node-and-NPM](node)
+
+Projects:
+
+- [first-server](node/first-server)
 
 ### [Gulp](gulp)
 
