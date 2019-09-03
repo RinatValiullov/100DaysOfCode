@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Get positive Numbers Sum</title>
+</head>
+<body>
+  <div id="app">
+    <h3>Numbers: </h3>
+    <ul>
+      <li>-5</li>
+      <li>0</li>
+      <li>5</li>
+      <li>10</li>
+      <li>-6</li>
+      <li>-3</li>
+      <li>4</li>
+    </ul>
+    <p>The sum of positive numbers {{ getPosNumbSum() }}</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    let lis = document.querySelectorAll('li');
+    let numbersFromLi = [...lis].map(li => Number(li.textContent));
+    new Vue({
+      el: '#app',
+      data: {
+        numbers: numbersFromLi
+      },
+      methods: {
+        getPosNumb() {
+          return this.numbers.filter(number => number > 0);
+        },
+        getPosNumbSum() {
+          return this.getPosNumb().reduce((acc, prev) => acc + prev, 0);
+        }
+      }
+    })
+  </script>
+</body>
+</html>
