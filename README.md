@@ -107,6 +107,7 @@ Projects:
 Projects:
 
 - [express-learning](vue/express-learning)
+- [get-positive-sum](vue/get-positive-sum)
 
 ### [Angular](angular)
 
