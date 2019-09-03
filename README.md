@@ -45,6 +45,7 @@ Projects:
 - [clip-path](css/clip-path)
 - [irregular-shadows](css/irregular-shadows)
 - [color-tinting](css/color-tinting)
+- [blend-mode](css/blend-mode)
 
 ### [JavaScript Basics](javascript)
 

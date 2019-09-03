@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mix-blend-mode property</title>
+</head>
+<body>
+  <style>
+    a {
+      background: hsl(92, 37%, 60%);
+      display: block;
+      width: 50%;
+    }
+    img {
+      display: inherit;
+      mix-blend-mode: luminosity;
+      max-width: 100%;
+    }
+  </style>
+
+  <a href="#">
+    <img src="./bear.jpg" alt="roar!">
+  </a>
+</body>
+</html>
