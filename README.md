@@ -7,7 +7,7 @@
 - Days 1–8: [HTML](#HTML)
 - Days 9–16: [CSS](#CSS)
 - Days 17–24: [JavaScript Basics](#JavaScript-Basics)
-- Days 25–27: jQuery
+- Days 25–27: [jQuery](#jQuery)
 - Days 28–33: Responsive Web Design
 - Days 34–36: Accessibility
 - Days 37–39: Git
@@ -63,6 +63,12 @@ Projects:
 - [scroll-magic](javascript/scroll-magic)
 - [fibonacci-memoization](javascript/fibonacci-memoization)
 - [eslint-prettier-airbnb](javascript/eslint-prettier-airbnb)
+
+### [jQuery](jQuery)
+
+Projects:
+
+- [loading-image](jQuery/loading-image)
 
 ### [Gulp](gulp)
 
