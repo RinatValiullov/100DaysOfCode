@@ -27,6 +27,7 @@
 ### **Extra activities:**
 
 - Days 100-120: [Vue](#Vue)
+- Days 120-130: [Angular](#Angular)
 
 ### [HTML](html)
 
