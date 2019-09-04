@@ -21,7 +21,18 @@ let newUser = {
     age: 555
 };
 
+// bind method
 user.showInfo.bind(newUser, 'Builder', '8-565-656-00-01')();
 
 user.greet();
-user.showInfo();
+user.showInfo('Web Developer', '8-960-654-54-99');
+
+
+let newPerson = {
+    nick: 'Nemo',
+    age: 1
+};
+
+// call and apply
+user.showInfo.call(newPerson, 'Builder', '8-565-656-00-01');
+user.showInfo.apply(newPerson, ['Builder', '8-565-656-00-01']);
