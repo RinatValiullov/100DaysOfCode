@@ -33,3 +33,7 @@ main::before {
     top: 0;
     z-index: -1;
 }
+
+footer {
+    text-align: right;
+}
