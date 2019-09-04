@@ -18,7 +18,8 @@
       <li>6</li>
       <li>7</li>
     </ul>
-    <p>{{ getDoubleNumbers }}</p>
+    <h2>Double odd numbers:</h2>
+    <p>{{ getDoubleOddNumbers }}</p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script>
@@ -27,11 +28,11 @@
     new Vue({
       el: '#root',
       data: {
-        numbers
+        numbers: numbers.filter((elem, idx) => idx % 2 === 0)
       },
       computed: {
-        getDoubleNumbers() {
-          console.log('log: getDoubleNumbers');
+        getDoubleOddNumbers() {
+          console.log('log: getDoubleOddNumbers');
           return this.numbers.map(number => number * 2);
         }
       }
