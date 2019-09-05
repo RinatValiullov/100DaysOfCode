@@ -49,6 +49,7 @@ Projects:
 - [blend-mode](css/blend-mode)
 - [frosted-glass](css/frosted-glass)
 - [svg-transform](css/svg-transform)
+- [svg-stroke](css/svg-stroke)
 
 ### [JavaScript Basics](javascript)
 
