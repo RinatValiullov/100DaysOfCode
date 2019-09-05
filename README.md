@@ -48,6 +48,7 @@ Projects:
 - [color-tinting](css/color-tinting)
 - [blend-mode](css/blend-mode)
 - [frosted-glass](css/frosted-glass)
+- [svg-transform](css/svg-transform)
 
 ### [JavaScript Basics](javascript)
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rotate rectangle in svg</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        figure {
+            margin: auto;
+        }
+        svg {
+            background-image:
+                linear-gradient(#999 1px, transparent 0),
+                linear-gradient(90deg, #999 1px, transparent 0);
+            background-size: 50px 50px;
+        }
+    </style>
+    <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <rect
+                x='20' y='20' width='50' height='30' fill='#456'
+                transform='rotate(45 45,35)'
+            ></rect>
+        </svg>
+    </figure>
+</body>
+</html>
