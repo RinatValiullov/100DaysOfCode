@@ -79,6 +79,7 @@ Projects:
 
 - [first-server](node/first-server)
 - [html-render](node/html-render)
+- [reading-file](node/reading-file)
 
 ### [Gulp](gulp)
 
