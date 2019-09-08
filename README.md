@@ -69,6 +69,7 @@ Projects:
 - [eslint-prettier-airbnb](javascript/eslint-prettier-airbnb)
 - [awesome-context](javascript/awesome-context)
 - [whitespace_regex-js2019](javascript/whitespace_regex-js2019)
+- [compare-arrays](javascript/compare-arrays)
 
 ### [jQuery](jQuery)
 
