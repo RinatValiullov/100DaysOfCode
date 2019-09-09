@@ -71,6 +71,7 @@ Projects:
 - [whitespace_regex-js2019](javascript/whitespace_regex-js2019)
 - [compare-arrays](javascript/compare-arrays)
 - [map-datastructure](javascript/map-datastructure)
+- [proxy-object](javascript/proxy-object)
 
 ### [jQuery](jQuery)
 
