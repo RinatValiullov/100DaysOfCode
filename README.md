@@ -72,6 +72,7 @@ Projects:
 - [compare-arrays](javascript/compare-arrays)
 - [map-datastructure](javascript/map-datastructure)
 - [proxy-object](javascript/proxy-object)
+- [get-names](javascript/get-names)
 
 ### [jQuery](jQuery)
 
