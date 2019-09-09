@@ -32,3 +32,11 @@ for(let [key, value] of people) {
   resultAsObject[key] = value;
   console.log(resultAsObject);
 }
+
+// 3. Using forEach loop
+
+people.forEach((value, key) => {
+  let resultAsObject = {};
+  resultAsObject[key] = value;
+  console.log(resultAsObject);
+});
