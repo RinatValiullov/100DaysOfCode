@@ -1,7 +1,7 @@
 let handler = {
     has(target, key) {
         if (key[0] === '_') {
-            console.log('property name with underscore');
+            console.log(`'${key}' with underscore`);
             return false;
         }
         return key in target;
