@@ -24,3 +24,11 @@ console.log(namesOfPeople.next(), valuesOfPeople.next());
 console.log(namesOfPeople.next(), valuesOfPeople.next());
 console.log(namesOfPeople.next(), valuesOfPeople.next());
 console.groupEnd('people');
+
+// 2. Using for...of loop
+
+for(let [key, value] of people) {
+  let resultAsObject = {};
+  resultAsObject[key] = value;
+  console.log(resultAsObject);
+}
