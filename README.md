@@ -70,6 +70,7 @@ Projects:
 - [awesome-context](javascript/awesome-context)
 - [whitespace_regex-js2019](javascript/whitespace_regex-js2019)
 - [compare-arrays](javascript/compare-arrays)
+- [map-datastructure](javascript/map-datastructure)
 
 ### [jQuery](jQuery)
 
