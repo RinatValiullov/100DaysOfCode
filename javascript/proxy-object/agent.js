@@ -7,7 +7,7 @@ let handler = {
     return target[prop]
   },
   set(target, propName, value) {
-    if(propName === 'rate') {
+    if (propName === 'rate') {
       value += value * 0.85;
     }
     target[propName] = value;
@@ -15,9 +15,6 @@ let handler = {
 };
 
 let agent = new Proxy(person, handler);
-
-console.log(agent.status);
-
 agent.rate = 100;
 
 console.log(agent);
