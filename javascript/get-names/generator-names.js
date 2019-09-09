@@ -18,8 +18,10 @@ function* getName() {
 
 let generatorIterator = getName();
 
+// get the first name out of the generator
 let name = generatorIterator.next().value;
 
+// pass data in *and* get the next name
 name = generatorIterator.next(`${name} is awesome!`).value;
 name = generatorIterator.next(`${name} is miracle!`).value;
 name = generatorIterator.next(`${name} is great!`).value;
