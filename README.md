@@ -50,6 +50,7 @@ Projects:
 - [frosted-glass](css/frosted-glass)
 - [svg-transform](css/svg-transform)
 - [svg-stroke](css/svg-stroke)
+- [svg-markers](css/svg-markers)
 
 ### [JavaScript Basics](javascript)
 

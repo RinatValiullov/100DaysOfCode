@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG markers</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        figure {
+            border: 1px solid #ddd;
+            margin: auto;
+            width: 500px;
+        }
+        line, path {
+            stroke: #333;
+        }
+        path {
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'>
+            <defs>
+                <marker
+                    id='arrowHead'
+                    viewBox='0 0 10 10' orient='auto'
+                    markerHeight='10' markerWidth='10'
+                    refX='3' refY='5'
+                >
+                    <polygon points='0,0 10,5 0,10 3,5' />
+                </marker>>
+            </defs>
+            <line x1='50' y1='250' x2='400' y2='100' marker-end='url(#arrowHead)' marker-start='url(#arrowHead)' />
+            <path d='M53,301c96-42,278-130,197-12c-50.3,73.2,35,198,129-24' marker-end='url(#arrowHead)' marker-mid='url(#arrowHead)' />
+        </svg>
+    </figure>
+</body>
+</html>
