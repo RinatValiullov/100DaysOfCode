@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG gradients</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        figure {
+            border: 1px solid #ddd;
+            margin: auto;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'>
+            <defs>
+                <linearGradient id='hot' x1='0' y1='0' x2='1' y2='1'>
+                    <stop stop-color='gold' offset='50%'></stop>
+                    <stop stop-color='darkred' offset='100%'></stop>
+                </linearGradient>
+                <radialGradient id='cold' cx='0.8' cy='0.3' r='.5'>
+                    <stop stop-color='blue' offset='40%'></stop>
+                    <stop stop-color='aqua' offset='100%'></stop>
+                </radialGradient>
+            </defs>
+            <!-- You can also set gradient to stroke (bring fill color back also): `stroke-width='30' stroke='url(#hot)'` -->
+            <rect
+                fill='url(#hot)'
+                x='0' y='0' height='100%' width='500'
+            ></rect>
+            <circle fill='url(#cold)' cx='250' cy='250' r='150'></circle>
+        </svg>
+    </figure>
+</body>
+</html>
