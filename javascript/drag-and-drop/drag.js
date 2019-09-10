@@ -3,18 +3,19 @@ let dropZone = document.querySelector('.dropZone');
 
 dragTarget.addEventListener('dragstart', function(event) {
   
-    event.dataTransfer.setData('text/plain', event.target.classList);
+    event.dataTransfer.setData('text/plain', event.target.className.substr(5));
 
     event.currentTarget.style.background = '#d82578';
 
-    console.log(event.dataTransfer);
+    console.dir(event.dataTransfer);
 
 });
 
 
-// dragTarget.addEventListener('dragover', function(event) {
-//   event.preventDefault();
-// });
+dropZone.addEventListener('dragover', function(event) {
+  event.preventDefault();
+  console.log(event.target);
+});
 
 
 // dragTarget.addEventListener('drop', function(event) {
