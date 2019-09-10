@@ -9,10 +9,9 @@ body {
 
 .parent {
   border: 1px solid #ddd;
+  height: 200px;
+  position: relative;
   width: 80%;
-  display: flex;
-  justify-content: space-between;
-  /* padding: 2rem; */
 }
 
 .init {
@@ -27,19 +26,29 @@ body {
 }
 
 .dragTarget {
-
+  padding: 1rem;
 }
 
 .dropZone {
-
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* helper classes (for drag-and-drop states) */
 
 .dragged {
   background: #d82578;
+  height: 20px;
+  line-height: initial;
+  width: 100px;
 }
 
 .dropped {
+  align-items: center;
   background: #e52;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: initial;
 }

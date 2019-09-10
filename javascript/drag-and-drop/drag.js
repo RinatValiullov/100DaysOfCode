@@ -25,6 +25,11 @@ dropZone.addEventListener('drop', function(event) {
   let dropzone = event.target;
 
   dropzone.appendChild(draggableElement);
+  dropzone.classList.add('dropped');
+  dropzone.removeChild(dropzone.childNodes[0])
+  draggableElement.classList.add('dragged');
+  draggableElement.textContent = 'dragged';
+
 
   event.dataTransfer.clearData();
 
