@@ -48,9 +48,10 @@ Projects:
 - [color-tinting](css/color-tinting)
 - [blend-mode](css/blend-mode)
 - [frosted-glass](css/frosted-glass)
-- [svg-transform](css/svg-learn/svg-transform)
-- [svg-stroke](css/svg-learn/svg-stroke)
-- [svg-markers](css/svg-learn/svg-markers)
+- [svg](css/svg)
+  - [svg-transform](css/svg-learn/svg-transform)
+  - [svg-stroke](css/svg-learn/svg-stroke)
+  - [svg-markers](css/svg-learn/svg-markers)
 
 ### [JavaScript Basics](javascript)
 
