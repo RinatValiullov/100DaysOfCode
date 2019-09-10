@@ -73,6 +73,7 @@ Projects:
 - [map-datastructure](javascript/map-datastructure)
 - [proxy-object](javascript/proxy-object)
 - [get-names](javascript/get-names)
+- [drag-and-drop](javascript/drag-and-drop)
 
 ### [jQuery](jQuery)
 

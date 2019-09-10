@@ -1,0 +1,38 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  border: 1px solid #ddd;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 2rem; */
+}
+
+.parent > div {
+  background: #aef;
+  color: #457;
+  font-weight: 600;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  width: 200px;
+}
+
+.dragTarget {
+
+}
+
+.dropZone {
+
+}
+
+.dropped {
+  background: #e52;
+}
