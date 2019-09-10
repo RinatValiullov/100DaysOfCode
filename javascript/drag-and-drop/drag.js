@@ -14,10 +14,18 @@ dragTarget.addEventListener('dragstart', function(event) {
 
 dropZone.addEventListener('dragover', function(event) {
   event.preventDefault();
-  console.log(event.target);
+  // console.log(event.target);
 });
 
 
-// dragTarget.addEventListener('drop', function(event) {
-//   // console.log(event.dataTransfer.getData('text/plain'));
-// });
+dropZone.addEventListener('drop', function(event) {
+  let classItem = event.dataTransfer.getData('text');
+
+  let draggableElement = document.querySelector(`.${classItem}`);
+  let dropzone = event.target;
+
+  dropzone.appendChild(draggableElement);
+
+  event.dataTransfer.clearData();
+
+});
