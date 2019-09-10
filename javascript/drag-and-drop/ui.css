@@ -15,14 +15,15 @@ body {
   /* padding: 2rem; */
 }
 
-.parent > div {
-  background: #aef;
+.init {
+  background: #9df;
   color: #457;
   font-weight: 600;
   height: 200px;
   line-height: 200px;
   text-align: center;
   width: 200px;
+  user-select: none;
 }
 
 .dragTarget {
@@ -31,6 +32,12 @@ body {
 
 .dropZone {
 
+}
+
+/* helper classes (for drag-and-drop states) */
+
+.dragged {
+  background: #d82578;
 }
 
 .dropped {
