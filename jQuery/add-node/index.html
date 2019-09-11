@@ -26,15 +26,19 @@
         h4 {
             text-align: center;
         }
+        fieldset {
+            margin: 1rem;
+        }
     </style>
-    <button class="add">add element</button>
-    <section>
-    <h4>ELEMENTS:</h4>
-        <fieldset>
-            <div>After 3000 ms it will be cleared</div>
-        </fieldset>
+    <button class="add">append/prepend element</button>
+    <button class="addto">appendTO element</button>
+    <section class="inside">
+        <h4>ELEMENTS:</h4>
+        <fieldset></fieldset>
+        <fieldset></fieldset>
     </section>
 
+    <button class='clear'>Clear</button>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="add.js"></script>
 </body>

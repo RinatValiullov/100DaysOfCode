@@ -1,16 +1,16 @@
-/* Base elements
- * 1.
- * 2.
- * 3.
- */
-
-let simpleParagraph = $('<p>Simple paragraph</p>');
+// Base elements
 let simpleDiv = $('<div>Simple div</div>');
 
 
-$('button').on('click', function () {
-    $('section fieldset').append(simpleDiv, simpleParagraph);
-    setTimeout(function () {
-        $('section fieldset').empty();
-    }, 3000);
+$('.clear').on('click', function () {
+    $('.inside fieldset').empty();
+});
+
+
+$('.add').on('click', function () {
+    $('.inside fieldset').append(simpleDiv);
+});
+
+$('.addto').on('click', function () {
+    $(simpleDiv).appendTo($('.inside fieldset'));
 });
