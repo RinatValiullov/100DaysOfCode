@@ -34,8 +34,7 @@ $('.after').on('click', function () {
     $('.inside fieldset .divider').after(simpleDivAfter);
 });
 
-/* // inserAfter method
-$('.afterTo').on('click', function () {
-    $(simpleDivPrep).prependTo('.inside fieldset');
+// inserAfter method
+$('.afterto').on('click', function () {
+    $(simpleDivAfter).insertAfter('.inside fieldset .divider');
 });
- */
