@@ -53,6 +53,7 @@ Projects:
   - [svg-stroke](css/svg-learn/svg-stroke)
   - [svg-markers](css/svg-learn/svg-markers)
   - [svg-gradients](css/svg-learn/svg-gradients)
+- [just-pagination](css/just-pagination)
 
 ### [JavaScript Basics](javascript)
 

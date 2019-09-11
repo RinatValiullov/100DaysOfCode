@@ -1,0 +1,50 @@
+body {
+    background: #dde;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.wrapper {
+    margin: auto;
+    /* width: 500px; */
+}
+
+.pagination {
+    border: 1px solid #99a;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: default;
+    font-weight: bold;
+    padding: 1rem 1.2rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+li:not(:last-of-type) {
+    border-right: 1px solid #99a;
+}
+
+li.active {
+    background-color: #457;
+    border-radius: 3px;
+    color: #de9
+}
+
+li:hover {
+    background-color: #457;
+    color: #de9
+}
+
+.left {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.right {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
