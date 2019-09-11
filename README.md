@@ -85,6 +85,7 @@ Projects:
 
 - [loading-image](jQuery/loading-image)
 - [traverse-dom](jQuery/traverse-dom)
+- [add-node](jQuery/add-node)
 
 ### [Node-and-NPM](node)
 
