@@ -6,11 +6,11 @@ body {
 }
 .wrapper {
     margin: auto;
-    /* width: 500px; */
 }
 
 .pagination {
     border: 1px solid #99a;
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -30,7 +30,6 @@ li:not(:last-of-type) {
 
 li.active {
     background-color: #457;
-    border-radius: 3px;
     color: #de9
 }
 
