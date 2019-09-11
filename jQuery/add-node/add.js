@@ -2,6 +2,7 @@
 let simpleDiv = $('<div>Simple div (appended)</div>');
 let simpleDivPrep = $('<div>Simple div (prepended)</div>');
 let simpleDivAfter = $('<div>Simple div (after)</div>');
+let simpleDivBefore = $('<div>Simple div (Before)</div>');
 
 
 $('.clear').on('click', function () {
@@ -17,7 +18,6 @@ $('.add').on('click', function () {
 $('.addto').on('click', function () {
     $(simpleDiv).appendTo($('.inside fieldset'));
 });
-
 
 // prepend method
 $('.prep').on('click', function () {
@@ -37,4 +37,9 @@ $('.after').on('click', function () {
 // inserAfter method
 $('.afterto').on('click', function () {
     $(simpleDivAfter).insertAfter('.inside fieldset .divider');
+});
+
+// before method
+$('.before').on('click', function () {
+    $('.inside fieldset .divider').before(simpleDivBefore);
 });
