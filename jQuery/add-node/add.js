@@ -35,11 +35,16 @@ $('.after').on('click', function () {
 });
 
 // inserAfter method
-$('.afterto').on('click', function () {
+$('.insertAfter').on('click', function () {
     $(simpleDivAfter).insertAfter('.inside fieldset .divider');
 });
 
 // before method
 $('.before').on('click', function () {
     $('.inside fieldset .divider').before(simpleDivBefore);
+});
+
+// insertBefore method
+$('.insertBefore').on('click', function () {
+    $(simpleDivBefore).insertBefore('.inside fieldset .divider');
 });
