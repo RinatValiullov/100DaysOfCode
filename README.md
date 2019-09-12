@@ -87,6 +87,7 @@ Projects:
 - [traverse-dom](jQuery/traverse-dom)
 - [add-node](jQuery/add-node)
 - [enumeration-elements](jQuery/enumeration-elements)
+- [event-bubbling](jQuery/event-bubbling)
 
 ### [Node-and-NPM](node)
 

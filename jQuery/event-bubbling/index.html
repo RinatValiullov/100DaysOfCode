@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event bubbling</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  </head>
+<body>
+  <style>
+    .child {
+      border: 1px solid #adf;
+      cursor: default;
+      height: 60px;
+      margin: 2rem auto;
+      padding: 0.6rem;
+      text-align: center;
+      width: 200px;
+    }
+  </style>
+  <section class="greatgrandparent">
+    <div class="grandparent">
+      <div class="parent">
+        <div class="child">click me and watch all my parents</div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="bubble.js"></script>
+</body>
+</html>
