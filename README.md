@@ -88,6 +88,7 @@ Projects:
 - [add-node](jQuery/add-node)
 - [enumeration-elements](jQuery/enumeration-elements)
 - [event-bubbling](jQuery/event-bubbling)
+- [event-delegation](jQuery/event-delegation)
 
 ### [Node-and-NPM](node)
 
