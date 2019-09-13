@@ -9,7 +9,6 @@
   </head>
 <body>
   <style>
-    .child,
     .st-child {
       border: 1px solid #adf;
       cursor: default;
@@ -20,15 +19,16 @@
       width: 200px;
     }
   </style>
-  <section class="greatgrandparent">
-    <div class="grandparent">
-      <div class="parent">
-        <div class="child">click me and watch all my parents</div>
+
+  <section class="st-greatgrandparent">
+    <div class="st-grandparent">
+      <div class="st-parent">
+        <div class="st-child">click me and you will not see all my parents</div>
       </div>
     </div>
   </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="bubble.js"></script>
+  <script src="stop-bubble.js"></script>
 </body>
 </html>
