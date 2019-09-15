@@ -130,6 +130,7 @@ Projects:
 Projects:
 
 - [typescript-gulp](typescript/typescript-gulp)
+- [types-basics](typescript/types-basics)
 
 ### [Vue](vue)
 
