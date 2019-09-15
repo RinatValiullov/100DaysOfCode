@@ -132,6 +132,7 @@ Projects:
 - [typescript-gulp](typescript/typescript-gulp)
 - [types-basics](typescript/types-basics)
 - [ts-interfaces](typescript/ts-interfaces)
+- [ts-enum](typescript/ts-enum)
 
 ### [Vue](vue)
 
