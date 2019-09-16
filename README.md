@@ -136,6 +136,7 @@ Projects:
 - [ts-enum](typescript/ts-enum)
 - [ts-functions](typescript/ts-functions)
 - [ts-classes](typescript/ts-classes)
+- [ts-guards](typescript/ts-guards)
 
 ### [Vue](vue)
 
