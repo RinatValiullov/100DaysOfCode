@@ -1,4 +1,8 @@
 /* common styles */
+h1 {
+  text-align: center;
+}
+
 .container {
   border: 1px solid #adf;
   display: grid;
@@ -6,6 +10,7 @@
   grid-template-rows: 1fr 1fr;
   margin: 1rem;
 }
+
 .block {
   background: #78a;
   justify-self: center;
