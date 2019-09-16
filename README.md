@@ -27,7 +27,8 @@
 ### **Extra activities:**
 
 - Days 100-120: [Vue](#Vue)
-- Days 120-130: [Angular](#Angular)
+- Days 120-140: [Angular](#Angular)
+- Days 140-160: [Markdown](#Markdown)
 
 ### [HTML](html)
 
@@ -153,5 +154,11 @@ Projects:
 Projects:
 
 - [angular8-from-scratch](angular/angular8-from-scratch/angular-app)
+
+### [Markdown](markdown)
+
+Projects:
+
+- [paragraphs](markdown/paragraphs)
 
 Thanks for article to [__Nick Scialli__](https://twitter.com/nas5w) - [A Timeboxed, Day-by-Day #100DaysOfCode Front-End Development Curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2)
