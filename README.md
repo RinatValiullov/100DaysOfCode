@@ -133,6 +133,7 @@ Projects:
 - [types-basics](typescript/types-basics)
 - [ts-interfaces](typescript/ts-interfaces)
 - [ts-enum](typescript/ts-enum)
+- [ts-functions](typescript/ts-functions)
 
 ### [Vue](vue)
 
