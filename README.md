@@ -135,6 +135,7 @@ Projects:
 - [ts-interfaces](typescript/ts-interfaces)
 - [ts-enum](typescript/ts-enum)
 - [ts-functions](typescript/ts-functions)
+- [ts-classes](typescript/ts-classes)
 
 ### [Vue](vue)
 
