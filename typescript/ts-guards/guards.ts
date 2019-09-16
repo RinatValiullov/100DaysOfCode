@@ -31,7 +31,7 @@ function handle(response: MyResponse | MyError) {
 type AlertType = 'success' | 'danger' | 'warning'
 
 function setAlertType(type: AlertType) {
-    //...
+    console.log(type);
 }
 
 setAlertType('success');

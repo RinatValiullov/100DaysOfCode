@@ -137,6 +137,7 @@ Projects:
 - [ts-functions](typescript/ts-functions)
 - [ts-classes](typescript/ts-classes)
 - [ts-guards](typescript/ts-guards)
+- [ts-generics](typescript/ts-generics)
 
 ### [Vue](vue)
 
