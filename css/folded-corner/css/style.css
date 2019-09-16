@@ -10,7 +10,9 @@
   background: #78a;
   justify-self: center;
   height: 200px;
+  line-height: 200px;
   margin: 1rem;
+  text-align: center;
   width: 200px;
 }
 
