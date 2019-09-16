@@ -54,6 +54,7 @@ Projects:
   - [svg-markers](css/svg-learn/svg-markers)
   - [svg-gradients](css/svg-learn/svg-gradients)
 - [just-pagination](css/just-pagination)
+- [folded-corner](css/folded-corner)
 
 ### [JavaScript Basics](javascript)
 
