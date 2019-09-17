@@ -1,29 +1,43 @@
-# product-showcase
+# TASK **product-showcase**
 
 ## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+```npm install```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Compiles and hot-reloads for development
 
-### Run your tests
-```
-npm run test
-```
+```npm run serve```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Compiles and minifies for production
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```npm run build```
+
+## Run your tests
+
+```npm run test```
+
+## Lints and fixes files
+
+```npm run lint```
+
+----
+
+### Description
+
+На входе JSON, каждый элемент содержит в себе ID (ID товара), name (название товара), description (описание товара), price (цена), cover (изображение товара, все изображения товара лежат локально).
+
+Необходимо сверстать витрину, на которой случайным образом будут отображаться товары (до 10 штук, т.е. может быть и 1 товар и 2 и 3... и 10).
+Блок товара содержит название, изображение и цену. При клике на товар переходим в карточку товара, где к общей информации также добавляется описание товара. Из карточки товара можно осуществить добавление товара в корзину, которую можно открыть как с экрана витрины, так и из карточки товара (корзина должна открываться в модальном окне).
+
+Функционал корзины:
+
+- Удаление позиции
+- Изменение кол-ва единиц заказанной позиции
+- Закрытие корзины
+- Кнопка "Распечатать позиции"
+
+Пожелания:
+
+- витрина меняет отображение в зависимости от кол-ва товаров, когда 1 то например он один на экране на всю ширину, когда 2 то 2 на экране, если больше 3 то выводим слайдером с прокруткой
+- Вертска под разрешение 1280x800 (не адаптив)
+- Использование фреймворков: Vue.js или React
