@@ -1,0 +1,26 @@
+.another-angle-scss {
+  position: relative;
+  background: #679;
+  /* Recovery solution */
+  background: -webkit-linear-gradient(230deg, transparent 2em, #679 0);
+  background: linear-gradient(-140deg, transparent 2em, #679 0);
+  border-radius: .5em;
+}
+.another-angle-scss::before {
+  border-bottom-left-radius: inherit;
+  box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.2);
+  content: '';
+  background: -webkit-linear-gradient(right top, transparent 50%, rgba(102, 119, 153, 0.2) 0, rgba(102, 119, 153, 0.4)) 100% 0 no-repeat;
+  background: linear-gradient(to left bottom, transparent 50%, rgba(102, 119, 153, 0.2) 0, rgba(102, 119, 153, 0.4)) 100% 0 no-repeat;
+  height: 3.11145em;
+  right: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-0.50063em) rotate(-10deg);
+      -ms-transform: translateY(-0.50063em) rotate(-10deg);
+          transform: translateY(-0.50063em) rotate(-10deg);
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  width: 2.61081em;
+}

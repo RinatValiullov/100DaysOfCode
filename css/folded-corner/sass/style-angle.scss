@@ -1,0 +1,33 @@
+@mixin folded-corner($background, $size, $angle: 30deg) {
+
+  position: relative;
+  background: $background; /* Recovery solution */
+  background:
+    linear-gradient($angle - 180deg,
+      transparent $size, $background 0);
+  border-radius: .5em;
+
+  $x: $size / sin($angle);
+  $y: $size / cos($angle);
+
+  &::before {
+    border-bottom-left-radius: inherit;
+    box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0,0,0,0.2);
+    content: '';
+    background:
+      linear-gradient(to left bottom, transparent 50%, rgba(102,119,153,0.2) 0,
+      rgba(102,119,153,0.4)) 100% 0 no-repeat;
+    height: $x;
+    right: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY($y - $x) rotate(2*$angle - 90deg);
+    transform-origin: bottom right;
+    width: $y;
+  }
+
+}
+
+.another-angle-scss {
+  @include folded-corner(#679, 2em, 40deg);
+}
