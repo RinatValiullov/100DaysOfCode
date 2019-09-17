@@ -148,6 +148,7 @@ Projects:
 - [express-learning](vue/express-learning)
 - [get-positive-sum](vue/get-positive-sum)
 - [get-double](vue/get-double)
+- [product-showcase](vue/product-showcase)
 
 ### [Angular](angular)
 
