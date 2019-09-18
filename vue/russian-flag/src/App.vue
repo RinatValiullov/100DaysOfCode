@@ -2,9 +2,11 @@
   <div id="app">
     <section class="wrapper">
       <HeadTitle />
-      <Stripe color="white" />
-      <Stripe color="blue" />
-      <Stripe color="red" />
+      <div class="wrapper-flag">
+        <Stripe color="white" />
+        <Stripe color="blue" />
+        <Stripe color="red" />
+      </div>
     </section>
   </div>
 </template>
@@ -32,6 +34,9 @@ export default {
   margin-top: 60px;
 }
 .wrapper {
-  
+  margin: 16px;
+}
+.wrapper-flag {
+  border: 1px solid #aaa;
 }
 </style>
