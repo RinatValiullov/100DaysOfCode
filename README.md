@@ -149,6 +149,7 @@ Projects:
 - [get-positive-sum](vue/get-positive-sum)
 - [get-double](vue/get-double)
 - [product-showcase](vue/product-showcase)
+- [russian-flag](vue/russian-flag)
 
 ### [Angular](angular)
 
