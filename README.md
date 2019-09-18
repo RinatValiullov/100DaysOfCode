@@ -150,6 +150,7 @@ Projects:
 - [get-double](vue/get-double)
 - [product-showcase](vue/product-showcase)
 - [russian-flag](vue/russian-flag)
+- [simple-watcher](vue/simple-watcher)
 
 ### [Angular](angular)
 
