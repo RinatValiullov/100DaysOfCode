@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <section class="wrapper">
+      <HeadTitle />
       <Stripe color="white" />
       <Stripe color="blue" />
       <Stripe color="red" />
@@ -10,11 +11,13 @@
 
 <script>
 import Stripe from './components/Stripe.vue'
+import HeadTitle from './components/HeadTitle.vue'
 
 export default {
   name: 'app',
   components: {
-    Stripe
+    Stripe,
+    HeadTitle
   }
 }
 </script>
