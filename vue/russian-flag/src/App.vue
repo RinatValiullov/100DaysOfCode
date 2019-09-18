@@ -32,6 +32,6 @@ export default {
   margin-top: 60px;
 }
 .wrapper {
-  border: 1px solid #aaf;
+  
 }
 </style>
