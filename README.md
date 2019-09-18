@@ -151,6 +151,7 @@ Projects:
 - [product-showcase](vue/product-showcase)
 - [russian-flag](vue/russian-flag)
 - [simple-watcher](vue/simple-watcher)
+- [just-component](vue/just-component)
 
 ### [Angular](angular)
 
