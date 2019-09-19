@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ref attribute</title>
+</head>
+<body>
+  <div id="root">
+    <div
+      class="target"
+      ref="targetDiv"
+      :style="{ border: '1px dashed #aaa', padding: '1rem' }"
+    >
+      Click the bottom button to see the sentence
+    </div>
+    <button @click="getTarget">showTarget</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#root',
+      data: {
+        param: 'parameter in target div'
+      },
+      methods: {
+        getTarget() {
+          this.$refs.targetDiv.innerHTML = `<code>ref</code> attribute in VUE is a cool feature for accessing DOM!`
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -153,6 +153,7 @@ Projects:
 - [simple-watcher](vue/simple-watcher)
 - [just-component](vue/just-component)
 - [filter-data](vue/filter-data)
+- [ref-attr](vue/ref-attr)
 
 ### [Angular](angular)
 
