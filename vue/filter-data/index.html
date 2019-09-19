@@ -8,9 +8,9 @@
 </head>
 <body>
   <div id="root">
-    <p>Product one cost {{ productOneCost | formatCost }}</p>
-    <p>Product one cost {{ productTwoCost | formatCost }}</p>
-    <p>Product one cost {{ productThreeCost | formatCost }}</p>
+    <p>Product one cost {{ productOneCost | formatCost('$') }}</p>
+    <p>Product one cost {{ productTwoCost | formatCost('$') }}</p>
+    <p>Product one cost {{ productThreeCost | formatCost('$') }}</p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script>
@@ -22,8 +22,8 @@
         productThreeCost: 1036
       },
       filters: {
-        formatCost(value) {
-          return `$${(value/100).toFixed(2)}`;
+        formatCost(value, symbol) {
+          return `${symbol}${(value/100).toFixed(2)}`;
         }
       }
     });
