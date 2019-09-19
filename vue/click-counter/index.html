@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inputs and Events</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+</head>
+<body>
+  <div id="root">
+    <button @click="increase">Increase the counter</button>
+    <button @click="decrease">Decrease the counter</button>
+    <div>You've clicked the button {{ counter }}</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+  new Vue({
+    el: '#root',
+    data: {
+       counter: 0
+    },
+    methods: {
+      increase(event) {
+        this.counter++;
+        console.log(event);
+      },
+      decrease(event) {
+        this.counter--
+      },
+    }
+  })
+  </script>
+</body>
+</html>

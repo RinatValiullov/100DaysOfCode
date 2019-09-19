@@ -154,6 +154,7 @@ Projects:
 - [just-component](vue/just-component)
 - [filter-data](vue/filter-data)
 - [ref-attr](vue/ref-attr)
+- [click-counter](vue/click-counter)
 
 ### [Angular](angular)
 
