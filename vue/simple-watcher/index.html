@@ -22,7 +22,8 @@
         oldInputValue: ''
       },
       watch: {
-        inputValue() {
+        inputValue(val, oldVal) {
+          // val = this.inputValue
           let newValue = this.inputValue;
           setTimeout(() => {
             this.oldInputValue = newValue
