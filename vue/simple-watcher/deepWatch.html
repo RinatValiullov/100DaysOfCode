@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Watch the input value</title>
+</head>
+<body>
+  <div id="app">
+    <input type="text" v-model="formData">
+    <p>Value is 
+      <u>{{ formData }}</u>
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        formData: {
+          userName: '4ront'
+        }
+      },
+      watch: {
+        formData: {
+          handler(val, oldVal) {
+            console.log(val, oldVal);
+          },
+          deep: true
+        }
+      }
+    })
+  </script>
+</body>
+</html>
