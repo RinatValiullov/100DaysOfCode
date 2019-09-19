@@ -155,6 +155,7 @@ Projects:
 - [filter-data](vue/filter-data)
 - [ref-attr](vue/ref-attr)
 - [click-counter](vue/click-counter)
+- [event-modifiers](vue/event-modifiers)
 
 ### [Angular](angular)
 

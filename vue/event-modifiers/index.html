@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Modifiers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+</head>
+<body>
+  <style>
+    a {
+      display: block;
+    }
+    a, fieldset {
+      margin-bottom: 1rem;
+    }
+    .parent {
+      border: 1px solid #aaa;
+      margin-bottom: 1rem;
+      padding: 2rem;
+    }
+  </style>
+  <div id="root">
+    <a href="https://vuejs.org" @click.prevent="handleClickLink" ref="link">vue site</a>
+    <fieldset>
+      <div class="parent">
+        <button @click.stop="handleClick" ref="hndlcl" class="click">button</button>
+      </div>
+    </fieldset>
+    <button @click.once="handleFirstClick" ref="hndlfcl" class="firstClick">first click</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+  new Vue({
+    el: '#root',
+    data: {
+      yourData: ''
+    },
+    methods: {
+      handleClickLink() {
+        console.log(this.$refs.link);
+      },
+      handleClick() {
+        console.log(this.$refs.hndlcl);
+      },
+      handleFirstClick() {
+        console.log(this.$refs.hndlfcl);
+      }
+    }
+  })
+  </script>
+</body>
+</html>
