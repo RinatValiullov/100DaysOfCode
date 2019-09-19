@@ -152,6 +152,7 @@ Projects:
 - [russian-flag](vue/russian-flag)
 - [simple-watcher](vue/simple-watcher)
 - [just-component](vue/just-component)
+- [filter-data](vue/filter-data)
 
 ### [Angular](angular)
 
