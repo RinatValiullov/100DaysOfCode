@@ -157,6 +157,7 @@ Projects:
 - [click-counter](vue/click-counter)
 - [event-modifiers](vue/event-modifiers)
 - [key-modifiers](vue/key-modifiers)
+- [lifecycle-hooks](vue/lifecycle-hooks)
 
 ### [Angular](angular)
 
