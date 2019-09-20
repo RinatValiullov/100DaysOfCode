@@ -25,10 +25,11 @@
     <a href="https://vuejs.org" @click.prevent="handleClickLink" ref="link">vue site</a>
     <fieldset>
       <div class="parent">
-        <button @click.stop="handleClick" ref="hndlcl" class="click">button</button>
+        <button @click.stop="handleClick" ref="hndlcl">button</button>
       </div>
     </fieldset>
-    <button @click.once="handleFirstClick" ref="hndlfcl" class="firstClick">first click</button>
+    <button @click.once="handleFirstClick" ref="hndlfcl">first click</button>
+    <button @click.capture="handleCaptureClick" ref="hndlccl">capture click</button>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script>
@@ -46,6 +47,9 @@
       },
       handleFirstClick(event) {
         console.log(event, this.$refs.hndlfcl);
+      },
+      handleCaptureClick(event) {
+        console.log(event, this.$refs.hndlccl);
       }
     }
   })
