@@ -45,7 +45,11 @@
         }
       },
       handleBody(event) {
-        this.$refs.inputElement.parentElement.insertAdjacentHTML('beforeend', `<b style="display: block;">You pressed key:</b> ${event.key}`)
+        if(event.code === "Space") {
+          this.$refs.inputElement.parentElement.insertAdjacentHTML('beforeend', `<b style="display: block;">You pressed key:</b> ${event.code}`);
+        } else {
+          this.$refs.inputElement.parentElement.insertAdjacentHTML('beforeend', `<b style="display: block;">You pressed key:</b> ${event.key}`);
+        }
       }
     }
   })
