@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custom Directives</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+</head>
+<body>
+  <style>
+    p {
+      background-color: aquamarine;
+      color: #459;
+      font-size: 1.4rem;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+  <div id="root">
+    <p v-blink>content will blink</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    Vue.directive('blink', {
+      bind(el) {
+        let isVisible = true;
+        setInterval(() => {
+          isVisible = !isVisible;
+          el.style.visibility = isVisible ? 'visible' : 'hidden';
+        }, 1000)
+      }
+    });
+
+    new Vue({
+      el: '#root'
+    });
+  </script>
+</body>
+</html>

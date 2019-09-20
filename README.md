@@ -158,6 +158,7 @@ Projects:
 - [event-modifiers](vue/event-modifiers)
 - [key-modifiers](vue/key-modifiers)
 - [lifecycle-hooks](vue/lifecycle-hooks)
+- [custom-directive](vue/custom-directive)
 
 ### [Angular](angular)
 
