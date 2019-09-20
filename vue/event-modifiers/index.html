@@ -38,14 +38,14 @@
       yourData: ''
     },
     methods: {
-      handleClickLink() {
-        console.log(this.$refs.link);
+      handleClickLink(event) {
+        console.log(event, this.$refs.link);
       },
-      handleClick() {
-        console.log(this.$refs.hndlcl);
+      handleClick(event) {
+        console.log(event, this.$refs.hndlcl);
       },
-      handleFirstClick() {
-        console.log(this.$refs.hndlfcl);
+      handleFirstClick(event) {
+        console.log(event, this.$refs.hndlfcl);
       }
     }
   })
