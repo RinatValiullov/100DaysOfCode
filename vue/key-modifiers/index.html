@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Key modifiers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+</head>
+<body>
+  <style>
+    form {
+      margin-bottom: 1rem;
+    }
+    #root > div {
+      border: 1px solid #aff;
+      padding: 1rem;
+    }
+  </style>
+  <div id="root">
+    <form @keyup="handleKeyup">
+      <div>
+        <label for="inp">Press <code>ESC</code> or <code>w</code> key</label>
+        <input type="text" id="inp" >
+      </div>
+    </form>
+    <form @keyup="handleBody">
+      <div>
+        <label for="inp2">Press <code>any</code> key</label>
+        <input type="text" id="inp2" ref="inputElement">
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+  new Vue({
+    el: '#root',
+    methods: {
+      handleKeyup(event) {
+        console.log(event);
+        if(event.keyCode === 27 || event.keyCode === 87) { // ESC
+          console.log('YEP');
+        } else {
+          console.log('NOPE');
+        }
+      },
+      handleBody(event) {
+        this.$refs.inputElement.parentElement.insertAdjacentHTML('beforeend', `<b style="display: block;">You pressed key:</b> ${event.key}`)
+      }
+    }
+  })
+  </script>
+</body>
+</html>
