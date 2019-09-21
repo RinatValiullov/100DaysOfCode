@@ -1,19 +1,26 @@
 let getBtn = document.querySelector('.get-btn');
 let sendBtn = document.querySelector('.send-btn');
 
+let sendHttpRequest = (method, url) => {
+    let promise = new Promise((resolve, reject) => {
+        let xhr = new XMLHttpRequest();
+        xhr.responseType = 'json';
+
+        xhr.open(method, url);
+
+        xhr.onload = () => {
+            resolve(xhr.response)
+        };
+
+        xhr.send(null);
+
+    });
+    return promise;
+}
+
 let getData = () => {
-    let url = 'https://reqres.in/api/users';
-
-    let xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
-
-    xhr.open('GET', url);
-
-    xhr.onload = () => {
-        console.log(xhr.response)
-    };
-
-    xhr.send(null);
+    sendHttpRequest('GET', 'https://reqres.in/api/users')
+        .then(responseData => console.log(responseData));
 };
 
 let sendData = () => {};
