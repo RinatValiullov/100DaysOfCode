@@ -160,6 +160,7 @@ Projects:
 - [key-modifiers](vue/key-modifiers)
 - [lifecycle-hooks](vue/lifecycle-hooks)
 - [custom-directive](vue/custom-directive)
+- [twoway-binding](vue/twoway-binding)
 
 ### [Angular](angular)
 
