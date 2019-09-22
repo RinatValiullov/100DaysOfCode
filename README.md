@@ -6,7 +6,7 @@
 
 - Days 1–8: [HTML](#HTML)
 - Days 9–16: [CSS](#CSS)
-- Days 17–24: [JavaScript Basics](#JavaScript-Basics)
+- Days 17–24: [JavaScript](#JavaScript)
 - Days 25–27: [jQuery](#jQuery)
 - Days 28–33: Responsive Web Design
 - Days 34–36: Accessibility
@@ -57,7 +57,7 @@ Projects:
 - [just-pagination](css/just-pagination)
 - [folded-corner](css/folded-corner)
 
-### [JavaScript Basics](javascript)
+### [JavaScript](javascript)
 
 Projects:
 
