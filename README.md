@@ -169,6 +169,7 @@ Projects:
 - [twoway-binding](vue/twoway-binding)
 - [computed-props](vue/computed-props)
 - [css-transitions](vue/css-transitions)
+- [within-components](vue/within-components)
 
 ### [Angular](angular)
 
