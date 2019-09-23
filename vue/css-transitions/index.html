@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Transitions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+</head>
+<body>
+  <style>
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity 0.5s;
+    }
+    .fade-enter, .fade-leave-to {
+      opacity: 0;
+    }
+  </style>
+  <div id="root">
+    <button @click="divVisible = !divVisible">Toggle visibility</button>
+
+    <transition name="fade">
+      <div v-if="divVisible">CLick the button to toggle my visibility</div>
+    </transition>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+  new Vue({
+    el: '#root',
+    data: {
+      divVisible: true
+    }
+  })
+  </script>
+</body>
+</html>

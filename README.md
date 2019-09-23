@@ -168,6 +168,7 @@ Projects:
 - [custom-directive](vue/custom-directive)
 - [twoway-binding](vue/twoway-binding)
 - [computed-props](vue/computed-props)
+- [css-transitions](vue/css-transitions)
 
 ### [Angular](angular)
 
