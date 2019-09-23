@@ -3,7 +3,8 @@ Vue.component('task-list', {
     <ul>
       <task v-for="task in tasks">{{ task.text }}</task>
     </ul>
-    `,
+  `,
+
   data() {
     return {
       tasks: [
@@ -11,9 +12,9 @@ Vue.component('task-list', {
         { text: 'Learn CSS', completed: false },
         { text: 'Learn JS', completed: true },
         { text: 'Learn VUE', completed: false },
-      ]
+      ].filter(task => task.completed)
     }
-  }
+  },
 });
 
 Vue.component('task', {
