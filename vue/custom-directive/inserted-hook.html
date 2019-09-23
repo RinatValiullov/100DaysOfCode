@@ -9,7 +9,10 @@
 </head>
 <body>
   <div id="root">
-    <p v-blue>Lorem ipsum dolor sit amet.</p>
+    <p v-blue>
+      <span style="display: block">Lorem ipsum dolor sit amet.</span>
+      <b></b>
+    </p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script>
@@ -19,8 +22,9 @@
     directives: {
       blue: {
         // inserted hook: called when the bound element has been inserted into its parent node
-        inserted(el) {
+        inserted(el, binding) {
           el.style.color = '#21f';
+          el.children[1].innerHTML = JSON.stringify(binding);
         }
       }
     }
