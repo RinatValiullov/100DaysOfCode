@@ -18,22 +18,25 @@
     }
   </style>
   <div id="root">
-    <p v-blink>content will blink</p>
+    <p v-blink="frequency">content will blink</p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script>
     Vue.directive('blink', {
-      bind(el) {
+      bind(el, binding) {
         let isVisible = true;
         setInterval(() => {
           isVisible = !isVisible;
           el.style.visibility = isVisible ? 'visible' : 'hidden';
-        }, 1000)
+        }, binding.value || 1000)
       }
     });
 
     new Vue({
-      el: '#root'
+      el: '#root',
+      data: {
+        frequency: 3000
+      }
     });
   </script>
 </body>

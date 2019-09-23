@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="root">
-    <p v-blue>
+    <p v-blue:foo.a.b="message">
       <span style="display: block">Lorem ipsum dolor sit amet.</span>
       <b></b>
     </p>
@@ -18,13 +18,23 @@
   <script>
   new Vue({
     el: '#root',
-    data: {},
+    data: {
+      message: 'Hi!'
+    },
     directives: {
       blue: {
         // inserted hook: called when the bound element has been inserted into its parent node
-        inserted(el, binding) {
+        inserted(el, binding, vnode) {
           el.style.color = '#21f';
-          el.children[1].innerHTML = JSON.stringify(binding);
+          let js = JSON.stringify;
+          el.children[1].innerHTML = 
+            'name: ' + js(binding.name) + '<br>' +
+            'value: ' + js(binding.value) + '<br>' +
+            'expression: ' + js(binding.expression) + '<br>' +
+            'argument: ' + js(binding.arg) + '<br>' +
+            'modifiers: ' + js(binding.modifiers) + '<br>' +
+            'vnode keys: ' + Object.keys(vnode).join(', ') + '<br>' + 
+            'def: ' + js(binding.def)
         }
       }
     }
