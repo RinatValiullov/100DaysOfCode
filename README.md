@@ -170,6 +170,7 @@ Projects:
 - [computed-props](vue/computed-props)
 - [css-transitions](vue/css-transitions)
 - [within-components](vue/within-components)
+- [component-communicate](vue/component-communicate)
 
 ### [Angular](angular)
 
