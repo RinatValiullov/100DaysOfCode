@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Computed properties</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>
+        {{ reversedMessage }}
+      </h1>
+
+      <section>
+        <h2>My tasks</h2>
+        <ul>
+          <li v-for="task in tasks" v-text="task.description"></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Incomplete tasks</h2>
+        <ul>
+          <li v-for="task in incompleteTasks" v-text="task.description"></li>
+        </ul>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>
+      let app = new Vue({
+        el: '#root',
+        data: {
+          message: 'Some message',
+          tasks: [
+            { description: 'buy ticket', completed: false },
+            { description: 'learn JavaScript', completed: false },
+            { description: 'invite friends', completed: true },
+            { description: 'wait Mom', completed: true },
+            { description: 'clean room', completed: false },
+            { description: 'sell house', completed: true },
+          ],
+        },
+        computed: {
+          reversedMessage() {
+            return this.message
+              .split('')
+              .reverse()
+              .join('');
+          },
+          incompleteTasks() {
+            return this.tasks.filter(task => !task.completed);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

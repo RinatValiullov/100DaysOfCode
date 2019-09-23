@@ -161,6 +161,7 @@ Projects:
 - [lifecycle-hooks](vue/lifecycle-hooks)
 - [custom-directive](vue/custom-directive)
 - [twoway-binding](vue/twoway-binding)
+- [computed-props](vue/computed-props)
 
 ### [Angular](angular)
 
