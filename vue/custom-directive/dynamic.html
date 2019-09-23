@@ -26,8 +26,8 @@
       pin: {
         bind(el, binding, vnode) {
           el.style.position = 'fixed';
-          let s = (binding.arg = 'left' ? 'left' : 'top');
-          el.style[s] = binding.value + 'px';
+          let direct = (binding.arg == 'left' ? 'left' : 'top');
+          el.style[direct] = binding.value + 'px';
         }
       }
     }
