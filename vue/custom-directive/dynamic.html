@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inserted hook</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+</head>
+<body>
+  <div id="root">
+    <div id="pos">
+      <h4 style="text-align: center;">{{ title }}</h4>
+      <p v-pin:[direction]="200">I am pinned onto the page at 200px to the left.</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+  new Vue({
+    el: '#root',
+    data: {
+      title: 'Directive arguments can be dynamic',
+      direction: 'left'
+    },
+    directives: {
+      pin: {
+        bind(el, binding, vnode) {
+          el.style.position = 'fixed';
+          let s = (binding.arg = 'left' ? 'left' : 'top');
+          el.style[s] = binding.value + 'px';
+        }
+      }
+    }
+  })
+  </script>
+</body>
+</html>
