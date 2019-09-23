@@ -10,7 +10,7 @@
 - Days 25–27: [jQuery](#jQuery)
 - Days 28–33: Responsive Web Design
 - Days 34–36: Accessibility
-- Days 37–39: Git
+- Days 37–39: [Git](#Git)
 - Days 40–44: [Node and NPM](#Node-and-NPM)
 - Days 45–50: Sass
 - Days 51–54: Bootstrap
@@ -93,6 +93,12 @@ Projects:
 - [event-bubbling](jQuery/event-bubbling)
 - [event-delegation](jQuery/event-delegation)
 - [event-propagation](jQuery/event-propagation)
+
+### [Git](Git)
+
+Projects:
+
+- [stash-commits](Git/stash-commits)
 
 ### [Node-and-NPM](node)
 
