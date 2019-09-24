@@ -1,3 +1,93 @@
+section {
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  background: rgba(114, 180, 216, 0.2);
+  margin: auto;
+  padding: 1rem;
+  text-align: left;
+  width: 400px;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+h3 {
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  text-transform: capitalize;
+  margin-bottom: 0.4rem;
+}
+
+.btn {
+  background-color: rgba(68, 85, 153, 1);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+}
+
+
 .container {
   text-align: center;
+}
+
+.main-title {
+  margin: 0 0 2rem;
+}
+
+.align-primary-button .wrong {
+  text-align: right;
+}
+
+.align-primary-button .wrong .wrapper {
+  text-align: left;
+}
+
+.form-title {
+  position: relative;
+}
+
+.form-title::before {
+  background: rgba(68, 85, 153, 1);
+  border-radius: 50%;
+  color: #df4;
+  content: '';
+  height: 2rem;
+  left: 0;
+  line-height: 2rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+}
+
+.wrong-title::before {
+  content: '\2716';
+}
+
+.correct-title::before {
+  content: '\2714';
 }
