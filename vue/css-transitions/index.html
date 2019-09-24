@@ -9,14 +9,20 @@
 </head>
 <body>
   <style>
-    .fade-enter-active, .fade-leave-active {
-      transition: opacity 0.5s 2s ease-out;
+    .fade-enter-active {
+      transition: all 0.5s 1s ease-out;
+    }
+    .fade-leave-active {
+      transition: all 0.7s 1s ease-in-out;
     }
     .fade-enter, .fade-leave-to {
+      transform: translateY(20px);
       opacity: 0;
     }
     #root > div {
       background: bisque;
+      padding: 10px;
+      width: 300px;
     }
   </style>
   <div id="root">
