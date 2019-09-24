@@ -171,6 +171,7 @@ Projects:
 - [css-transitions](vue/css-transitions)
 - [within-components](vue/within-components)
 - [component-communicate](vue/component-communicate)
+- [css-animations](vue/css-animations)
 
 ### [Angular](angular)
 

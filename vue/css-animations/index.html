@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Animations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+</head>
+<body>
+  <style>
+    .bounce-enter-active {
+      animation: bounce-in 0.3s;
+    }
+    .bounce-leave-active {
+      animation: bounce-in 0.3s reverse;
+    }
+    @keyframes bounce-in {
+      0% {
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    #root > div {
+      background: cadetblue;
+      margin: auto;
+      padding: 10px;
+      width: 300px;
+    }
+  </style>
+  <div id="root">
+    <button @click="show = !show">Toggle</button>
+
+    <transition name="bounce">
+      <div v-if="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit.</div>
+    </transition>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+  new Vue({
+    el: '#root',
+    data: {
+      show: true
+    }
+  })
+  </script>
+</body>
+</html>
