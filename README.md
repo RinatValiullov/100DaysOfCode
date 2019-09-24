@@ -56,6 +56,7 @@ Projects:
   - [svg-gradients](css/svg-learn/svg-gradients)
 - [just-pagination](css/just-pagination)
 - [folded-corner](css/folded-corner)
+- [autosized-columns](css/autosized-columns)
 
 ### [JavaScript](javascript)
 

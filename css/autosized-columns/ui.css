@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+h1 {
+  color: #459;
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.auto-sized {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
