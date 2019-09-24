@@ -29,6 +29,7 @@
 - Days 100-120: [Vue](#Vue)
 - Days 120-140: [Angular](#Angular)
 - Days 140-160: [Markdown](#Markdown)
+- Days 140-160: [UI-UX](#UI-UX)
 
 ### [HTML](html)
 
@@ -185,5 +186,11 @@ Projects:
 Projects:
 
 - [paragraphs](markdown/paragraphs)
+
+### [UI-UX](UI-UX)
+
+Projects:
+
+- [whereToPut-buttons](UI-UX/whereToPut-buttons)
 
 Thanks for article to [__Nick Scialli__](https://twitter.com/nas5w) - [A Timeboxed, Day-by-Day #100DaysOfCode Front-End Development Curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2)
