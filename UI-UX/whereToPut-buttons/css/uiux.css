@@ -48,7 +48,6 @@ label {
   border-radius: 5px;
 }
 
-
 .container {
   text-align: center;
 }
@@ -57,11 +56,11 @@ label {
   margin: 0 0 2rem;
 }
 
-.align-primary-button .wrong {
+.how-to-align-primary-button .wrong {
   text-align: right;
 }
 
-.align-primary-button .wrong .wrapper {
+.how-to-align-primary-button .wrong .wrapper {
   text-align: left;
 }
 
