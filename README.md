@@ -174,6 +174,7 @@ Projects:
 - [within-components](vue/within-components)
 - [component-communicate](vue/component-communicate)
 - [css-animations](vue/css-animations)
+- [message-component](vue/message-component)
 
 ### [Angular](angular)
 

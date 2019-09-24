@@ -12,21 +12,21 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script>
-      Vue.component('my-component', {
-          template: '<span>{{ showMessage }}</span>',
-          data() {
-              return {
-                  message: "SPAN COMPONENT"
-              }
-          },
-          computed: {
-              showMessage() {
-                  return this.message.toUpperCase();
-              }
-          }
-      })
+    Vue.component('my-component', {
+        template: '<span>{{ showMessage }}</span>',
+        data() {
+            return {
+                message: "SPAN COMPONENT"
+            }
+        },
+        computed: {
+            showMessage() {
+                return this.message.toUpperCase();
+            }
+        }
+    })
 
-      new Vue({ el: '#app' })
+    new Vue({ el: '#app' })
   </script>
 </body>
 </html>

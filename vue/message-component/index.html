@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Message Component</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./bulma.css">
+</head>
+<body>
+  <style>
+    button {
+      background-color: #0a2a4a;
+      border: none;
+      border-radius: 50%;
+      color: #ff2;
+      font-weight: bold;
+      height: 32px;
+      line-height: 32px;
+      padding: 0;
+      width: 32px;
+    }
+  </style>
+  <div id="root" class="container">
+    <message title="My first practical component" body="I was part of something special. I gave it a cold? I gave it a virus. A computer virus. Forget the fat lady! You\'re obsessed with the fat lady! Drive us out of here! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Hey, take a look at the earthlings. Goodbye!"></message>
+
+    <message title="My second practical component" body="I was part of something special. I gave it a cold? I gave it a virus. A computer virus. Forget the fat lady! You\'re obsessed with the fat lady! Drive us out of here! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Hey, take a look at the earthlings. Goodbye!"></message>
+
+    <message title="My third practical component" body="I was part of something special. I gave it a cold? I gave it a virus. A computer virus. Forget the fat lady! You\'re obsessed with the fat lady! Drive us out of here! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Hey, take a look at the earthlings. Goodbye!"></message>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    Vue.component('message', {
+      props: ['title', 'body'],
+
+      data() {
+        return {
+          isVisible: true
+        }
+      },
+
+      template: `
+        <article class="message" v-show="isVisible">
+          <div class="message-header">
+            {{ title }}
+            <button class="close" @click="isVisible = false">x</button>
+          </div>
+          <div class="message-body">
+            {{ body }}
+          </div>
+        </article>
+      `
+    })
+
+    new Vue({
+      el: '#root'
+    })
+  </script>
+</body>
+</html>

@@ -33,26 +33,26 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script>
-  new Vue({
-    el: '#root',
-    methods: {
-      handleKeyup(event) {
-        console.log(event);
-        if(event.keyCode === 27 || event.keyCode === 87) { // ESC
-          console.log('YEP');
-        } else {
-          console.log('NOPE');
-        }
-      },
-      handleBody(event) {
-        if(event.code === "Space") {
-          this.$refs.inputElement.parentElement.insertAdjacentHTML('beforeend', `<b style="display: block;">You pressed key:</b> ${event.code}`);
-        } else {
-          this.$refs.inputElement.parentElement.insertAdjacentHTML('beforeend', `<b style="display: block;">You pressed key:</b> ${event.key}`);
+    new Vue({
+      el: '#root',
+      methods: {
+        handleKeyup(event) {
+          console.log(event);
+          if(event.keyCode === 27 || event.keyCode === 87) { // ESC
+            console.log('YEP');
+          } else {
+            console.log('NOPE');
+          }
+        },
+        handleBody(event) {
+          if(event.code === "Space") {
+            this.$refs.inputElement.parentElement.insertAdjacentHTML('beforeend', `<b style="display: block;">You pressed key:</b> ${event.code}`);
+          } else {
+            this.$refs.inputElement.parentElement.insertAdjacentHTML('beforeend', `<b style="display: block;">You pressed key:</b> ${event.key}`);
+          }
         }
       }
-    }
-  })
+    })
   </script>
 </body>
 </html>
