@@ -10,10 +10,13 @@
 <body>
   <style>
     .fade-enter-active, .fade-leave-active {
-      transition: opacity 0.5s;
+      transition: opacity 0.5s 2s ease-out;
     }
     .fade-enter, .fade-leave-to {
       opacity: 0;
+    }
+    #root > div {
+      background: bisque;
     }
   </style>
   <div id="root">
