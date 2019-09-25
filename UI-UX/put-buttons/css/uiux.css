@@ -1,4 +1,4 @@
-/* helpers */
+/*** helpers ***/
 
 .break-line {
   display: block;
@@ -10,16 +10,16 @@
   border-radius: 5px;
 }
 
-/* helpers */
+/*** helpers ***/
 
 
-/* common */
+/*** common ***/
 
 button {
   cursor: pointer;
 }
 
-/* common */
+/*** common ***/
 
 
 /*** Align the primary button to the left edge of the inputs ***/
@@ -143,9 +143,11 @@ label {
   margin-bottom: 1.4rem;
 }
 
+/*** Put the back button above the form ***/
 
 
-/* media queries */
+
+/*** media queries ***/
 
 @media (max-width: 768px) {
 
@@ -160,4 +162,4 @@ label {
 
 }
 
-/* media queries */
+/*** media queries ***/
