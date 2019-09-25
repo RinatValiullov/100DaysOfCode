@@ -5,10 +5,11 @@ let handle = (mutations, observer) => {
     switch(mutation.type) {
       case 'attributes':
         //
-        console.log(mutation); // MutationRecord 
+        console.log('attribute changed'); // MutationRecord 
         break;
       case 'childList':
         //
+        console.log('added child');
         break;
     }
   });
