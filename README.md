@@ -58,6 +58,7 @@ Projects:
 - [just-pagination](css/just-pagination)
 - [folded-corner](css/folded-corner)
 - [autosized-columns](css/autosized-columns)
+- [first-glance](css/tailwind-framework/first-glance)
 
 ### [JavaScript](javascript)
 
