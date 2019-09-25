@@ -84,6 +84,7 @@ Projects:
 - [get-names](javascript/get-names)
 - [drag-and-drop](javascript/drag-and-drop)
 - [send-request](javascript/send-request)
+- [mutation-observer](javascript/mutation-observer)
 
 ### [jQuery](jQuery)
 
