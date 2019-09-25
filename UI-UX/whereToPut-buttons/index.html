@@ -53,11 +53,49 @@
       </article>
     </section>
     
-    <section class="how-to-align">
+    <section class="how-to-put-the-back-button">
       <h2 id="put-the-back-button">
         <a href="#put-the-back-button">Put the back button above the form</a>
       </h2>
-      <form></form>
+      <article>
+        <form class="wrong">
+          <h3 class="form-title wrong-title">Back button next <span class="break-line">to the primary button</span></h3>
+          <div class="wrapper name-wrapper">
+            <label for="name-input">name</label>
+            <input type="text" id="name-input">
+          </div>
+          <div class="wrapper email-wrapper">
+            <label for="email-input">email</label>
+            <input type="text" id="email-input">
+          </div>
+          <div class="wrapper country-wrapper">
+            <label for="country-input">country</label>
+            <input type="text" id="country-input">
+          </div>
+          <div class="buttons">
+            <button type="submit" class="btn btn-primary">primary button</button>
+            <button class="btn btn-back"><span>&lsaquo;</span> back button</button>
+          </div>
+        </form>
+
+        <form class="correct">
+          <h3 class="form-title correct-title">Back button above the form</h3>
+          <button class="btn btn-back"><span>&lsaquo;</span> back button</button>
+          <div class="wrapper name-wrapper">
+            <label for="name-input">name</label>
+            <input type="text" id="name-input">
+          </div>
+          <div class="wrapper email-wrapper">
+            <label for="email-input">email</label>
+            <input type="text" id="email-input">
+          </div>
+          <div class="wrapper country-wrapper">
+            <label for="country-input">country</label>
+            <input type="text" id="country-input">
+          </div>
+          <button type="submit" class="btn btn-primary">primary button</button>
+        </form>
+      </article>
     </section>
     
     <section class="how-to-align">
@@ -103,7 +141,7 @@
           <a href="#multi-select">Put buttons on multi select forms above the form</a>
         </h2>
         <form></form>
-      </section>
+    </section>
 
   </main>
 </body>
