@@ -212,6 +212,25 @@ label {
 
 /*** Put the ‘add another’ button above the primary button ***/
 
+
+/*** Put the ‘save and exit’ button next to the primary button ***/
+
+.save-and-exit-button .btn-secondary {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #999;
+}
+
+.save-and-exit-button .wrong .btn-secondary {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.save-and-exit-button .correct .btn-primary {
+  margin-right: 1rem;
+}
+
+/*** Put the ‘save and exit’ button next to the primary button ***/
+
 /*** media queries ***/
 
 @media (max-width: 768px) {
