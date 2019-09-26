@@ -12,7 +12,6 @@
 
 /*** helpers ***/
 
-
 /*** common ***/
 
 button {
@@ -20,7 +19,6 @@ button {
 }
 
 /*** common ***/
-
 
 /*** Align the primary button to the left edge of the inputs ***/
 
@@ -40,7 +38,6 @@ article {
 
 form {
   background-color: rgba(114, 180, 216, 0.2);
-  /* margin: auto; */
   padding: 1rem;
   text-align: left;
   width: 360px;
@@ -115,8 +112,6 @@ label {
   content: '\2714';
 }
 
-
-
 /*** Put the back button above the form ***/
 
 .buttons {
@@ -135,7 +130,8 @@ label {
   transition: background-color 0.3s;
 }
 
-.btn-back:hover, .btn-back:focus {
+.btn-back:hover,
+.btn-back:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -145,12 +141,30 @@ label {
 
 /*** Put the back button above the form ***/
 
+/*** Put tangentially related actions above the form ***/
 
+.how-to-put-tangentially-related-actions .country-wrapper {
+  position: relative;
+}
+
+.forgotpswd-link {
+  position: absolute;
+  right: 0;
+  text-decoration: underline;
+  top: 0;
+}
+
+.correct .forgotpswd-link {
+  display: block;
+  margin-bottom: 1rem;
+  position: static;
+}
+
+/*** Put tangentially related actions above the form ***/
 
 /*** media queries ***/
 
 @media (max-width: 768px) {
-
   article {
     align-items: center;
     flex-direction: column;
@@ -159,7 +173,6 @@ label {
   article .wrong {
     margin-bottom: 1.4rem;
   }
-
 }
 
 /*** media queries ***/

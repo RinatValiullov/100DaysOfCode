@@ -1,148 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Where to put button on forms</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="css/uiux.css">
-</head>
-<body>
-  <main class="container">
-    <h1 class="main-title">Where to put buttons on forms</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Where to put button on forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/uiux.css" />
+  </head>
 
-    <section class="how-to-align-primary-button">
-      <h2 id="align-the-primary-button">
-        <a href="#align-the-primary-button">Align the primary button to the left edge of the inputs</a>
-      </h2>
-      <article>
-        <form class="wrong">
-          <h3 class="form-title wrong-title">Right align button</h3>
-          <div class="wrapper name-wrapper">
-            <label for="name-input">name</label>
-            <input type="text" id="name-input">
-          </div>
-          <div class="wrapper email-wrapper">
-            <label for="email-input">email</label>
-            <input type="text" id="email-input">
-          </div>
-          <div class="wrapper country-wrapper">
-            <label for="country-input">country</label>
-            <input type="text" id="country-input">
-          </div>
-          <button type="submit" class="btn btn-primary">primary button</button>
-        </form>
+  <body>
+    <main class="container">
+      <h1 class="main-title">Where to put buttons on forms</h1>
 
-        <form class="correct">
-          <h3 class="form-title correct-title">Left align button</h3>
-          <div class="wrapper name-wrapper">
-            <label for="name-input">name</label>
-            <input type="text" id="name-input">
-          </div>
-          <div class="wrapper email-wrapper">
-            <label for="email-input">email</label>
-            <input type="text" id="email-input">
-          </div>
-          <div class="wrapper country-wrapper">
-            <label for="country-input">country</label>
-            <input type="text" id="country-input">
-          </div>
-          <button type="submit" class="btn btn-primary">primary button</button>
-        </form>
-      </article>
-    </section>
-    
-    <section class="how-to-put-the-back-button">
-      <h2 id="put-the-back-button">
-        <a href="#put-the-back-button">Put the back button above the form</a>
-      </h2>
-      <article>
-        <form class="wrong">
-          <h3 class="form-title wrong-title">Back button next <span class="break-line">to the primary button</span></h3>
-          <div class="wrapper name-wrapper">
-            <label for="name-input">name</label>
-            <input type="text" id="name-input">
-          </div>
-          <div class="wrapper email-wrapper">
-            <label for="email-input">email</label>
-            <input type="text" id="email-input">
-          </div>
-          <div class="wrapper country-wrapper">
-            <label for="country-input">country</label>
-            <input type="text" id="country-input">
-          </div>
-          <div class="buttons">
+      <section class="how-to-align-primary-button">
+        <h2 id="align-the-primary-button">
+          <a href="#align-the-primary-button">Align the primary button to the left edge of the inputs</a>
+        </h2>
+        <article>
+          <form class="wrong">
+            <h3 class="form-title wrong-title">Right align button</h3>
+            <div class="wrapper name-wrapper">
+              <label for="name-input">name</label>
+              <input type="text" id="name-input" />
+            </div>
+            <div class="wrapper email-wrapper">
+              <label for="email-input">email</label>
+              <input type="text" id="email-input" />
+            </div>
+            <div class="wrapper country-wrapper">
+              <label for="country-input">country</label>
+              <input type="text" id="country-input" />
+            </div>
             <button type="submit" class="btn btn-primary">primary button</button>
+          </form>
+
+          <form class="correct">
+            <h3 class="form-title correct-title">Left align button</h3>
+            <div class="wrapper name-wrapper">
+              <label for="name-input">name</label>
+              <input type="text" id="name-input" />
+            </div>
+            <div class="wrapper email-wrapper">
+              <label for="email-input">email</label>
+              <input type="text" id="email-input" />
+            </div>
+            <div class="wrapper country-wrapper">
+              <label for="country-input">country</label>
+              <input type="text" id="country-input" />
+            </div>
+            <button type="submit" class="btn btn-primary">primary button</button>
+          </form>
+        </article>
+      </section>
+
+      <section class="how-to-put-the-back-button">
+        <h2 id="put-the-back-button">
+          <a href="#put-the-back-button">Put the back button above the form</a>
+        </h2>
+        <article>
+          <form class="wrong">
+            <h3 class="form-title wrong-title">
+              Back button next <span class="break-line">to the primary button</span>
+            </h3>
+            <div class="wrapper name-wrapper">
+              <label for="name-input">name</label>
+              <input type="text" id="name-input" />
+            </div>
+            <div class="wrapper email-wrapper">
+              <label for="email-input">email</label>
+              <input type="text" id="email-input" />
+            </div>
+            <div class="wrapper country-wrapper">
+              <label for="country-input">country</label>
+              <input type="text" id="country-input" />
+            </div>
+            <div class="buttons">
+              <button type="submit" class="btn btn-primary">primary button</button>
+              <button class="btn btn-back"><span>&lsaquo;</span> back button</button>
+            </div>
+          </form>
+
+          <form class="correct">
+            <h3 class="form-title correct-title">Back button above the form</h3>
             <button class="btn btn-back"><span>&lsaquo;</span> back button</button>
-          </div>
-        </form>
+            <div class="wrapper name-wrapper">
+              <label for="name-input">name</label>
+              <input type="text" id="name-input" />
+            </div>
+            <div class="wrapper email-wrapper">
+              <label for="email-input">email</label>
+              <input type="text" id="email-input" />
+            </div>
+            <div class="wrapper country-wrapper">
+              <label for="country-input">country</label>
+              <input type="text" id="country-input" />
+            </div>
+            <button type="submit" class="btn btn-primary">primary button</button>
+          </form>
+        </article>
+      </section>
 
-        <form class="correct">
-          <h3 class="form-title correct-title">Back button above the form</h3>
-          <button class="btn btn-back"><span>&lsaquo;</span> back button</button>
-          <div class="wrapper name-wrapper">
-            <label for="name-input">name</label>
-            <input type="text" id="name-input">
-          </div>
-          <div class="wrapper email-wrapper">
-            <label for="email-input">email</label>
-            <input type="text" id="email-input">
-          </div>
-          <div class="wrapper country-wrapper">
-            <label for="country-input">country</label>
-            <input type="text" id="country-input">
-          </div>
-          <button type="submit" class="btn btn-primary">primary button</button>
-        </form>
-      </article>
-    </section>
-    
-    <section class="how-to-align">
-      <h2 id="put-tangentially-related-actions">
-        <a href="#put-tangentially-related-actions">Put tangentially related actions above the form</a>
-      </h2>
-      <form></form>
-    </section>
-    
-    <section class="how-to-align">
-      <h2 id="place-extra-buttons">
-        <a href="#place-extra-buttons">Place extra buttons based on what they do</a>
-      </h2>
-      <article class="cancel-button">
-        <h3 id="put-cancel-button">
-          <a href="#put-cancel-button">Put the cancel button below the primary button</a>
-        </h3>
-        <form></form>
-      </article>
-      <article class="add-another-button">
-        <h3 id="put-add-another-button">
-          <a href="#put-add-another-button">Put the 'add another' button above the primary button</a>
-        </h3>
-        <form></form>
-      </article>
-      <article class="save-and-exit-button">
-        <h3 id="put-save-and-exit-button">
-          <a href="#put-save-and-exit-button">Put the 'save and exit' button next to the primary button</a>
-        </h3>
-        <form></form>
-      </article>
-    </section>
+      <section class="how-to-put-tangentially-related-actions">
+        <h2 id="put-tangentially-related-actions">
+          <a href="#put-tangentially-related-actions">Put tangentially related actions above the form</a>
+        </h2>
+        <article>
+          <form class="wrong">
+            <h3 class="form-title wrong-title">
+              <code>Forgot password</code> <span class="break-line">link within the form</span>
+            </h3>
+            <div class="wrapper name-wrapper">
+              <label for="name-input">name</label>
+              <input type="text" id="name-input" />
+            </div>
+            <div class="wrapper email-wrapper">
+              <label for="email-input">email</label>
+              <input type="text" id="email-input" />
+            </div>
+            <div class="wrapper country-wrapper">
+              <a href="#" class="forgotpswd-link">forgot password</a>
+              <label for="country-input">country</label>
+              <input type="text" id="country-input" />
+            </div>
+            <div class="buttons">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
 
-    <section class="how-to-align">
-      <h2 id="single-field">
-        <a href="#single-field">In some single field forms put the button next to the input</a>
-      </h2>
-      <form></form>
-    </section>
+          <form class="correct">
+            <h3 class="form-title correct-title">
+              <code>Forgot password</code> <span class="break-line">link outside the form</span>
+            </h3>
+            <a href="#" class="forgotpswd-link">forgot password</a>
+            <div class="wrapper name-wrapper">
+              <label for="name-input">name</label>
+              <input type="text" id="name-input" />
+            </div>
+            <div class="wrapper email-wrapper">
+              <label for="email-input">email</label>
+              <input type="text" id="email-input" />
+            </div>
+            <div class="wrapper country-wrapper">
+              <label for="country-input">country</label>
+              <input type="text" id="country-input" />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </article>
+      </section>
 
-    <section class="how-to-align">
+      <section class="how-to-align">
+        <h2 id="place-extra-buttons">
+          <a href="#place-extra-buttons">Place extra buttons based on what they do</a>
+        </h2>
+        <article class="cancel-button">
+          <h3 id="put-cancel-button">
+            <a href="#put-cancel-button">Put the cancel button below the primary button</a>
+          </h3>
+          <form></form>
+        </article>
+        <article class="add-another-button">
+          <h3 id="put-add-another-button">
+            <a href="#put-add-another-button">Put the 'add another' button above the primary button</a>
+          </h3>
+          <form></form>
+        </article>
+        <article class="save-and-exit-button">
+          <h3 id="put-save-and-exit-button">
+            <a href="#put-save-and-exit-button">Put the 'save and exit' button next to the primary button</a>
+          </h3>
+          <form></form>
+        </article>
+      </section>
+
+      <section class="how-to-align">
+        <h2 id="single-field">
+          <a href="#single-field">In some single field forms put the button next to the input</a>
+        </h2>
+        <form></form>
+      </section>
+
+      <section class="how-to-align">
         <h2 id="multi-select">
           <a href="#multi-select">Put buttons on multi select forms above the form</a>
         </h2>
         <form></form>
-    </section>
-
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
