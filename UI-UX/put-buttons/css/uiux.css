@@ -198,6 +198,20 @@ label {
 
 /*** Put the cancel button below the primary button ***/
 
+
+/*** Put the ‘add another’ button above the primary button ***/
+
+.add-another-button .btn-secondary {
+  padding: 0.6rem 1rem;
+}
+
+.add-another-button .correct .btn-secondary {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+/*** Put the ‘add another’ button above the primary button ***/
+
 /*** media queries ***/
 
 @media (max-width: 768px) {
