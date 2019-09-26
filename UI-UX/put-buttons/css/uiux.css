@@ -162,6 +162,42 @@ label {
 
 /*** Put tangentially related actions above the form ***/
 
+
+/*** Put the cancel button below the primary button ***/
+
+.cancel-button .btn {
+  padding: 0.6rem 1rem;
+}
+
+.cancel-button form .buttons {
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.cancel-button form .buttons .btn-primary {
+  margin: 0;
+}
+
+.cancel-button .btn-secondary {
+  margin: 0;
+}
+
+.cancel-button .correct .buttons {
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.cancel-button .correct .buttons .btn-primary {
+  margin-right: 1rem;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  border: 1px solid #999;
+}
+
+/*** Put the cancel button below the primary button ***/
+
 /*** media queries ***/
 
 @media (max-width: 768px) {
