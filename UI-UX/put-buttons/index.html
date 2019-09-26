@@ -256,8 +256,8 @@
                 <label for="name-input">Name of person</label>
                 <input type="text" id="name-input" />
               </div>
-                <button class="btn btn-secondary">Save and exit</button>
-                <button type="submit" class="btn btn-primary">Continue</button>
+              <button class="btn btn-secondary">Save and exit</button>
+              <button type="submit" class="btn btn-primary">Continue</button>
             </form>
 
             <form class="correct">
@@ -272,13 +272,38 @@
               <button class="btn btn-secondary">Save and exit</button>
             </form>
           </article>
+        </section>
       </section>
 
-      <section class="how-to-align">
-        <h2 id="single-field">
-          <a href="#single-field">In some single field forms put the button next to the input</a>
+      <section class="how-to-put-the-button-next-to-the-input">
+        <h2 id="put-the-button-next-to-the-input">
+          <a href="#put-the-button-next-to-the-input">In some single field forms put the button next to the input</a>
         </h2>
-        <form></form>
+        <article>
+          <form class="wrong">
+            <h3 class="form-title wrong-title">
+              Button below search box
+            </h3>
+            <div class="wrapper search-wrapper">
+              <label for="search-input">search</label>
+              <input type="search" id="search-input" />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+          <form class="correct">
+            <h3 class="form-title correct-title">
+              Button next to search box
+            </h3>
+            <div class="search">
+              <div class="wrapper search-wrapper">
+                <label for="search-input">search</label>
+                <input type="search" id="search-input" />
+              </div>
+              <button type="submit" class="btn btn-primary btn-search">Login</button>
+            </div>
+          </form>
+        </article>
       </section>
 
       <section class="how-to-align">

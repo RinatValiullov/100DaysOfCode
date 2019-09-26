@@ -231,6 +231,30 @@ label {
 
 /*** Put the ‘save and exit’ button next to the primary button ***/
 
+
+/*** Put the button next to the input ***/
+
+.search {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-input {
+  padding: 0.5rem 0;
+}
+
+.search .search-wrapper {
+  flex: 3;
+  margin: 0 1rem 0 0;
+}
+
+.search .btn-search {
+  flex: 1;
+}
+
+/*** Put the button next to the input ***/
+
 /*** media queries ***/
 
 @media (max-width: 768px) {
