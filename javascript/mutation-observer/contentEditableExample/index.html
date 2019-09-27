@@ -10,25 +10,18 @@
   <body>
     <style>
       #target {
-        background-color: #256;
-        color: #fff;
+        background-color: #eee;
+        color: #456;
         font-size: 1.4rem;
-        height: 200px;
+        height: auto;
         line-height: 2;
         margin: 5rem auto;
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
-        width: 200px;
-      }
-      div i {
-        display: block;
+        width: max-content;
       }
     </style>
-    <div id="target" contenteditable>
-      You can<br />
-      <i>change</i>
-      text here
-    </div>
+    <div id="target" contenteditable>You can <i>change</i> text here</div>
 
     <script src="./mutations.js"></script>
   </body>
