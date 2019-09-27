@@ -14,12 +14,14 @@ let handle = (mutations, observer) => {
         console.dir(mutation);  // MutationRecord object
         break;
       case 'childList':
-        //
-        console.log('added child');
-        break;
-      case 'subtree':
-        //
-        console.log('sibling was changed');
+        if(mutation.addedNodes[0]) {
+          console.dir(`'${mutation.addedNodes[0].nodeName}' was added as a child element`);
+        }
+        console.dir(mutation);  // MutationRecord object
+        if(mutation.removedNodes[0]) {
+          console.dir(`'${mutation.removedNodes[0].nodeName}' was deleted from ${mutation.target.classList}`);
+          break;
+        }
         break;
     }
   });
