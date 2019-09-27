@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mutation Observer API</title>
-</head>
-<body>
-  <style>
-    .target {
-      background: #456;
-      height: 150px;
-      margin: 2rem auto;
-      text-align: center;
-      width: 200px;
-    }
-    span {
-      color: #fff;
-      font-size: 2rem;
-    }
-  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mutation Observer API</title>
+  </head>
+  <body>
+    <style>
+      :root {
+        --bgColor: #456;
+      }
+      .target {
+        background-color: var(--bgColor, #456);
+        height: 150px;
+        margin: 2rem auto;
+        position: relative;
+        text-align: center;
+        width: 200px;
+      }
+      button {
+        border: none;
+        background-color: var(--bgColor, #456);
+        color: #fff;
+        display: block;
+        font-size: 1.2rem;
+        margin: auto;
+        padding: 0.6rem 1rem;
+      }
+    </style>
 
-  <div class="prevToTarget" prev="previous sibling of target"></div>
-  <div class="target" foo="old foo attribute value"></div>
-  <div class="nextToTarget" next="next sibling of target"></div>
+    <div class="prevToTarget" prev="previous sibling of target"></div>
+    <div class="target" foo="old foo attribute value"></div>
+    <div class="nextToTarget" next="next sibling of target"></div>
 
-  <script src="./mutations.js"></script>
-</body>
+    <button class="addChildNode">add childe node</button>
+
+    <script src="./mutations.js"></script>
+  </body>
 </html>
