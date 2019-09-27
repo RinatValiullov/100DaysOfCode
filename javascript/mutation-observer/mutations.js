@@ -1,3 +1,7 @@
+// helper elements and functions
+let childSpan = document.createElement('span');
+childSpan.innerText = 'I\'m a SPAN';
+
 let target = document.querySelector('.target');
 
 let handle = (mutations, observer) => {
@@ -14,10 +18,10 @@ let handle = (mutations, observer) => {
         console.dir(mutation);  // MutationRecord object
         break;
       case 'childList':
+        console.dir(mutation);  // MutationRecord object
         if(mutation.addedNodes[0]) {
           console.dir(`'${mutation.addedNodes[0].nodeName}' was added as a child element`);
         }
-        console.dir(mutation);  // MutationRecord object
         if(mutation.removedNodes[0]) {
           console.dir(`'${mutation.removedNodes[0].nodeName}' was deleted from ${mutation.target.classList}`);
           break;
