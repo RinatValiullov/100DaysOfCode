@@ -86,6 +86,7 @@ Projects:
 - [send-request](javascript/send-request)
 - [mutation-observer](javascript/mutation-observer)
 - [cache-weakmap](javascript/cache-weakmap)
+- [intersection-arrays](javascript/intersection-arrays)
 
 ### [jQuery](jQuery)
 
