@@ -85,6 +85,7 @@ Projects:
 - [drag-and-drop](javascript/drag-and-drop)
 - [send-request](javascript/send-request)
 - [mutation-observer](javascript/mutation-observer)
+- [cache-weakmap](javascript/cache-weakmap)
 
 ### [jQuery](jQuery)
 
