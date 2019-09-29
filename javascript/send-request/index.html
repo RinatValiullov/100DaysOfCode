@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTTP requests</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <style>
-        fieldset {
-            margin: auto;
-            width: 50%;
-        }
+      fieldset {
+        margin: auto;
+        width: 50%;
+      }
 
-        button {
-            background-color: #458;
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-        }
+      button {
+        background-color: #458;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+      }
     </style>
 
     <fieldset>
-        <button class="get-btn">get</button>
-        <button class="send-btn">send</button>
+      <button class="get-btn">get</button>
+      <button class="send-btn">send</button>
     </fieldset>
 
     <!-- <script src="xhr.js"></script> -->
-    <script src="fetch.js"></script>
-</body>
-
+    <!-- <script src="fetch.js"></script> -->
+    <script src="axios.js"></script>
+  </body>
 </html>
