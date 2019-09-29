@@ -9,11 +9,24 @@ let getData = () => {
 
 let sendData = () => {
   axios
-    .post('https://reqres.in/api/register', {
-      email: 'eve.holt@reqres.in',
-      password: 'pistol'
+    .post(
+      'https://reqres.in/api/register',
+      {
+        email: 'eve.holt@reqres.in'
+        // password: 'pistol'
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    )
+    .then(response => {
+      console.log(response);
     })
-    .then(response => console.log(response));
+    .catch(error => {
+      console.log(error, error.response);
+    });
 };
 
 getBtn.addEventListener('click', getData);
