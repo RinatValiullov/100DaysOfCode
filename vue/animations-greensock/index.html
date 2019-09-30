@@ -24,6 +24,7 @@
       <transition
         v-on:before-enter="handleBeforeEnter"
         v-on:enter="handleEnter"
+        v-on:after-enter="handleAfterEnter"
         v-on:leave="handleLeave"
         v-bind:css="false"
       >
@@ -55,15 +56,26 @@
             }
           },
           handleBeforeEnter(element) {
+            console.log("before-enter hook");
             element.style.opacity = 0;
           },
+          handleAfterEnter(element, done) {
+            console.log("after-enter hook");
+            TweenLite.to(element, 3, {
+              color: "#fff",
+              onComplete: done
+            });
+          },
           handleEnter(element, done) {
+            console.log("enter hook");
             TweenLite.to(element, 3, {
               opacity: 1,
               onComplete: done
             });
+            done();
           },
           handleLeave(element, done) {
+            console.log("leave hook");
             TweenLite.to(element, 2, {
               opacity: 0,
               onComplete: done
