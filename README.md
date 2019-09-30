@@ -89,6 +89,7 @@ Projects:
 - [intersection-arrays](javascript/intersection-arrays)
 - [hackerrank-challenges](javascript/hackerrank-challenges)
   - [loop-challenge](javascript/hackerrank-challenges/loop-challenge)
+  - [factorial-challenge](javascript/hackerrank-challenges/factorial-challenge)
 
 ### [jQuery](jQuery)
 
