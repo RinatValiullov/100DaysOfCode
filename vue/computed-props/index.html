@@ -11,6 +11,7 @@
       <h1>
         {{ reversedMessage }}
       </h1>
+      <button @click="showReverse">reverse a message</button>
 
       <section>
         <h2>My tasks</h2>
@@ -38,8 +39,8 @@
             { description: 'invite friends', completed: true },
             { description: 'wait Mom', completed: true },
             { description: 'clean room', completed: false },
-            { description: 'sell house', completed: true },
-          ],
+            { description: 'sell house', completed: true }
+          ]
         },
         computed: {
           reversedMessage() {
@@ -50,8 +51,16 @@
           },
           incompleteTasks() {
             return this.tasks.filter(task => !task.completed);
-          },
+          }
         },
+        methods: {
+          showReverse() {
+            return this.message
+              .split('')
+              .reverse()
+              .join('');
+          }
+        }
       });
     </script>
   </body>
