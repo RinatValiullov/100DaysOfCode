@@ -13,7 +13,7 @@
   <body>
     <div id="root">
       <h1>
-        {{ reversedMessage }}
+        {{ message }}
       </h1>
       <button @click="showReverse">reverse a message</button>
 
@@ -59,10 +59,11 @@
         },
         methods: {
           showReverse() {
-            return this.message
+            this.message = this.message
               .split('')
               .reverse()
               .join('');
+            return this.message;
           }
         }
       });
