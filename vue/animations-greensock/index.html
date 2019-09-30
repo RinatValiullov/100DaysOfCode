@@ -14,11 +14,15 @@
     <style>
       #root > div {
         background-color: cornflowerblue;
-        padding: 1rem;
+        padding: 2rem;
+      }
+      p {
+        margin: 0;
       }
     </style>
     <div id="root">
       <transition
+        v-on:before-enter="handleBeforeEnter"
         v-on:enter="handleEnter"
         v-on:leave="handleLeave"
         v-bind:css="false"
@@ -28,7 +32,7 @@
           voluptates? Cumque quibusdam magni iure id.
         </div>
       </transition>
-      <button @click="show = !show">Toggle</button>
+      <button @click="show = !show">Fade in div</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
@@ -40,14 +44,20 @@
           show: false
         },
         methods: {
-          handleBeforeEnter: function(element) {
+          handleBeforeEnter(element) {
             element.style.opacity = 0;
           },
-          handleEnter: function(element, done) {
-            TweenLite.to(element, 5, { opacity: 1, onComplete: done });
+          handleEnter(element, done) {
+            TweenLite.to(element, 3, {
+              opacity: 1,
+              onComplete: done
+            });
           },
-          handleLeave: function(element, done) {
-            TweenLite.to(element, 5, { opacity: 0, onComplete: done });
+          handleLeave(element, done) {
+            TweenLite.to(element, 2, {
+              opacity: 0,
+              onComplete: done
+            });
           }
         }
       });
