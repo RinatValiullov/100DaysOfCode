@@ -179,6 +179,8 @@ Projects:
 - [css-transitions](vue/css-transitions)
 - [within-components](vue/within-components)
 - [component-communicate](vue/component-communicate)
+  - [custom-events](vue/component-communicate/custom-events)
+  - [event-dispatcher](vue/component-communicate/event-dispatcher)
 - [css-animations](vue/css-animations)
 - [message-component](vue/message-component)
 - [animations-greensock](vue/animations-greensock)
