@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inputs and Events</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <style>
+      #root > div {
+        background-color: cornflowerblue;
+        padding: 1rem;
+      }
+    </style>
+    <div id="root">
+      <transition>
+        v-on:before-enter="handleBeforeEnter" v-on:enter="handleEnter" v-on:leave="handleLeave"
+        <div v-if="show">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptates? Cumque quibusdam magni iure
+            id.
+          </p>
+        </div>
+      </transition>
+      <button @click="show = !show">Toggle</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#root',
+        data: {
+          show: true,
+        },
+        methods: {
+          handleBeforeEnter(element) {
+            element.style.opacity = 0;
+          },
+          handleEnter(element, done) {
+            TweenLite.to(element, 0.6, { opacity: 1, onComplete: done });
+          },
+          handleLeave(element, done) {
+            TweenLite.to(element, 0.6, { opacity: 0, onComplete: done });
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
