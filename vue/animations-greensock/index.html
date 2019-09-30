@@ -18,35 +18,38 @@
       }
     </style>
     <div id="root">
-      <transition v-on:before-enter="handleBeforeEnter" v-on:enter="handleEnter" v-on:leave="handleLeave">
+      <transition
+        v-on:enter="handleEnter"
+        v-on:leave="handleLeave"
+        v-bind:css="false"
+      >
         <div v-if="show">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptates? Cumque quibusdam magni iure
-            id.
-          </p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          voluptates? Cumque quibusdam magni iure id.
         </div>
       </transition>
       <button @click="show = !show">Toggle</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script>
       new Vue({
-        el: '#root',
+        el: "#root",
         data: {
-          show: false,
+          show: false
         },
         methods: {
-          handleBeforeEnter(element) {
+          handleBeforeEnter: function(element) {
             element.style.opacity = 0;
           },
-          handleEnter(element, done) {
-            TweenLite.to(element, 0.6, { opacity: 1, onComplete: done });
+          handleEnter: function(element, done) {
+            TweenLite.to(element, 5, { opacity: 1, onComplete: done });
           },
-          handleLeave(element, done) {
-            TweenLite.to(element, 0.6, { opacity: 0, onComplete: done });
-          },
-        },
+          handleLeave: function(element, done) {
+            TweenLite.to(element, 5, { opacity: 0, onComplete: done });
+          }
+        }
       });
     </script>
   </body>
