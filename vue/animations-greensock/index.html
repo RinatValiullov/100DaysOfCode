@@ -18,8 +18,7 @@
       }
     </style>
     <div id="root">
-      <transition>
-        v-on:before-enter="handleBeforeEnter" v-on:enter="handleEnter" v-on:leave="handleLeave"
+      <transition v-on:before-enter="handleBeforeEnter" v-on:enter="handleEnter" v-on:leave="handleLeave">
         <div v-if="show">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptates? Cumque quibusdam magni iure
@@ -35,7 +34,7 @@
       new Vue({
         el: '#root',
         data: {
-          show: true,
+          show: false,
         },
         methods: {
           handleBeforeEnter(element) {
