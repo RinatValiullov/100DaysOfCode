@@ -189,6 +189,7 @@ Projects:
 - [css-animations](vue/css-animations)
 - [message-component](vue/message-component)
 - [animations-greensock](vue/animations-greensock)
+- [components-basics](vue/components-basics)
 
 ### [Angular](angular)
 
