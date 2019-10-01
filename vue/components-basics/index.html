@@ -12,20 +12,26 @@
   </head>
   <body>
     <div id="root">
-      <custom-component></custom-component>
+      <custom-component text-color="#456"></custom-component>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script>
       let customComponent = {
         template: `
-          <section>
+          <section :style="style">
             <h1>{{ headingText }}</h1>
           </section>
         `,
+        props: ['textColor'],
         data() {
           return {
             headingText: 'Custom Component',
           };
+        },
+        computed: {
+          style() {
+            return { color: this.textColor };
+          },
         },
       };
       let app = new Vue({
