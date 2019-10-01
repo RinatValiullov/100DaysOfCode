@@ -90,6 +90,7 @@ Projects:
 - [hackerrank-challenges](javascript/hackerrank-challenges)
   - [loop-challenge](javascript/hackerrank-challenges/loop-challenge)
   - [factorial-challenge](javascript/hackerrank-challenges/factorial-challenge)
+  - [ifelse-challenge](javascript/hackerrank-challenges/ifelse-challenge)
 
 ### [jQuery](jQuery)
 
