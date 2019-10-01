@@ -13,30 +13,34 @@
   <body>
     <div id="root">
       <custom-component text-color="#456"></custom-component>
+      <custom-component text-color="#98a"></custom-component>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script>
       let customComponent = {
         template: `
           <section :style="style">
-            <h1>{{ headingText }}</h1>
+            <h2>{{ headingText }}</h2>
+            <article>
+              <p>Just my luck, no ice. My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard! Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Did he just throw my cat out of the window?</p>
+            </article>
           </section>
         `,
-        props: ['textColor'],
+        props: ['textColor', 'pad'],
         data() {
           return {
-            headingText: 'Custom Component',
+            headingText: 'Some heading',
+            padding: '1rem',
           };
         },
         computed: {
           style() {
-            return { color: this.textColor };
+            return { color: this.textColor, padding: this.padding };
           },
         },
       };
       let app = new Vue({
         el: '#root',
-        data: {},
         components: {
           customComponent,
         },
