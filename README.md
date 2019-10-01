@@ -93,6 +93,7 @@ Projects:
   - [ifelse-challenge](javascript/hackerrank-challenges/ifelse-challenge)
   - [arrays-challenge](javascript/hackerrank-challenges/arrays-challenge)
   - [arrowfunc-challenge](javascript/hackerrank-challenges/arrowfunc-challenge)
+  - [switch-challenge](javascript/hackerrank-challenges/switch-challenge)
 
 ### [jQuery](jQuery)
 
