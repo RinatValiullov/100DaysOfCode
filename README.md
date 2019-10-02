@@ -190,6 +190,7 @@ Projects:
 - [message-component](vue/message-component)
 - [animations-greensock](vue/animations-greensock)
 - [components-basics](vue/components-basics)
+- [data-props](vue/data-props)
 
 ### [Angular](angular)
 

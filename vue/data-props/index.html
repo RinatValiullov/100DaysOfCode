@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Props and prop validation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <wrapper-component></wrapper-component>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>
+      Vue.component('wrapper-component', {
+        template: `
+          <section class="wrapper">
+              <message-component background-msg="#a95" textColor="#fff"></message-component>
+              <message-component background-msg="#99a" textColor="#fff"></message-component>
+          </section>
+        `
+      });
+
+      Vue.component('message-component', {
+        template: `
+          <article class="message" :style="style">
+            <h2>{{ generateTitle }}</h2>
+          </article>
+        `,
+        data() {
+          return {
+            title: 'Message title'
+          };
+        },
+        props: {
+          backgroundMsg: {
+            type: String,
+            required: true
+          },
+          textColor: {
+            type: String
+          }
+        },
+        computed: {
+          style() {
+            return {
+              backgroundColor: this.backgroundMsg,
+              color: this.textColor,
+              textAlign: 'center',
+              padding: '1rem'
+            };
+          },
+          generateTitle() {
+            return `${this.title} ${--this._uid}`;
+          }
+        }
+      });
+
+      new Vue({
+        el: '#root'
+      });
+    </script>
+  </body>
+</html>
