@@ -94,6 +94,7 @@ Projects:
   - [arrays-challenge](javascript/hackerrank-challenges/arrays-challenge)
   - [arrowfunc-challenge](javascript/hackerrank-challenges/arrowfunc-challenge)
   - [switch-challenge](javascript/hackerrank-challenges/switch-challenge)
+- [dependency-observer](javascript/dependency-observer)
 
 ### [jQuery](jQuery)
 
