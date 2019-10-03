@@ -13,7 +13,7 @@
   <body>
     <style>
       section {
-        color: rgb(86, 94, 105);
+        color: rgb(117, 78, 27);
         font-size: 2rem;
         font-weight: 900;
         padding: 1rem;
@@ -27,42 +27,61 @@
     <script>
       Vue.component('update-component', {
         template: `
-          <section :style="style">
+          <section :style="ch()">
             <p>{{ number }}</p>
           </section>
         `,
         props: {
           number: {
             type: Number,
-            required: true
-          }
+            required: true,
+          },
         },
         data() {
           return {
-            colors: ['red', 'green', 'lavender']
+            colors: [
+              'red',
+              'green',
+              'lavender',
+              'lightcoral',
+              'firebrick',
+              'hotpink',
+              'mediumvioletred',
+              'coral',
+              'orange',
+              'khaki',
+              'fuchsia',
+              'indigo',
+              'chartreuse',
+              'mediumspringgreen',
+              'olive',
+              'teal',
+              'cyan',
+              'rosybrown',
+              'dimgray',
+              'mistyrose',
+            ],
           };
         },
-        computed: {
-          style() {
-            return {
-              backgroundColor: this.colors[
-                Math.floor(Math.random() * this.colors.length)
-              ]
-            };
-          }
-        }
+        methods: {
+          ch() {
+            setInterval(() => {
+              this.$el.style.backgroundColor = this.colors[Math.floor(Math.random() * this.colors.length)];
+            }, 1000);
+          },
+        },
       });
 
       new Vue({
         el: '#root',
         data: {
-          number: 0
+          number: 0,
         },
         created() {
           setInterval(() => {
             this.number++;
           }, 1000);
-        }
+        },
       });
     </script>
   </body>
