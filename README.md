@@ -95,6 +95,7 @@ Projects:
   - [arrowfunc-challenge](javascript/hackerrank-challenges/arrowfunc-challenge)
   - [switch-challenge](javascript/hackerrank-challenges/switch-challenge)
   - [throw-challenge](javascript/hackerrank-challenges/throw-challenge)
+  - [inheritance-challenge](javascript/hackerrank-challenges/inheritance-challenge)
 - [dependency-observer](javascript/dependency-observer)
 
 ### [jQuery](jQuery)
