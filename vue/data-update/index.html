@@ -13,8 +13,7 @@
   <body>
     <style>
       section {
-        background-color: #2f679e;
-        color: #fff;
+        color: rgb(255, 255, 255);
         font-size: 2rem;
         font-weight: 900;
         padding: 1rem;
@@ -22,13 +21,17 @@
       }
     </style>
     <div id="root">
-      <update-component v-bind:number="number"></update-component>
+      <update-component
+        v-bind:number="number"
+        backgr="#2f679e"
+      ></update-component>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script>
+      let colors = [];
       Vue.component('update-component', {
         template: `
-          <section>
+          <section :style="style">
             <p>{{ number }}</p>
           </section>
         `,
@@ -36,6 +39,24 @@
           number: {
             type: Number,
             required: true
+          },
+          backgr: {
+            type: String,
+            required: true
+          }
+        },
+        data() {
+          return {
+            colors: ['red', 'green', 'yellow']
+          };
+        },
+        computed: {
+          style() {
+            return {
+              backgroundColor: this.colors[
+                Math.floor(Math.random() * this.colors.length)
+              ]
+            };
           }
         }
       });
@@ -47,7 +68,7 @@
         created() {
           setInterval(() => {
             this.number++;
-          }, 2000);
+          }, 1000);
         }
       });
     </script>
