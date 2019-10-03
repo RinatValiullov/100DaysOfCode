@@ -193,6 +193,7 @@ Projects:
 - [animations-greensock](vue/animations-greensock)
 - [components-basics](vue/components-basics)
 - [data-props](vue/data-props)
+- [data-update](vue/data-update)
 
 ### [Angular](angular)
 

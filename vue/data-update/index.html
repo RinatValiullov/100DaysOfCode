@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Update data every second</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <style>
+      section {
+        background-color: #2f679e;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 900;
+        padding: 1rem;
+        text-align: center;
+      }
+    </style>
+    <div id="root">
+      <update-component v-bind:number="number"></update-component>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>
+      Vue.component('update-component', {
+        template: `
+          <section>
+            <p>{{ number }}</p>
+          </section>
+        `,
+        props: {
+          number: {
+            type: Number,
+            required: true
+          }
+        }
+      });
+      new Vue({
+        el: '#root',
+        data: {
+          number: 0
+        },
+        created() {
+          setInterval(() => {
+            this.number++;
+          }, 2000);
+        }
+      });
+    </script>
+  </body>
+</html>
