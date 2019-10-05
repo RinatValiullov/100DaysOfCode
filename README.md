@@ -61,6 +61,7 @@ Projects:
 - [folded-corner](css/folded-corner)
 - [autosized-columns](css/autosized-columns)
 - [first-glance](css/tailwind-framework/first-glance)
+- [simple-animation](css/tailwind-framework/simple-animation)
 
 ### [JavaScript](javascript)
 
