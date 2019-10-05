@@ -1,5 +1,7 @@
 # 100DaysOfCode
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 ## My 100DaysOfCode process of learning web development
 
 ### **The recommended day-by-day activities are as follows:**
