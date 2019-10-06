@@ -1,0 +1,30 @@
+body,
+html {
+  height: 90vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 15px;
+  width: 100%;
+}
+
+.glide .glide__arrows {
+  position: static;
+}
+
+.glide__arrow {
+  top: 200px;
+  transform: translateY(-50%);
+}
+
+.glide__arrow--left {
+  left: 0;
+}
+
+.glide__arrow--right {
+  right: 0;
+}
