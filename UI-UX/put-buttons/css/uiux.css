@@ -162,7 +162,6 @@ label {
 
 /*** Put tangentially related actions above the form ***/
 
-
 /*** Put the cancel button below the primary button ***/
 
 .cancel-button .btn {
@@ -198,7 +197,6 @@ label {
 
 /*** Put the cancel button below the primary button ***/
 
-
 /*** Put the ‘add another’ button above the primary button ***/
 
 .add-another-button .btn-secondary {
@@ -211,7 +209,6 @@ label {
 }
 
 /*** Put the ‘add another’ button above the primary button ***/
-
 
 /*** Put the ‘save and exit’ button next to the primary button ***/
 
@@ -230,7 +227,6 @@ label {
 }
 
 /*** Put the ‘save and exit’ button next to the primary button ***/
-
 
 /*** Put the button next to the input ***/
 
@@ -254,6 +250,42 @@ label {
 }
 
 /*** Put the button next to the input ***/
+
+/*** Put buttons above the form ***/
+
+.how-to-put-buttons-above-the-form .buttons {
+  margin-bottom: 1rem;
+}
+
+.how-to-put-buttons-above-the-form .btn-primary {
+  margin-bottom: 1.4rem;
+}
+
+.how-to-put-buttons-above-the-form .btn-back {
+  margin-bottom: 0;
+}
+.how-to-put-buttons-above-the-form .btn-back:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.how-to-put-buttons-above-the-form form {
+  width: 450px;
+}
+
+.how-to-put-buttons-above-the-form form input[type='text'] {
+  width: 100%;
+}
+
+table {
+  margin-bottom: 1.4rem;
+  width: 100%;
+}
+
+td {
+  padding: 0 0.4rem;
+}
+
+/*** Put buttons above the form ***/
 
 /*** media queries ***/
 
