@@ -100,6 +100,7 @@ Projects:
   - [throw-challenge](javascript/hackerrank-challenges/throw-challenge)
   - [inheritance-challenge](javascript/hackerrank-challenges/inheritance-challenge)
   - [bitwise-challenge](javascript/hackerrank-challenges/bitwise-challenge)
+  - [dates-challenge](javascript/hackerrank-challenges/dates-challenge)
 - [dependency-observer](javascript/dependency-observer)
 - [simple-slider](javascript/simple-slider)
 
