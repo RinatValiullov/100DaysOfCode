@@ -120,6 +120,7 @@ Projects:
 Projects:
 
 - [stash-commits](Git/stash-commits)
+- [udacity-git-course](Git/udacity-git-course)
 
 ### [Node-and-NPM](node)
 
