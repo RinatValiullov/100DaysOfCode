@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Two-way data binding</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <custom-number-update
+        v-bind:number="number"
+        @update:number="value => number = value"
+      ></custom-number-update>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>
+      Vue.component('custom-number-update', {
+        template: '<p>{{ this.number }}</p>',
+        props: {
+          number: {
+            type: Number,
+            required: true
+          }
+        },
+        mounted() {
+          setInterval(() => {
+            this.$emit('update:number', this.number + 1);
+          }, 1000);
+        }
+      });
+
+      new Vue({
+        el: '#root',
+        data: {
+          number: 0
+        }
+      });
+    </script>
+  </body>
+</html>

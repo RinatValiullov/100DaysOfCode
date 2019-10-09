@@ -203,6 +203,7 @@ Projects:
 - [components-basics](vue/components-basics)
 - [data-props](vue/data-props)
 - [data-update](vue/data-update)
+- [sync-modifier](vue/sync-modifier)
 
 ### [Angular](angular)
 
