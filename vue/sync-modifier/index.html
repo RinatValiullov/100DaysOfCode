@@ -20,16 +20,26 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script>
       Vue.component('custom-number-update', {
-        template: '<p>{{ this.number }}</p>',
+        template: '<p>{{ localNumber }}</p>',
         props: {
           number: {
             type: Number,
             required: true
           }
         },
+        computed: {
+          localNumber: {
+            get() {
+              return this.number;
+            },
+            set(value) {
+              this.$emit('update:number', value);
+            }
+          }
+        },
         mounted() {
           setInterval(() => {
-            this.$emit('update:number', this.number + 1);
+            this.localNumber++;
           }, 1000);
         }
       });
