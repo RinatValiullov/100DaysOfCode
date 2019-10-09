@@ -101,6 +101,7 @@ Projects:
   - [inheritance-challenge](javascript/hackerrank-challenges/inheritance-challenge)
   - [bitwise-challenge](javascript/hackerrank-challenges/bitwise-challenge)
   - [dates-challenge](javascript/hackerrank-challenges/dates-challenge)
+  - [regexpvowels-challenge](javascript/hackerrank-challenges/regexpvowels-challenge)
 - [dependency-observer](javascript/dependency-observer)
 - [simple-slider](javascript/simple-slider)
 
