@@ -102,6 +102,7 @@ Projects:
   - [bitwise-challenge](javascript/hackerrank-challenges/bitwise-challenge)
   - [dates-challenge](javascript/hackerrank-challenges/dates-challenge)
   - [regexpvowels-challenge](javascript/hackerrank-challenges/regexpvowels-challenge)
+  - [regexpMr-challenge](javascript/hackerrank-challenges/regexpMr-challenge)
 - [dependency-observer](javascript/dependency-observer)
 - [simple-slider](javascript/simple-slider)
 
