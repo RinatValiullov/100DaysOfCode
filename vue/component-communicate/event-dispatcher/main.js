@@ -18,7 +18,9 @@ Vue.component('coupon', {
 
   methods: {
     onCouponApplied() {
-      Event.fire('applied');
+      Event.fire('applied', function(e) {
+        console.log(this);
+      });
     }
   }
 });
@@ -29,6 +31,9 @@ new Vue({
     couponApplied: false
   },
   created() {
-    Event.listen('applied', () => console.log('Handling on!'));
+    Event.listen('applied', () => {
+      this.couponApplied = !this.couponApplied;
+      console.log('Handling on!');
+    });
   }
 });
