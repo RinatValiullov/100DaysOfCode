@@ -33,7 +33,7 @@
 - Days 140-160: [Markdown](#Markdown)
 - Days 140-160: [UI-UX](#UI-UX)
 
-### [HTML](html) &#8210; [Back &#8679;](#100daysofcode)
+### [HTML](html)
 
 Projects:
 
@@ -41,7 +41,7 @@ Projects:
 
 [Back &#8679;](#100daysofcode)
 
-### [CSS](css) &#8210; [Back &#8679;](#100daysofcode)
+### [CSS](css)
 
 Projects:
 
@@ -65,7 +65,9 @@ Projects:
 - [first-glance](css/tailwind-framework/first-glance)
 - [simple-animation](css/tailwind-framework/simple-animation)
 
-### [JavaScript](javascript) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [JavaScript](javascript)
 
 Projects:
 
@@ -108,7 +110,9 @@ Projects:
 - [dependency-observer](javascript/dependency-observer)
 - [simple-slider](javascript/simple-slider)
 
-### [jQuery](jQuery) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [jQuery](jQuery)
 
 Projects:
 
@@ -120,14 +124,18 @@ Projects:
 - [event-delegation](jQuery/event-delegation)
 - [event-propagation](jQuery/event-propagation)
 
-### [Git](Git) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [Git](Git)
 
 Projects:
 
 - [stash-commits](Git/stash-commits)
 - [udacity-git-course](Git/udacity-git-course)
 
-### [Node-and-NPM](node) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [Node-and-NPM](node)
 
 Projects:
 
@@ -135,14 +143,18 @@ Projects:
 - [html-render](node/html-render)
 - [reading-file](node/reading-file)
 
-### [Gulp](gulp) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [Gulp](gulp)
 
 Projects:
 
 - [compile-sass](gulp/compile-sass)
 - [gulp-1.01](gulp/gulp-1.01)
 
-### [React](react) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [React](react)
 
 Projects:
 
@@ -154,14 +166,18 @@ Projects:
 - [conditional-render](react/conditional-render)
 - [table-rendering](react/table-rendering)
 
-### [Jest](Jest) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [Jest](Jest)
 
 Projects:
 
 - [first-test](jest/container/first-test)
 - [learn-matchers](jest/container/learn-matchers)
 
-### [TypeScript](TypeScript) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [TypeScript](TypeScript)
 
 Projects:
 
@@ -175,7 +191,9 @@ Projects:
 - [ts-generics](typescript/ts-generics)
 - [ts-operators](typescript/ts-operators)
 
-### [Vue](vue) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [Vue](vue)
 
 Projects:
 
@@ -208,23 +226,31 @@ Projects:
 - [data-update](vue/data-update)
 - [sync-modifier](vue/sync-modifier)
 
-### [Angular](angular) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [Angular](angular)
 
 Projects:
 
 - [angular8-from-scratch](angular/angular8-from-scratch/angular-app)
 
-### [Markdown](markdown) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [Markdown](markdown)
 
 Projects:
 
 - [paragraphs](markdown/paragraphs)
 
-### [UI-UX](UI-UX) &#8210; [Back &#8679;](#100daysofcode)
+[Back &#8679;](#100daysofcode)
+
+### [UI-UX](UI-UX)
 
 Projects:
 
 - [put-buttons](UI-UX/put-buttons)
+
+[Back &#8679;](#100daysofcode)
 
 Thanks for article to [**Nick Scialli**](https://twitter.com/nas5w) - [A Timeboxed, Day-by-Day #100DaysOfCode Front-End
 Development Curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2)
