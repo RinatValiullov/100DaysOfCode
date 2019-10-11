@@ -33,13 +33,15 @@
 - Days 140-160: [Markdown](#Markdown)
 - Days 140-160: [UI-UX](#UI-UX)
 
-### [HTML](html)
+### [HTML](html) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
 - [custom-elements](html/custom-elements)
 
-### [CSS](css)
+[Back &#8679;](#100daysofcode)
+
+### [CSS](css) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
@@ -63,7 +65,7 @@ Projects:
 - [first-glance](css/tailwind-framework/first-glance)
 - [simple-animation](css/tailwind-framework/simple-animation)
 
-### [JavaScript](javascript)
+### [JavaScript](javascript) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
@@ -106,7 +108,7 @@ Projects:
 - [dependency-observer](javascript/dependency-observer)
 - [simple-slider](javascript/simple-slider)
 
-### [jQuery](jQuery)
+### [jQuery](jQuery) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
@@ -118,14 +120,14 @@ Projects:
 - [event-delegation](jQuery/event-delegation)
 - [event-propagation](jQuery/event-propagation)
 
-### [Git](Git)
+### [Git](Git) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
 - [stash-commits](Git/stash-commits)
 - [udacity-git-course](Git/udacity-git-course)
 
-### [Node-and-NPM](node)
+### [Node-and-NPM](node) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
@@ -133,14 +135,14 @@ Projects:
 - [html-render](node/html-render)
 - [reading-file](node/reading-file)
 
-### [Gulp](gulp)
+### [Gulp](gulp) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
 - [compile-sass](gulp/compile-sass)
 - [gulp-1.01](gulp/gulp-1.01)
 
-### [React](react)
+### [React](react) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
@@ -152,14 +154,14 @@ Projects:
 - [conditional-render](react/conditional-render)
 - [table-rendering](react/table-rendering)
 
-### [Jest](Jest)
+### [Jest](Jest) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
 - [first-test](jest/container/first-test)
 - [learn-matchers](jest/container/learn-matchers)
 
-### [TypeScript](TypeScript)
+### [TypeScript](TypeScript) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
@@ -173,7 +175,7 @@ Projects:
 - [ts-generics](typescript/ts-generics)
 - [ts-operators](typescript/ts-operators)
 
-### [Vue](vue)
+### [Vue](vue) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
@@ -206,19 +208,19 @@ Projects:
 - [data-update](vue/data-update)
 - [sync-modifier](vue/sync-modifier)
 
-### [Angular](angular)
+### [Angular](angular) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
 - [angular8-from-scratch](angular/angular8-from-scratch/angular-app)
 
-### [Markdown](markdown)
+### [Markdown](markdown) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
 - [paragraphs](markdown/paragraphs)
 
-### [UI-UX](UI-UX)
+### [UI-UX](UI-UX) &#8210; [Back &#8679;](#100daysofcode)
 
 Projects:
 
