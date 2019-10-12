@@ -110,6 +110,7 @@ Projects:
 - [dependency-observer](javascript/dependency-observer)
 - [simple-slider](javascript/simple-slider)
 - [object-iterator](javascript/object-iterator)
+- [random-pool](javascript/random-pool)
 
 [Back &#8679;](#100daysofcode)
 
