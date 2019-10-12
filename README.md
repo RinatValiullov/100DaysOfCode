@@ -109,6 +109,7 @@ Projects:
   - [regexpMr-challenge](javascript/hackerrank-challenges/regexpMr-challenge)
 - [dependency-observer](javascript/dependency-observer)
 - [simple-slider](javascript/simple-slider)
+- [object-iterator](javascript/object-iterator)
 
 [Back &#8679;](#100daysofcode)
 
