@@ -14,14 +14,24 @@ let fetchUsers = async id => {
 
   let response = await fetch(`https://catappapi.herokuapp.com/users/${id}`);
   let user = await response.json();
-  let catImageUrls = [];
-  for (let catId of user.cats) {
+
+  /*for (let catId of user.cats) {
     let response = await fetch(`https://catappapi.herokuapp.com/cats/${catId}`);
     let catData = await response.json();
     catImageUrls.push(catData.imageUrl);
   }
+
   console.log(catImageUrls);
-  return catImageUrls;
+  return catImageUrls;*/
+
+  return await Promise.all(
+    user.cats.map(async function(catId) {
+      let response = await fetch(`https://catappapi.herokuapp.com/cats/${catId}`);
+      let catData = await response.json();
+      console.log(catData.imageUrl);
+      return catData.imageUrl;
+    }),
+  );
 };
 
 let result = fetchUsers(123);
