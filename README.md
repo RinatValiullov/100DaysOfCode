@@ -111,7 +111,9 @@ Projects:
 - [simple-slider](javascript/simple-slider)
 - [object-iterator](javascript/object-iterator)
 - [random-pool](javascript/random-pool)
-- [base-example](javascript/async-await/base-example)
+- [async-await](javascript/async-await)
+  - [base-example](javascript/async-await/base-example)
+  - [several-outputs](javascript/async-await/several-outputs)
 
 [Back &#8679;](#100daysofcode)
 
