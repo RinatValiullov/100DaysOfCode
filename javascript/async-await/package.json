@@ -1,8 +1,8 @@
 {
-  "name": "base-example",
+  "name": "async-await",
   "version": "1.0.0",
-  "description": "### Learning `async / await`",
-  "main": "async-await.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
