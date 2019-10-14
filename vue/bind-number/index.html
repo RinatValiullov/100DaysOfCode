@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binding to number and display type</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <section id="asString">
+        <h2>Number as String</h2>
+        <input
+          type="number"
+          v-model="inputs.numberAsString"
+          :input="logString"
+        />
+        <p><strong>Number:</strong> {{ inputs.numberAsString }}</p>
+        <p>
+          <strong>Typeof numberAsString:</strong>
+          {{ typeof inputs.numberAsString }}
+        </p>
+      </section>
+      <section id="asNumber">
+        <h2>Number as Number</h2>
+        <input
+          type="number"
+          v-model.number="inputs.numberAsNumber"
+          :input="logNumber"
+        />
+        <p><strong>Number:</strong> {{ inputs.numberAsNumber }}</p>
+        <p>
+          <strong>Typeof numberAsString:</strong>
+          {{ typeof inputs.numberAsNumber }}
+        </p>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#root',
+        data: {
+          inputs: {
+            numberAsString: '0',
+            numberAsNumber: 0
+          }
+        },
+        computed: {
+          logString() {
+            console.log(
+              `Value is ${this.inputs.numberAsString} and type is ${typeof this
+                .inputs.numberAsString}`
+            );
+          },
+          logNumber() {
+            console.log(
+              `Value is ${this.inputs.numberAsNumber} and type is ${typeof this
+                .inputs.numberAsNumber}`
+            );
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

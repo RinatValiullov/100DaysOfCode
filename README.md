@@ -231,6 +231,7 @@ Projects:
 - [data-update](vue/data-update)
 - [sync-modifier](vue/sync-modifier)
 - [custom-input](vue/custom-input)
+- [bind-number](vue/bind-number)
 
 [Back &#8679;](#100daysofcode)
 
