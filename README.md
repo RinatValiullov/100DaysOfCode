@@ -230,6 +230,7 @@ Projects:
 - [data-props](vue/data-props)
 - [data-update](vue/data-update)
 - [sync-modifier](vue/sync-modifier)
+- [custom-input](vue/custom-input)
 
 [Back &#8679;](#100daysofcode)
 
