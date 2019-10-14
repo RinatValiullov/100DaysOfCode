@@ -234,6 +234,7 @@ Projects:
 - [bind-data](vue/bind-data)
   - [bind-number](vue/bind-data/bind-number)
   - [bind-checkboxes](vue/bind-data/bind-checkboxes)
+  - [bind-radio](vue/bind-data/bind-radio)
 
 [Back &#8679;](#100daysofcode)
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Radio button create ddynamically</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <section>
+        <h2>Radio buttons</h2>
+        <template v-for="(element, index) in inputs.radioButtonsDynamic">
+          <input
+            type="radio"
+            v-model="inputs.radioButtons"
+            :value="element.value"
+            :id="element.value"
+          />
+          <label :for="element.value">{{ element.label }}</label>
+          <br v-if="index < inputs.radioButtonsDynamic.length" />
+        </template>
+        <p><strong>Radios: </strong> {{ inputs.radioButtons }}</p>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#root',
+        data: {
+          inputs: {
+            radioButtonsDynamic: [
+              {
+                value: 'first',
+                label: 'first'
+              },
+              {
+                value: 'second',
+                label: 'second'
+              },
+              {
+                value: 'third',
+                label: 'third'
+              }
+            ],
+            radioButtons: []
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
