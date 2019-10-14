@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Yet another counter</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+  </head>
+  <body>
+    <div id="root">
+      <counter v-bind:add-num="5"></counter>
+    </div>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    <script>
+      let counter = Vue.component('counter', {
+        template: `
+          <div class="text-center">
+              <p class="lead">Count: {{ counter }}</p>
+              <b-button
+                size="lg"
+                variant="primary"
+                @click="increment"
+              >Increment by {{ addNum }}</b-button>
+            </div>
+        `,
+        props: {
+          addNum: {
+            type: Number,
+            default: 1,
+          },
+        },
+        data() {
+          return {
+            counter: 0,
+          };
+        },
+        methods: {
+          increment() {
+            this.counter += this.addNum;
+          },
+        },
+      });
+      let app = new Vue({
+        el: '#root',
+      });
+    </script>
+  </body>
+</html>
