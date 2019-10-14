@@ -8,12 +8,18 @@
   </head>
   <body>
     <div id="root">
-      <select v-model="selected">
-        <option v-for="option in options" v-bind:value="option.value">
-          {{ option.text }}
-        </option>
-      </select>
-      <p>Selected option: {{ selected }}</p>
+      <section>
+        <select v-model="selected">
+          <option v-for="option in options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+        <p>Selected option: {{ selected }}</p>
+      </section>
+      <section>
+        <input type="text" v-model="inputs.text" />
+        <p><strong>Text:</strong> {{ inputs.text }}</p>
+      </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script>
@@ -24,9 +30,12 @@
           options: [
             { text: 'first option', value: 'A' },
             { text: 'second option', value: 'B' },
-            { text: 'third option', value: 'C' },
+            { text: 'third option', value: 'C' }
           ],
-        },
+          inputs: {
+            text: 'some initial text'
+          }
+        }
       });
     </script>
   </body>

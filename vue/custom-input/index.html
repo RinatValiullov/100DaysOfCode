@@ -18,16 +18,21 @@
     <script>
       Vue.component('custom-input', {
         template: `
-          <input type="text" :value="value" @input="handleInput">
+          <input type="text" :value="value" @input="handleInput" :style="style">
         `,
         props: {
           value: {
             type: String,
             required: true
+          },
+          textStyle: {
+            type: String,
+            default: 'italic'
           }
         },
         methods: {
           handleInput(event) {
+            console.log(this.$options);
             let value = event.target.value.trim().toLowerCase();
 
             // If value was chabged, update it on the input too
@@ -36,6 +41,13 @@
             }
 
             this.$emit('input', value);
+          }
+        },
+        computed: {
+          style() {
+            return {
+              fontStyle: this.textStyle
+            };
           }
         }
       });
