@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rendering list items</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+  </head>
+  <body>
+    <div id="root">
+      <b-list-group>
+        <b-list-group-item class="text-white bg-primary" :key="color.id" v-if="color.show" v-for="color in colors">
+          {{ color.title }}
+        </b-list-group-item>
+      </b-list-group>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    <script>
+      new Vue({
+        el: '#root',
+        data: {
+          colors: [
+            {
+              title: 'red',
+              show: true,
+              id: 'ea2952ab-8daa-436d-8eaa-5489afd160e3',
+            },
+            {
+              title: 'yellow',
+              show: false,
+              id: '68b734f2-6711-4bf9-819a-d6d2dafa785a',
+            },
+            {
+              title: 'aqua',
+              show: true,
+              id: '19f5a300-63e2-45b7-bdb7-115045bbb362',
+            },
+            {
+              title: 'blue',
+              show: true,
+              id: 'a6037443-4bf4-483e-a3d7-b246ffda36c6',
+            },
+            {
+              title: 'black',
+              show: false,
+              id: 'b3a7eb41-bd79-45a9-94f3-5a26c7e52b26',
+            },
+            {
+              title: 'maroon',
+              show: true,
+              id: '2b716bce-4535-4646-a120-b19bba75c025',
+            },
+            {
+              title: 'darkgrey',
+              show: true,
+              id: '3dd6b26f-f380-4f3f-9e36-9dffd593a174',
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
