@@ -237,6 +237,7 @@ Projects:
   - [bind-radio](vue/bind-data/bind-radio)
 - [bootstrap-counter](vue/bootstrap-counter)
 - [render-list](vue/render-list)
+- [event-click](vue/event-click)
 
 [Back &#8679;](#100daysofcode)
 
