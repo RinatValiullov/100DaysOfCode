@@ -1,7 +1,8 @@
 import React from 'react';
+import Heading from './components/Heading';
 
 function App() {
-  return <h1>Hello, React!</h1>;
+  return <Heading />;
 }
 
 export default App;
