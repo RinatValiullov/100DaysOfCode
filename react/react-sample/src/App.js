@@ -1,8 +1,8 @@
 import React from 'react';
-import Heading from './components/Heading';
+import Heading from './components/Heading/Heading';
 
 function App() {
-  return <Heading />;
+  return <Heading title="text-center" />;
 }
 
 export default App;
