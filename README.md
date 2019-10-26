@@ -156,6 +156,7 @@ Projects:
 
 - [compile-sass](gulp/compile-sass)
 - [gulp-1.01](gulp/gulp-1.01)
+- [partial-imports](gulp/partial-imports)
 
 [Back &#8679;](#100daysofcode)
 

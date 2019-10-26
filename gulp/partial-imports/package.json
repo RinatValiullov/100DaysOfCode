@@ -1,0 +1,18 @@
+{
+  "name": "partial-imports",
+  "version": "1.0.0",
+  "description": "### Learning [`postcss-partial-import`](https://github.com/jonathantneal/postcss-partial-import \"Inline sugary @import statements in CSS\") plugin",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "4rontender <4ront@4ront.ru> (4ront.ru)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "postcss-partial-import": "^4.1.0",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
