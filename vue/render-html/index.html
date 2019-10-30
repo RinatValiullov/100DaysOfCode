@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Render html</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: 'Victor Mono', serif;
+        font-weight: 600;
+        background: #5af;
+        color: #fff;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      img {
+        height: 32px;
+        width: 32px;
+      }
+    </style>
+    <div id="root">
+      <p
+        v-for="person in persons()"
+        v-html="person.name + '&nbsp;' + person.pic"
+      ></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>
+      function renderPic(name) {
+        // return `<img src=${'pictures/' + src} alt='profile picture'>`;
+
+        let out = `<img src="pictures/` + name + `.png">`;
+        return out;
+      }
+
+      let app = new Vue({
+        el: '#root',
+        data: {
+          harryPic: renderPic('airbnb'),
+          dilanPic: renderPic('amazon'),
+          sallyPic: renderPic('android'),
+          christyPic: renderPic('apple'),
+          matthewPic: renderPic('asana'),
+        },
+        methods: {
+          persons() {
+            return [
+              { name: 'Harry', pic: this.harryPic },
+              { name: 'Dilan', pic: this.dilanPic },
+              { name: 'Sally', pic: this.sallyPic },
+              { name: 'Christy', pic: this.christyPic },
+              { name: 'Matthew', pic: this.matthewPic },
+            ];
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

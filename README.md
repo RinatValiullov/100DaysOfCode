@@ -241,6 +241,7 @@ Projects:
 - [bootstrap-counter](vue/bootstrap-counter)
 - [render-list](vue/render-list)
 - [event-click](vue/event-click)
+- [render-html](vue/render-html)
 
 [Back &#8679;](#100daysofcode)
 
