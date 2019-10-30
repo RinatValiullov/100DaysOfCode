@@ -4,18 +4,21 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { NoMatch } from './pages/NoMatch';
+import { Layout } from './components/Layout';
 
 function App() {
   return (
     <Fragment>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route component={NoMatch} />
-        </Switch>
-      </Router>
+      <Layout>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route component={NoMatch} />
+          </Switch>
+        </Router>
+      </Layout>
     </Fragment>
   );
 }
