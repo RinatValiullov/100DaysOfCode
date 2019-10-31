@@ -1,11 +1,11 @@
 import React from 'react';
 
-export let Contact = () => (
+export const Contact = () => `
   <div>
     <h2>Contact Page</h2>
     <p>
-      God help us, we're in the hands of engineers. Is this my espresso machine? Wh-what is-h-how did you get my
-      espresso machine? Must go faster. So you two dig up, dig up dinosaurs?{' '}
+      God help us, we're in the hands of engineers. Is this my espresso machine? What is how did you get my
+      espresso machine? Must go faster. So you two dig up, dig up dinosaurs?
     </p>
     <p>
       Must go faster... go, go, go, go, go! This thing comes fully loaded. AM/FM radio, reclining bucket seats, and...
@@ -18,4 +18,4 @@ export let Contact = () => (
       if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
   </div>
-);
+`;
