@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container } from 'react-bootstrap';
 
-export const Layout = props => `
-  <Container>
-    { props.children }
-  </Container>
-`;
+export const Layout = ({ children }) => <Container>{children}</Container>;
+
+Layout.propTypes = {
+  children: PropTypes.element,
+};
