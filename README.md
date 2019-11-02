@@ -147,6 +147,7 @@ Projects:
 - [first-server](node/first-server)
 - [html-render](node/html-render)
 - [reading-file](node/reading-file)
+- [server-babel](node/server-babel)
 
 [Back &#8679;](#100daysofcode)
 
