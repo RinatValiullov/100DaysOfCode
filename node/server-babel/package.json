@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel lib -d dist --source-maps inline",
+    "build": "babel lib -d dist --source-maps",
     "start": "npm run build && nodemon dist/index.js",
     "serve": "node dist/index.js",
     "test": "mocha --require @babel/register"
