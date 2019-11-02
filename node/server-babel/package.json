@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel lib -d dist",
     "start": "npm run build && nodemon dist/index.js",
-    "serve": "node dist/index.js"
+    "serve": "node dist/index.js",
+    "test": "mocha --require @babel/register"
   },
   "keywords": [],
   "author": "4rontender <4ront@4ront.ru> (4ront.ru)",
@@ -15,6 +16,8 @@
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "mocha": "^6.2.2",
     "nodemon": "^1.19.4"
   }
 }
