@@ -5,10 +5,12 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { NoMatch } from './pages/NoMatch';
 import { Layout } from './components/Layout';
+import { NavigationBar } from './components/NavigationBar';
 
 function App() {
   return (
     <>
+      <NavigationBar />
       <Layout>
         <Router>
           <Switch>
