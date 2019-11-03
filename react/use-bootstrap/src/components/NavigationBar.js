@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Styles = styled.div`
   .navbar {
@@ -9,7 +9,6 @@ const Styles = styled.div`
 
   .navbar-brand,
   .navbar-nav .nav-link {
-    color: #bbb;
 
     &:hover {
       color: #fff;
@@ -19,7 +18,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar expand="lg">
+    <Navbar expand="lg" className="navbar-dark bg-dark">
       <Navbar.Brand href="/">Code Life</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

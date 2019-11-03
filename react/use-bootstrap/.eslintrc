@@ -15,6 +15,7 @@
       }
     ],
     "react/destructuring-assignment": [1],
-    "react/prop-types": [1]
+    "react/prop-types": [1],
+    "react/self-closing-comp": [1]
   }
 }
