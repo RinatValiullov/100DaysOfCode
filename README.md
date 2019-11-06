@@ -114,6 +114,7 @@ Projects:
 - [async-await](javascript/async-await)
   - [base-example](javascript/async-await/base-example)
   - [several-outputs](javascript/async-await/several-outputs)
+- [draw-canvas](javascript/async-await/draw-canvas)
 
 [Back &#8679;](#100daysofcode)
 
