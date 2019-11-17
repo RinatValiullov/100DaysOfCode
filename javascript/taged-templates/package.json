@@ -1,0 +1,18 @@
+{
+  "name": "taged-templates",
+  "version": "1.0.0",
+  "description": "### Learning `taged templates`",
+  "main": "taged-templates.js",
+  "scripts": {
+    "test": "eslint .",
+    "test:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "4rontender <4ront@4ront.ru> (4ront.ru)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
