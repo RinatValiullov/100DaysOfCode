@@ -117,6 +117,7 @@ Projects:
 - [draw-canvas](javascript/async-await/draw-canvas)
 - [generate-names](javascript/generate-names)
 - [taged-templates](javascript/taged-templates)
+- [implement-classes](javascript/implement-classes)
 
 [Back &#8679;](#100daysofcode)
 
