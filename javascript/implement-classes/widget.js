@@ -8,10 +8,11 @@ function Widget(width, height) {
 Widget.prototype.render = function($where) {
   let targetElement = this.$elem;
   if (targetElement) {
-    targetElement.style.cssText = `
-      width: ${this.width}px,
-      width: ${this.height}px
-    `;
+    // targetElement.style.width = this.width + 'px';
+    // targetElement.style.height = this.height + 'px';
+
+    targetElement.style.cssText = `height: ${this.height}px; width: ${this.width}px`;
+
     $where.appendChild(targetElement);
   }
 };
