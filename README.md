@@ -118,6 +118,7 @@ Projects:
 - [generate-names](javascript/generate-names)
 - [taged-templates](javascript/taged-templates)
 - [implement-classes](javascript/implement-classes)
+- [style-delegation](javascript/style-delegation)
 
 [Back &#8679;](#100daysofcode)
 
