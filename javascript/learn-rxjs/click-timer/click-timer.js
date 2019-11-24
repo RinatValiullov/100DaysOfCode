@@ -15,5 +15,5 @@ clickOnButton.subscribe(_ => {
 });
 
 // let's start timer (5 times invoke click event on button)
-const numbers = rxjs.timer(3000, 2000).pipe(rxjs.operators.take(5));
-numbers.subscribe(_ => btn.click());
+const clicks = rxjs.timer(3000, 2000).pipe(rxjs.operators.take(5));
+clicks.subscribe(_ => btn.click());
