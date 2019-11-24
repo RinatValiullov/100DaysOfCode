@@ -119,6 +119,8 @@ Projects:
 - [taged-templates](javascript/taged-templates)
 - [implement-classes](javascript/implement-classes)
 - [style-delegation](javascript/style-delegation)
+- [learn-rxjs](javascript/learn-rxjs)
+  - [click-timer](javascript/learn-rxjs/click-timer)
 
 [Back &#8679;](#100daysofcode)
 
