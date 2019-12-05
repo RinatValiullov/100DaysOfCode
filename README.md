@@ -121,6 +121,8 @@ Projects:
 - [style-delegation](javascript/style-delegation)
 - [learn-rxjs](javascript/learn-rxjs)
   - [click-timer](javascript/learn-rxjs/click-timer)
+- [learn-promises](javascript/learn-rxjs/learn-promises)
+  - [promise-all](javascript/learn-rxjs/learn-promises/promise-all)
 
 [Back &#8679;](#100daysofcode)
 
