@@ -123,6 +123,7 @@ Projects:
   - [click-timer](javascript/learn-rxjs/click-timer)
 - [learn-promises](javascript/learn-rxjs/learn-promises)
   - [promise-all](javascript/learn-rxjs/learn-promises/promise-all)
+  - [fetch-render](javascript/learn-rxjs/learn-promises/fetch-render)
 
 [Back &#8679;](#100daysofcode)
 
