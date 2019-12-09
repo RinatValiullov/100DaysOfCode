@@ -158,6 +158,7 @@ Projects:
 - [html-render](node/html-render)
 - [reading-file](node/reading-file)
 - [server-babel](node/server-babel)
+- [hide-envvars](node/hide-envvars)
 
 [Back &#8679;](#100daysofcode)
 
