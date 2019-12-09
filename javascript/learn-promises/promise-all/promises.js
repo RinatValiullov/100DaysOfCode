@@ -2,8 +2,8 @@ const fetch = require('node-fetch');
 const URL = 'https://jsonplaceholder.typicode.com/users';
 
 // helper function for getting random number from determined range
-// const getRandomNumber = ({ min = 1, max = 10 } = {}) =>
-//   Math.floor(Math.random() * (max - min)) + min;
+const getRandomNumber = ({ min = 1, max = 10 } = {}) =>
+  Math.floor(Math.random() * (max - min)) + min;
 
 // get max parameter for getRandomNumber function
 // const maxLength = fetch('https://jsonplaceholder.typicode.com/users')
