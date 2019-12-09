@@ -84,7 +84,6 @@ Projects:
 - [fibonacci-memoization](javascript/fibonacci-memoization)
 - [eslint-prettier-airbnb](javascript/eslint-prettier-airbnb)
 - [awesome-context](javascript/awesome-context)
-- [whitespace_regex-js2019](javascript/whitespace_regex-js2019)
 - [compare-arrays](javascript/compare-arrays)
 - [map-datastructure](javascript/map-datastructure)
 - [proxy-object](javascript/proxy-object)
@@ -121,9 +120,11 @@ Projects:
 - [style-delegation](javascript/style-delegation)
 - [learn-rxjs](javascript/learn-rxjs)
   - [click-timer](javascript/learn-rxjs/click-timer)
-- [learn-promises](javascript/learn-rxjs/learn-promises)
-  - [promise-all](javascript/learn-rxjs/learn-promises/promise-all)
-  - [fetch-render](javascript/learn-rxjs/learn-promises/fetch-render)
+- [learn-promises](javascript/learn-promises)
+  - [promise-all](javascript/learn-promises/promise-all)
+  - [fetch-render](javascript/learn-promises/fetch-render)
+- [learn-regexp](javascript/learn-regexp)
+  - [whitespace_regex-js2019](javascript/learn-regexp/whitespace_regex-js2019)
 
 [Back &#8679;](#100daysofcode)
 
