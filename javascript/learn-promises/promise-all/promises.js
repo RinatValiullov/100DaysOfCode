@@ -33,6 +33,6 @@ function add(xPromise, yPromise) {
 const sum = add(fetchX(URL), fetchY(URL));
 
 sum.then(
-  getSum => console.log(getSum),
+  getSum => console.log(`Sum of random user's id: `, getSum),
   err => console.error(err)
 );
