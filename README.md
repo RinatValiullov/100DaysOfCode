@@ -120,6 +120,7 @@ Projects:
 - [style-delegation](javascript/style-delegation)
 - [learn-rxjs](javascript/learn-rxjs)
   - [click-timer](javascript/learn-rxjs/click-timer)
+  - [use-scheduler](javascript/learn-rxjs/use-scheduler)
 - [learn-promises](javascript/learn-promises)
   - [promise-all](javascript/learn-promises/promise-all)
   - [fetch-render](javascript/learn-promises/fetch-render)
