@@ -1,9 +1,24 @@
-import { range } from 'rxjs';
-import { map, filter } from 'rxjs/operators';
+import { Observable, asyncScheduler } from 'rxjs';
+import { observeOn } from 'rxjs/operators';
 
-range(1, 50)
-  .pipe(
-    filter(x => x % 2 === 1),
-    map(x => x + x)
-  )
-  .subscribe(x => console.log(x));
+const observable = new Observable(observer => {
+  observer.next(1);
+  observer.next(2);
+  observer.next(3);
+  observer.complete();
+}).pipe(observeOn(asyncScheduler));
+
+console.log('just before subscribe');
+observable.subscribe({
+  next(x) {
+    console.log('got value', x);
+  },
+  error(err) {
+    console.error('something went wrong', err);
+  },
+  complete() {
+    console.log('done');
+  }
+});
+
+console.log('just after subscribe');
