@@ -127,6 +127,7 @@ Projects:
 - [learn-regexp](javascript/learn-regexp)
   - [whitespace_regex-js2019](javascript/learn-regexp/whitespace_regex-js2019)
   - [LookAhead-LookBehind](javascript/learn-regexp/LookAhead-LookBehind)
+- [generator-iterator](javascript/generator-iterator)
 
 [Back &#8679;](#100daysofcode)
 
