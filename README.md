@@ -59,6 +59,7 @@ Projects:
   - [svg-stroke](css/svg-learn/svg-stroke)
   - [svg-markers](css/svg-learn/svg-markers)
   - [svg-gradients](css/svg-learn/svg-gradients)
+  - [svg-pattern](css/svg-learn/svg-pattern)
 - [just-pagination](css/just-pagination)
 - [folded-corner](css/folded-corner)
 - [autosized-columns](css/autosized-columns)
