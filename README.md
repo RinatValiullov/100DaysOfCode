@@ -129,6 +129,7 @@ Projects:
   - [whitespace_regex-js2019](javascript/learn-regexp/whitespace_regex-js2019)
   - [LookAhead-LookBehind](javascript/learn-regexp/LookAhead-LookBehind)
 - [generator-iterator](javascript/generator-iterator)
+- [composition-inheritance](javascript/composition-inheritance)
 
 [Back &#8679;](#100daysofcode)
 
