@@ -20,10 +20,10 @@ console.log(resultJSON);
 
 /*
  *
- * Conflates the input with the output x
+ * Conflates the input with the output ✕
  *
- * Doesn't work with control flow primitives x
+ * Doesn't work with control flow primitives ✕
  *
- * Doesn't handle errors x
+ * Doesn't handle errors ✕
  *
  */
