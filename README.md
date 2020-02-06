@@ -165,6 +165,7 @@ Projects:
 - [reading-file](node/reading-file)
 - [server-babel](node/server-babel)
 - [hide-envvars](node/hide-envvars)
+- [handle-errors](node/handle-errors)
 
 [Back &#8679;](#100daysofcode)
 
