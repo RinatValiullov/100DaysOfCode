@@ -193,6 +193,7 @@ Projects:
 - [react-sample](react/react-sample)
 - [formik-library](react/formik-library)
 - [use-bootstrap](react/use-bootstrap)
+- [ts-app](react/ts-app)
 
 [Back &#8679;](#100daysofcode)
 
