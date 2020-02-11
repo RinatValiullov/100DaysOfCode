@@ -14,17 +14,13 @@ const readFile = (fileName, enc) => {
 };
 
 const readJSON = fileName => {
-  return new Promise((resolve, reject) => {
-    readFile(fileName, 'utf8')
-      .then(result => {
-        try {
-          resolve(JSON.parse(result));
-        } catch (exept) {
-          reject(exept);
-        }
-      })
-      .catch(error => console.log(error));
-  });
+  return readFile(fileName, 'utf8')
+    .then(result =>
+      JSON.parse(result, (key, value) =>
+        console.log(`key: ${key}\nvalue: ${value}`)
+      )
+    )
+    .catch(error => console.error(error));
 };
 
 // Let's make an error artificially: typo in fileName
