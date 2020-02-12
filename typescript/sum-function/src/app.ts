@@ -12,5 +12,5 @@ const add = (input1: number, input2: number): number => {
 
 addButton.addEventListener('click', function () {
   const resultSum: number = add(Number(inp1.value), Number(inp2.value));
-  console.log(resultSum);
+  console.log(`The result: ${resultSum}`);
 });
