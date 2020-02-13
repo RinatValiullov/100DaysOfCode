@@ -1,0 +1,16 @@
+{
+  "name": "object-types",
+  "version": "1.0.0",
+  "description": "### Learn the basics of ts",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --outDir dist --rootDir src",
+    "start": "npm run build -- -w"
+  },
+  "keywords": [],
+  "author": "4rontender <4ront@4ront.ru> (4ront.ru)",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.7.5"
+  }
+}
