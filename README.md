@@ -219,7 +219,9 @@ Projects:
 - [ts-guards](typescript/ts-guards)
 - [ts-generics](typescript/ts-generics)
 - [ts-operators](typescript/ts-operators)
-- [sum-function](typescript/sum-function)
+- [basics](typescript/basics)
+  - [sum-function](typescript/basics/sum-function)
+  - [object-types](typescript/basics/object-types)
 
 [Back &#8679;](#100daysofcode)
 
