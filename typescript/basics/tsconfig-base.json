@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "sourceMap": false,
+    "composite": true
+  },
+  "references": [{
+      "path": "./object-types"
+    },
+    {
+      "path": "./sum-function"
+    }
+  ]
+}

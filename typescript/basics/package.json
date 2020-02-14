@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --build tsconfig-base.json",
     "start": "npm run build -- -w"
   },
   "keywords": [],

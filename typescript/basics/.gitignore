@@ -1,1 +1,3 @@
-/**/dist/*
+/**/dist/**/*.js
+*d.ts
+*.tsbuildinfo
