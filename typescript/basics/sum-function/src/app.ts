@@ -1,6 +1,6 @@
 const inp1 = document.querySelector('#num1')! as HTMLInputElement;
 const inp2 = document.querySelector('#num2')! as HTMLInputElement;
-const addButton = document.querySelector('button');
+const addButton = document.querySelector('button')! as HTMLButtonElement;
 
 const add = (input1: number, input2: number): number => {
   if (typeof input1 === 'number' && typeof input2 === 'number') {

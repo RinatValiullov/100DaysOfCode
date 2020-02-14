@@ -1,10 +1,6 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "ESNext",
-    "sourceMap": false,
-    "composite": true
-  },
+  "files": [],
+  "include": [],
   "references": [{
       "path": "./object-types"
     },
