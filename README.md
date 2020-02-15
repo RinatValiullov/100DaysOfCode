@@ -63,8 +63,10 @@ Projects:
 - [just-pagination](css/just-pagination)
 - [folded-corner](css/folded-corner)
 - [autosized-columns](css/autosized-columns)
-- [first-glance](css/tailwind-framework/first-glance)
-- [simple-animation](css/tailwind-framework/simple-animation)
+- [simple-animation](css/simple-animation)
+- [tailwind-learn](css/tailwind-framework)
+  - [first-glance](css/tailwind-framework/first-glance)
+- [bem-learn](css/bem-learn)
 
 [Back &#8679;](#100daysofcode)
 
