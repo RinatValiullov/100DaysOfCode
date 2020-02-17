@@ -226,6 +226,7 @@ Projects:
 - [basics](typescript/basics)
   - [sum-function](typescript/basics/sum-function)
   - [object-types](typescript/basics/object-types)
+  - [array-type](typescript/basics/array-type)
 
 [Back &#8679;](#100daysofcode)
 
