@@ -1,10 +1,10 @@
 import { text } from './text';
 
-const segments = [];
+const segments: string[] = [];
 let startCounter = -1; // need think to change the logic but not the startCounter = 0
 
 for (let idx: number = 0; idx < text.length; idx++) {
-  let character = text.charCodeAt(idx);
+  let character: number = text.charCodeAt(idx);
   if (character === 44) {
     // code '44' is for comma sign ','
     segments.push(text.substring(startCounter + 1, idx));
