@@ -133,6 +133,7 @@ Projects:
   - [LookAhead-LookBehind](javascript/learn-regexp/LookAhead-LookBehind)
 - [generator-iterator](javascript/generator-iterator)
 - [composition-inheritance](javascript/composition-inheritance)
+- [split-text](javascript/split-text)
 
 [Back &#8679;](#100daysofcode)
 
