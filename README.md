@@ -118,6 +118,7 @@ Projects:
 - [async-await](javascript/async-await)
   - [base-example](javascript/async-await/base-example)
   - [several-outputs](javascript/async-await/several-outputs)
+  - [yet_another-example](javascript/async-await/yet_another-example)
 - [draw-canvas](javascript/async-await/draw-canvas)
 - [generate-names](javascript/generate-names)
 - [taged-templates](javascript/taged-templates)
