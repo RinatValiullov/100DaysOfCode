@@ -68,6 +68,7 @@ Projects:
   - [first-glance](css/tailwind-framework/first-glance)
 - [bem-learn](css/bem-learn)
   - [simple-card](css/bem-learn/simple-card)
+- [multilevel-menu](css/multilevel-menu)
 
 [Back &#8679;](#100daysofcode)
 
