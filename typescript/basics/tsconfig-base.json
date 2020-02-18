@@ -1,11 +1,18 @@
 {
   "files": [],
   "include": [],
-  "references": [{
+  "references": [
+    {
       "path": "./object-types"
     },
     {
       "path": "./sum-function"
+    },
+    {
+      "path": "./array-type"
+    },
+    {
+      "path": "./tuple-type"
     }
   ]
 }
