@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -9,8 +10,9 @@ html {
 }
 
 body {
-  background-color: rgb(117, 93, 93);
+  background-color: rgb(77, 61, 61);
   font-size: 1.4rem;
+  height: inherit;
   margin: 0;
   padding: 0;
 }
@@ -25,4 +27,77 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.wrapper {
+  border: 1px solid #eee;
+  height: inherit;
+  padding: 10px;
+}
+
+.menu {
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu__list {
+  display: flex;
+  margin: 0;
+}
+
+.menu__list>li {
+  margin: 0 10px 0 0;
+}
+
+.menu__list>li:hover .sub-menu__list {
+  display: block;
+}
+
+.menu__link {
+  color: #fff;
+}
+
+.sub-menu__list {
+  display: none;
+  left: 0;
+  padding: 20px 0 0 0;
+  position: absolute;
+  top: 20px;
+  min-width: 300px;
+}
+
+.sub-menu__list>li {
+  background-color: #fff;
+}
+
+.sub-menu__link {
+  color: #000;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.sub-sub-menu__list {
+  display: none;
+  padding: 0 0 0 5px;
+  position: absolute;
+  left: 100%;
+  min-width: 300px;
+  top: 0;
+}
+
+.sub-sub-menu__list>li {
+  background-color: #000;
+}
+
+.sub-menu__list>li:hover .sub-sub-menu__list {
+  display: block;
+}
+
+.sub-sub-menu__link {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
 }
