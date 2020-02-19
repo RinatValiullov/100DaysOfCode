@@ -1,0 +1,4 @@
+enum Person {
+  AGE
+}
+

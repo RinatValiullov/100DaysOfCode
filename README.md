@@ -231,6 +231,7 @@ Projects:
   - [array-type](typescript/basics/array-type)
   - [tuple-type](typescript/basics/tuple-type)
   - [enum-type](typescript/basics/enum-type)
+  - [any-union-type](typescript/basics/any-union-type)
 
 [Back &#8679;](#100daysofcode)
 
