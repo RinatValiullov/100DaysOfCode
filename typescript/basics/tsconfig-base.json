@@ -1,8 +1,7 @@
 {
   "files": [],
   "include": [],
-  "references": [
-    {
+  "references": [{
       "path": "./object-types"
     },
     {
@@ -13,6 +12,9 @@
     },
     {
       "path": "./tuple-type"
+    },
+    {
+      "path": "./enum-type"
     }
   ]
 }
