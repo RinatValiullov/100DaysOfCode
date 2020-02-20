@@ -18,6 +18,9 @@
     },
     {
       "path": "./any-union-type"
+    },
+    {
+      "path": "./function-type"
     }
   ]
 }
