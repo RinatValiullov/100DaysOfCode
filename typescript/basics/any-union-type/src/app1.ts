@@ -1,4 +1,11 @@
-const combineAdd = (input1: number | string, input2: number | string, resultConversion: 'as-number' | 'as-text') => {
+type Combinable = number | string;
+type ConversionDescriptor = 'as-number' | 'as-text';
+
+const combineAdd = (
+  input1: Combinable,
+  input2: Combinable,
+  resultConversion: ConversionDescriptor
+) => {
   let result;
   if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
     result = Number(input1) + Number(input2);
