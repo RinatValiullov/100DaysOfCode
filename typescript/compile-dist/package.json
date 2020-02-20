@@ -1,0 +1,16 @@
+{
+  "name": "compile-dist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node buildProject && rm -rf dist"
+  },
+  "keywords": [],
+  "author": "4rontender <4ront@4ront.ru> (4ront.ru)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}
