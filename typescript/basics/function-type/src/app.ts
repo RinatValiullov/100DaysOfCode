@@ -15,3 +15,10 @@ function mult(n1: number, n2: number): undefined {
 }
 
 printResult(sum);
+
+let combinedValue: (a: number, b: number) => number;
+combinedValue = add;
+// combinedValue = mult;
+// combinedValue = '45'; // problem because combinedValue is type of any
+
+console.log(combinedValue(7, 8));
