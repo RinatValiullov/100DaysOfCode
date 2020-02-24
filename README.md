@@ -233,6 +233,7 @@ Projects:
   - [enum-type](typescript/basics/enum-type)
   - [any-union-type](typescript/basics/any-union-type)
   - [function-type](typescript/basics/function-type)
+  - [unknown-type](typescript/basics/unknown-type)
 - [compile-dist](typescript/compile-dist)
 
 [Back &#8679;](#100daysofcode)

@@ -1,7 +1,8 @@
 {
   "files": [],
   "include": [],
-  "references": [{
+  "references": [
+    {
       "path": "./object-types"
     },
     {
@@ -21,6 +22,9 @@
     },
     {
       "path": "./function-type"
+    },
+    {
+      "path": "./unknown-type"
     }
   ]
 }
