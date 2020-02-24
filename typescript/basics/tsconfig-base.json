@@ -25,6 +25,9 @@
     },
     {
       "path": "./unknown-type"
+    },
+    {
+      "path": "./never-type"
     }
   ]
 }

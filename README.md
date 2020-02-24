@@ -234,6 +234,7 @@ Projects:
   - [any-union-type](typescript/basics/any-union-type)
   - [function-type](typescript/basics/function-type)
   - [unknown-type](typescript/basics/unknown-type)
+  - [never-type](typescript/basics/never-type)
 - [compile-dist](typescript/compile-dist)
 
 [Back &#8679;](#100daysofcode)
