@@ -2,10 +2,10 @@ let userInput: unknown; // more restrictive than `any` type
 let userName!: string;
 
 userInput = 5;
-userInput = 'string';
+userInput = 'text';
 
-if (typeof userName === 'string') {
-  let userName = userInput;
+if (typeof userInput === 'string') {
+  userName = userInput;
 }
 
 console.log(userName, userInput);
