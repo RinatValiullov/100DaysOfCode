@@ -1,3 +1,3 @@
 export interface StringValidator {
-  isAcceptable(str: string): boolean;
+  isAcceptable(zip: string): boolean;
 }
