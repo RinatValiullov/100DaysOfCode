@@ -1,8 +1,7 @@
 {
   "files": [],
   "include": [],
-  "references": [
-    {
+  "references": [{
       "path": "./object-types"
     },
     {
@@ -28,6 +27,9 @@
     },
     {
       "path": "./never-type"
+    },
+    {
+      "path": "./modules/export-declaration"
     }
   ]
 }

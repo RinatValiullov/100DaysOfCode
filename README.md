@@ -235,6 +235,9 @@ Projects:
   - [function-type](typescript/basics/function-type)
   - [unknown-type](typescript/basics/unknown-type)
   - [never-type](typescript/basics/never-type)
+  - [modules](typescript/basics/modules)
+    - [export-declaration](typescript/basics/modules/export-declaration)
+    - [import-declaration](typescript/basics/modules/import-declaration)
 - [compile-dist](typescript/compile-dist)
 
 [Back &#8679;](#100daysofcode)
