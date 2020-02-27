@@ -6,4 +6,4 @@ class ZipCodeValidator {
         return str.length >= 6 && exports.numberRegExp.test(str);
     }
 }
-exports.ZipCodeValidator = ZipCodeValidator;
+exports.mainValidator = ZipCodeValidator;
