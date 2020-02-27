@@ -1,7 +1,8 @@
 {
   "files": [],
   "include": [],
-  "references": [{
+  "references": [
+    {
       "path": "./object-types"
     },
     {
@@ -30,6 +31,9 @@
     },
     {
       "path": "./modules/export-declaration"
+    },
+    {
+      "path": "./modules/import-declaration"
     }
   ]
 }

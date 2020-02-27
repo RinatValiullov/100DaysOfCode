@@ -1,6 +1,6 @@
-import { mainValidator } from 'ZipCodeValidator';
+import { MainValidator } from './ZipCodeValidator';
 
-const show = new mainValidator();
+const show = new MainValidator();
 
 const result = show.isAcceptable('314000');
 

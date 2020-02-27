@@ -8,4 +8,4 @@ class ZipCodeValidator implements StringValidator {
   }
 }
 
-export { ZipCodeValidator as mainValidator };
+export { ZipCodeValidator as MainValidator };
