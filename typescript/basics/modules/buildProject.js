@@ -19,10 +19,11 @@ fs.mkdirSync(`${dir}\\dist`);
 */
 
 const buildProjects = dir => {
+  console.log(path.dirname(__filename));
   const files = fs.readdirSync(dir);
 
   for (const i in files) {
-    const name = dir + '/' + files[i];
+    const name = files[i];
     if (
       fs.statSync(name).isDirectory() &&
       name !== './dist' &&
