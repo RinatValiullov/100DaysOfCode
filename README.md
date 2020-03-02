@@ -200,6 +200,8 @@ Projects:
 - [formik-library](react/formik-library)
 - [use-bootstrap](react/use-bootstrap)
 - [ts-app](react/ts-app)
+- [styling-ways](react/styling-ways)
+  - [simple-form](react/styling-ways/simple-form)
 
 [Back &#8679;](#100daysofcode)
 
