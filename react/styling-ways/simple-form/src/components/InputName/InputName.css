@@ -1,0 +1,8 @@
+.personName {
+  border: 1px solid #899;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  color: #456;
+  line-height: 1.4;
+  padding: 0.2rem;
+}

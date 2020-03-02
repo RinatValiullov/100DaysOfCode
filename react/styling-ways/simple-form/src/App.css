@@ -7,10 +7,6 @@
   padding: 1rem;
 }
 
-.InputsWrapper {
-  margin-bottom: 1rem;
-}
-
 input:first-child {
   margin-bottom: inherit;
 }

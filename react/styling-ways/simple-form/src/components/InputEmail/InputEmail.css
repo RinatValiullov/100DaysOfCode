@@ -1,0 +1,8 @@
+.personEmail {
+  border: 1px solid #899;
+  border-radius: 5px;
+  color: #456;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  padding: 0.2rem;
+}

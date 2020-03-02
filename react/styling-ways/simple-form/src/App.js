@@ -8,14 +8,10 @@ function App() {
   return (
     <div className="App">
       <form className="Form">
-        <div className="InputsWrapper">
-          <InputName />
-          <br />
-          <InputEmail />
-        </div>
-        <div className="ButtonWrapper">
-          <Button />
-        </div>
+        <InputName nameClass="personName" />
+        <br />
+        <InputEmail nameClass="personEmail" />
+        <Button nameClass="submitButton" />
       </form>
     </div>
   );
