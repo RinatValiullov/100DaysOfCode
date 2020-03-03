@@ -1,14 +1,9 @@
 .App {
   text-align: center;
-  padding-top: 1rem;
 }
 
-.Form {
-  padding: 1rem;
-}
-
-input:first-child {
-  margin-bottom: inherit;
+.InputsWrapper {
+  margin-bottom: 1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -5,7 +5,7 @@ function InputName({ nameClass }) {
   return (
     <div className="InputsWrapper">
       <label
-        for="name"
+        htmlFor="name"
         style={{
           display: 'block',
           fontSize: '1rem',
