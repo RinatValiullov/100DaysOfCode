@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #456;
+}
+
+h2 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.content {
+  max-width: 80%;
+  margin: auto;
+}
+
+.menu h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.navigation {
+  background-color: rgb(198, 235, 245);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.section {
+  color: #fff;
+  height: 100vh;
+  scroll-margin-top: 1rem;
+}
+
+#a {
+  background-color: rgb(83, 104, 173);
+}
+#b {
+  background-color: rgb(58, 184, 47);
+}
+#c {
+  background-color: rgb(189, 50, 73);
+}
+#d {
+  background-color: rgb(12, 25, 66);
+}
+#e {
+  background-color: rgb(76, 107, 19);
+}
