@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Lobster+Two');
+
+.app {
+  width: 400px;
+  margin: 100px auto 0;
+  border: outset;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.image {
+  width: 400px;
+  height: 350px;
+  padding-top: 20px;
+}
+
+.Day-image {
+  background-color: #99ffff;
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 20px auto 0;
+}
+
+.Day-ball {
+  background-color: yellow;
+}
+
+.Night-image {
+  background-color: #1a1a1a;
+}
+
+.Night-ball {
+  background-color: lightgray;
+}
+
+button {
+  border-radius: 15px;
+  margin-top: 150px;
+  font: 20px 'Lobster Two';
+}
+
+button:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px grey;
+}
