@@ -70,6 +70,7 @@ Projects:
   - [simple-card](css/bem-learn/simple-card)
 - [multilevel-menu](css/multilevel-menu)
 - [sticky-navigation](css/sticky-navigation)
+- [masonry-layout](css/masonry-layout)
 
 [Back &#8679;](#100daysofcode)
 
