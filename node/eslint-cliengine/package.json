@@ -1,0 +1,19 @@
+{
+  "name": "eslint-cliengine",
+  "version": "1.0.0",
+  "description": "Learning Node.js API CLIEngine (underlying utility that runs the ESLint command line interface)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ESLint",
+    "CLIEngine",
+    "NodeAPI"
+  ],
+  "author": "4rontender",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}

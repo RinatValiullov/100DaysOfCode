@@ -174,6 +174,7 @@ Projects:
 - [server-babel](node/server-babel)
 - [hide-envvars](node/hide-envvars)
 - [handle-errors](node/handle-errors)
+- [eslint-cliengine](node/eslint-cliengine)
 
 [Back &#8679;](#100daysofcode)
 
