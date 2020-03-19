@@ -289,6 +289,7 @@ Projects:
 - [render-list](vue/render-list)
 - [event-click](vue/event-click)
 - [render-html](vue/render-html)
+- [employees-database](vue/employees-database)
 
 [Back &#8679;](#100daysofcode)
 
