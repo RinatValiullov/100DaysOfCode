@@ -9,6 +9,7 @@
         v-model="employee.name"
         @focus="clearStatus"
         @keypress="clearStatus"
+        ref="first"
       />
 
       <label for="employeeEmail">Employee Email</label>
@@ -50,6 +51,7 @@ export default {
       }
 
       this.$emit("add:employee", this.employee);
+      this.$refs.first.focus();
       this.employee = {
         name: "",
         email: ""
