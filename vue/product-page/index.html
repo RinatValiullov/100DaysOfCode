@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="https://unpkg.com/browse/vue@2.6.11/dist/vue.js"></script>
+    <div class="nav-bar"></div>
+
+    <div id="app">
+      <div class="product">
+        <div class="product-image">
+          <img v-bind:src="image" :alt="imageDescription" />
+        </div>
+
+        <div class="product-info">
+          <h1>{{ product }}</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@latest"></script>
     <script src="main.js"></script>
   </body>
 </html>
