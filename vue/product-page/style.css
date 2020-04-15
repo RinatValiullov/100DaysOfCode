@@ -87,3 +87,7 @@ textarea {
   color: #16c0b0;
   text-decoration: underline;
 }
+
+.thr {
+  text-decoration: line-through;
+}

@@ -10,23 +10,24 @@ const app = new Vue({
       {
         variantId: 3245,
         variantColor: 'green',
-        variantImage: './assets/image/vmSocks-green-onWhite.jpg'
+        variantImage: './assets/image/vmSocks-green-onWhite.jpg',
       },
       {
         variantId: 1045,
-        variantColor: 'yellow',
-        variantImage: './assets/image/vmSocks-blue-onWhite.jpg'
+        variantColor: 'blue',
+        variantImage: './assets/image/vmSocks-blue-onWhite.jpg',
       },
     ],
-    cart: 0
+    cart: 0,
+    outOfStockStyle: 'thr',
   },
   methods: {
     addToCart() {
-      this.cart++
+      this.cart++;
     },
     updateProduct(variantImage) {
       console.log(this);
-      this.image = variantImage
-    }
-  }
+      this.image = variantImage;
+    },
+  },
 });
