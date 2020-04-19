@@ -53,9 +53,12 @@ Vue.component('product', {
         Add to Cart
       </button>
 
-      <div class="cart">
-        <p>Cart({{ cart }})</p>
-      </div>
+      <button
+        v-on:click="deleteFromCart"
+      >
+        Delete from Cart
+      </button>
+
     </div>
   </div>
   `,
@@ -65,9 +68,12 @@ Vue.component('product', {
       product: 'Socks',
       selectedVariant: 0,
       imageDescription: 'socks',
-      details: ['80% cotton', '20% polyester', 'Gender-neutral'],
-      variants: [
-        {
+      details: [
+        '80% cotton',
+        '20% polyester',
+        'Gender-neutral'
+      ],
+      variants: [{
           variantId: 3245,
           variantColor: 'green',
           variantImage: './assets/image/vmSocks-green-onWhite.jpg',
@@ -80,14 +86,16 @@ Vue.component('product', {
           variantQuantity: 0,
         },
       ],
-      cart: 0,
       outOfStockStyle: 'thr',
-      onSale: false,
+      onSale: true,
     };
   },
   methods: {
     addToCart() {
-      this.cart++;
+      this.$emit('add-to-cart', this.variants[this.selectedVariant].variantId);
+    },
+    deleteFromCart() {
+      this.$emit('delete-from-cart', this.variants[this.selectedVariant].variantId);
     },
     updateProduct(index) {
       this.selectedVariant = index;
@@ -125,5 +133,19 @@ let app = new Vue({
   el: '#app',
   data: {
     premium: true,
+    cart: [],
   },
+  methods: {
+    updateCart(id) {
+      this.cart.push(id);
+    },
+    emptyCart(id) {
+      for (let index = this.cart.length - 1; index >= 0; index--) {
+        console.log(this.cart);
+        if(this.cart[index] === id) {
+          this.cart.splice(index, 1);
+        }
+      }
+    }
+  }
 });
