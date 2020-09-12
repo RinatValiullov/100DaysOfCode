@@ -206,6 +206,7 @@ Projects:
 - [styling-ways](react/styling-ways)
   - [simple-form](react/styling-ways/simple-form)
 - [context-example](react/context-example)
+- [another-todo](react/another-todo)
 
 [Back &#8679;](#100daysofcode)
 
