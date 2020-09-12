@@ -83,6 +83,11 @@ textarea {
   cursor: pointer;
 }
 
+.tabs {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 .activeTab {
   color: #16c0b0;
   text-decoration: underline;
