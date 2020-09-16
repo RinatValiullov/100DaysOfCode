@@ -1,0 +1,29 @@
+body {
+  align-items: center;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  height: 30px;
+  width: 300px;
+}
+
+.progress-done {
+  align-items: center;
+  display: flex;
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  border-radius: 20px;
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  color: #e9e9e9;
+  justify-content: center;
+  height: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  width: 0;
+}
