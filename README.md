@@ -138,6 +138,7 @@ Projects:
 - [generator-iterator](javascript/generator-iterator)
 - [composition-inheritance](javascript/composition-inheritance)
 - [split-text](javascript/split-text)
+- [custom-progress-bar](javascript/custom-progress-bar)
 
 [Back &#8679;](#100daysofcode)
 
