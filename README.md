@@ -139,6 +139,7 @@ Projects:
 - [composition-inheritance](javascript/composition-inheritance)
 - [split-text](javascript/split-text)
 - [custom-progress-bar](javascript/custom-progress-bar)
+- [jetbrains-academy](javascript/jetbrains-academy)
 
 [Back &#8679;](#100daysofcode)
 
