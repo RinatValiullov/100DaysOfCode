@@ -8,6 +8,9 @@
     "test": "ava"
   },
   "ava": {
+    "files": [
+      "!dist/**/*.js"
+    ],
     "require": [
       "@babel/register",
       "@babel/polyfill"
