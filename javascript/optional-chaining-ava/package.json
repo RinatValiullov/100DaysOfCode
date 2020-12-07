@@ -1,0 +1,30 @@
+{
+  "name": "optional-chaining-ava",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel optional-chaining.test.js --out-file result.js",
+    "test": "ava"
+  },
+  "ava": {
+    "require": [
+      "@babel/register",
+      "@babel/polyfill"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-stage-0": "^7.8.3",
+    "@babel/register": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "ava": "^3.13.0"
+  }
+}

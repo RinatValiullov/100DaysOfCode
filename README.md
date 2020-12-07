@@ -141,6 +141,7 @@ Projects:
 - [custom-progress-bar](javascript/custom-progress-bar)
 - [jetbrains-academy](javascript/jetbrains-academy)
 - [checktime-bubblesort](javascript/checktime-bubblesort)
+- [optional-chaining-ava](javascript/optional-chaining-ava)
 
 [Back &#8679;](#100daysofcode)
 
