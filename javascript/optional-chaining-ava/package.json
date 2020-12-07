@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel optional-chaining.test.js --out-file result.js",
+    "build": "babel src --out-dir dist",
     "test": "ava"
   },
   "ava": {
@@ -22,7 +22,6 @@
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.7",
-    "@babel/preset-stage-0": "^7.8.3",
     "@babel/register": "^7.12.1",
     "@babel/runtime": "^7.12.5",
     "ava": "^3.13.0"
