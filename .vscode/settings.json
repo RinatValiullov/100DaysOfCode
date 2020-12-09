@@ -1,6 +1,5 @@
 {
-    "git.ignoreLimitWarning": true,
-    "editor.formatOnSave": true,
-    "dimmer.enabled": false,
-    "python.pythonPath": "C:\\Users\\4rontender\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnSave": true,
+  "python.pythonPath": "C:\\Python38\\python.exe"
 }
