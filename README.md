@@ -1,6 +1,7 @@
 # 100DaysOfCode
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRinatValiullov%2F100DaysOfCode.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FRinatValiullov%2F100DaysOfCode?ref=badge_shield)
 
 ## My 100DaysOfCode process of learning web development
 
@@ -325,3 +326,7 @@ Projects:
 
 Thanks for article to [**Nick Scialli**](https://twitter.com/nas5w) - [A Timeboxed, Day-by-Day #100DaysOfCode Front-End
 Development Curriculum](https://levelup.gitconnected.com/a-100daysofcode-timeboxed-front-end-development-curriculum-cb4b6c2081c2)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRinatValiullov%2F100DaysOfCode.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FRinatValiullov%2F100DaysOfCode?ref=badge_large)
