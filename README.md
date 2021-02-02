@@ -143,7 +143,7 @@ Projects:
 - [jetbrains-academy](javascript/jetbrains-academy)
 - [checktime-bubblesort](javascript/checktime-bubblesort)
 - [optional-chaining-ava](javascript/optional-chaining-ava)
-- [hamburger-button](css/hamburger-button)
+- [hamburger-button](javascript/hamburger-button)
 
 [Back &#8679;](#100daysofcode)
 
