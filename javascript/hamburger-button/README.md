@@ -1,3 +1,3 @@
-## Creaint *hamburger-button* project
+## Creating *hamburger-button* project
 
 ### Creating simple hamburger button with html and css only
