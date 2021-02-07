@@ -144,6 +144,7 @@ Projects:
 - [checktime-bubblesort](javascript/checktime-bubblesort)
 - [optional-chaining-ava](javascript/optional-chaining-ava)
 - [hamburger-button](javascript/hamburger-button)
+- [toast-notification](javascript/toast-notification)
 
 [Back &#8679;](#100daysofcode)
 
