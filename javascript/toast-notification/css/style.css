@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: serif;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  background-color: #67d;
+  border: none;
+  color: white;
+  padding: 0.6em 0.8em;
+}
+
+.container {
+  bottom: 10px;
+  overflow: auto;
+  position: fixed;
+  right: 10px;
+  top: 0;
+}
+
+.toast {
+  background-color: aqua;
+  border-radius: 5px;
+  color: rgb(76, 69, 69);
+  margin: 1em;
+  padding: 2em;
+}
