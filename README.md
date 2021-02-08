@@ -145,6 +145,7 @@ Projects:
 - [optional-chaining-ava](javascript/optional-chaining-ava)
 - [hamburger-button](javascript/hamburger-button)
 - [toast-notification](javascript/toast-notification)
+- [autowrite-text](javascript/autowrite-text)
 
 [Back &#8679;](#100daysofcode)
 
