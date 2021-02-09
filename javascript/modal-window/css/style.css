@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: serif;
+  font-size: 1.2em;
+  justify-content: center;
+  line-height: 1.2;
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  background-color: #67d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 0.6em 0.8em;
+}
+
+.popup-container {
+  align-items: center;
+  background-color: rgba(150, 150, 150, 0.7);
+  bottom: 0;
+  color: rgb(56, 64, 104);
+  display: none;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.popup-container.active {
+  display: flex;
+}
+
+.popup {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 2em;
+  position: relative;
+  width: 400px;
+}
+
+.close {
+  background-color: rgb(56, 64, 104, 0.2);
+  border-top-right-radius: inherit;
+  color: rgb(56, 64, 104);
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
