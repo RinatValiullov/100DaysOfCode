@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.2;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.heart {
+  animation: fall 3s linear forwards;
+  color: #f43;
+  font-size: 3em;
+  position: fixed;
+  top: -1vh;
+  transform: translateY(0);
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}

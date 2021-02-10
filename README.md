@@ -147,6 +147,7 @@ Projects:
 - [toast-notification](javascript/toast-notification)
 - [autowrite-text](javascript/autowrite-text)
 - [modal-window](javascript/modal-window)
+- [heart-rain](javascript/heart-rain)
 
 [Back &#8679;](#100daysofcode)
 
