@@ -148,6 +148,7 @@ Projects:
 - [autowrite-text](javascript/autowrite-text)
 - [modal-window](javascript/modal-window)
 - [heart-rain](javascript/heart-rain)
+- [background-changer](javascript/background-changer)
 
 [Back &#8679;](#100daysofcode)
 
