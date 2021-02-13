@@ -149,6 +149,7 @@ Projects:
 - [modal-window](javascript/modal-window)
 - [heart-rain](javascript/heart-rain)
 - [background-changer](javascript/background-changer)
+- [dark-mode](javascript/dark-mode)
 
 [Back &#8679;](#100daysofcode)
 
