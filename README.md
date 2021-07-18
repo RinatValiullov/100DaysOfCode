@@ -151,6 +151,7 @@ Projects:
 - [background-changer](javascript/background-changer)
 - [dark-mode](javascript/dark-mode)
 - [carousel](javascript/carousel)
+- [sound-board](javascript/sound-board)
 
 [Back &#8679;](#100daysofcode)
 
