@@ -1,3 +1,3 @@
-## Creating *simple-card* prject
+## Create *simple-card* prject
 
-### Lean BEM methodology basics
+### Learn BEM methodology (basics)

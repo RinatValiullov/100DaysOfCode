@@ -1,3 +1,3 @@
-## Creating a *frosted-glass*
+## Create *frosted-glass* project
 
-### Understanding css filters (blur)
+### Learn css filters (blur)

@@ -1,1 +1,1 @@
-## Creating a *hamburger icon* in different ways
+## Create a *hamburger icon* project

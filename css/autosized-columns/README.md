@@ -1,3 +1,3 @@
-## Creating *autosized-columns* project
+## Create *autosized-columns* project
 
-### Learning `Grid Layout` in CSS
+### Learn `Grid Layout` CSS API

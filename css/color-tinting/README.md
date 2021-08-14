@@ -1,3 +1,3 @@
-## Creating a *color-tinting* in different ways
+## Create *color-tinting* project
 
-### Understanding css filters
+### Learn css filters

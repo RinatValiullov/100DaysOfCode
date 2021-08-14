@@ -1,3 +1,3 @@
-## Creating irregular-shadows
+## Create *irregular-shadows* project
 
-### Understanding `box-shadow`
+### Learn `box-shadow` property

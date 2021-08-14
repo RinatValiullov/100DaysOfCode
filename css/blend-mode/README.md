@@ -1,3 +1,3 @@
-## creating blend-mode project
+## Create *blend-mode* project
 
-### Understanding `mix-blend-mode` property
+### Learn `mix-blend-mode` property
