@@ -1,3 +1,3 @@
-## Creating *just-pagination* project
+## Create *just-pagination* project
 
 ### Simple pagination (only UI)
