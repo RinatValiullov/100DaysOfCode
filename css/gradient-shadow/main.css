@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  align-items: center;
+  background-color: rgb(12 25 39 / 90%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  box-sizing: inherit;
+  background-image: url('./ice-home.jpg');
+  background-image: url('./ice-home.webp');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  height: 400px;
+  position: relative;
+  width: 400px;
+}
+
+.card::before {
+  background: linear-gradient(90deg, #338ea0, #5678d8, #345fd7);
+  border-radius: 50%;
+  content: '';
+  filter: blur(30px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
