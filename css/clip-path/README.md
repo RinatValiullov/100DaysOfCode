@@ -1,1 +1,1 @@
-## Creating clip-path project
+## Create *clip-path* project
