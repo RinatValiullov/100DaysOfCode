@@ -153,6 +153,7 @@ Projects:
 - [dark-mode](javascript/dark-mode)
 - [carousel](javascript/carousel)
 - [sound-board](javascript/sound-board)
+- [todo-app](javascript/todo-app)
 
 [Back &#8679;](#100daysofcode)
 

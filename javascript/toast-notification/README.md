@@ -1,3 +1,3 @@
-## Creating *toast-notification* project
+## Create *toast-notification* project
 
-### Creating toast notifiation
+### Learn how to make simple toast notifications
