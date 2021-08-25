@@ -154,6 +154,7 @@ Projects:
 - [carousel](javascript/carousel)
 - [sound-board](javascript/sound-board)
 - [todo-app](javascript/todo-app)
+- [notes](javascript/notes)
 
 [Back &#8679;](#100daysofcode)
 
