@@ -11,7 +11,7 @@
 - Days 9–16: [CSS](#CSS)
 - Days 17–24: [JavaScript](#JavaScript)
 - Days 25–27: [jQuery](#jQuery)
-- Days 28–33: Responsive Web Design
+- Days 28–33: [Responsive Web Design](#Responsive-Web-Design)
 - Days 34–36: Accessibility
 - Days 37–39: [Git](#Git)
 - Days 40–44: [Node and NPM](#Node-and-NPM)
