@@ -172,6 +172,14 @@ Projects:
 
 [Back &#8679;](#100daysofcode)
 
+### [Responsive Web Design](RWD)
+
+Projects:
+
+- [accordion](RWD/accordion)
+
+[Back &#8679;](#100daysofcode)
+
 ### [Git](Git)
 
 Projects:
