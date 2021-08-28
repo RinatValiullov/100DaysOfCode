@@ -1,0 +1,25 @@
+@media screen and (min-width: 576px) {
+  .accordion {
+    &__container {
+      border-radius: 0.75rem;
+      justify-self: center;
+      padding: 2.5rem;
+      width: 550px;
+    }
+    &__header {
+      padding: 1.5rem;
+    }
+    &__title {
+      padding-right: 3.5rem;
+    }
+    &__description {
+      padding: 0 4rem 1.25rem 3.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .container {
+    margin: auto;
+  }
+}

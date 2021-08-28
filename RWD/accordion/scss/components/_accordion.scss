@@ -1,0 +1,108 @@
+.accordion {
+  align-content: center;
+  display: grid;
+  height: 100vh;
+
+  &__container {
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 12px 32px hsla(0, 0%, 20%, 0.1);
+    display: grid;
+    padding: 2rem 1rem;
+    row-gap: 0.75rem;
+  }
+
+  &__title {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: 400;
+    margin-top: 0.15rem;
+    transition: 0.2s;
+  }
+
+  &__header {
+    column-gap: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+  }
+
+  &__description {
+    font-size: var(--smaller-font-size);
+    padding: 0 1.25rem 1.25rem 3rem;
+  }
+
+  &__icon {
+    color: var(--title-color);
+    font-size: 1.5rem;
+    height: max-content;
+    transition: 0.3s;
+  }
+
+  &__item {
+    background-color: var(--container-color);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 6px hsla(0, 0%, 15%, 0.1);
+    position: relative;
+    transition: all 0.25s ease;
+
+    &::after {
+      background-color: var(--first-color);
+      border-radius: 0.25rem 0 0 0.25rem;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 5px;
+    }
+
+    &:nth-child(1) {
+      background-color: hsl(28, 100, 97);
+
+      &::after {
+        background-color: hsl(28, 100, 77);
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: hsl(240, 100, 97);
+
+      &::after {
+        background-color: hsl(240, 100, 77);
+      }
+    }
+
+    &:nth-child(3) {
+      background-color: hsl(348, 100, 97);
+
+      &::after {
+        background-color: hsl(348, 100, 77);
+      }
+    }
+
+    &:nth-child(4) {
+      background-color: hsl(200, 100, 97);
+
+      &::after {
+        background-color: hsl(200, 100, 77);
+      }
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    height: 0;
+    transition: all 0.25s ease;
+  }
+}
+
+.accordion-open {
+  & .accordion__icon {
+    transform: rotate(45deg);
+  }
+
+  & .accordion__title {
+    font-weight: 600;
+  }
+}
