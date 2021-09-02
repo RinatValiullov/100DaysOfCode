@@ -1,13 +1,32 @@
 import { Observable } from "rxjs";
 
 const search$ = new Observable((observer) => {
-  console.log("Start in observable");
-  observer.next(1);
-  observer.next(2);
-  observer.next(3);
-  console.log("End in observable");
+  const search = document.querySelector("#search");
+
+  if (!search) {
+    observer.error("Element not found");
+    return;
+  }
+
+  search.addEventListener("input", (event) => {
+    observer.next(event.target.value);
+    // observer.complete(); // After this method subscriber will not work
+  });
 });
 
-console.log("Start in subscribe");
+// search$.subscribe({
+//   next: (value) => {
+//     console.log(value);
+//   },
+//   error: (err) => {
+//     console.log(err);
+//   },
+//   complete: () => {
+//     console.log("Event is done");
+//   }
+// });
 
-console.log("End in subscribe");
+search$.subscribe(
+  (value) => console.log(value),
+  (error) => console.log(error)
+);
