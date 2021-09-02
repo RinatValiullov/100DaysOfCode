@@ -1,0 +1,18 @@
+{
+  "name": "search-app",
+  "version": "1.0.0",
+  "description": "Learn RxJS",
+  "private": "true",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^7.3.0",
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0"
+  }
+}

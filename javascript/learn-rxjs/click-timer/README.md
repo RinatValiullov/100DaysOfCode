@@ -1,3 +1,3 @@
-## Creating *click-timer* project
+## Create *click-timer* project
 
-### Learning RxJS basics (`timer`, `pipe`, `fromEvent`)
+### Learn RxJS basics (`timer`, `pipe`, `fromEvent`)
