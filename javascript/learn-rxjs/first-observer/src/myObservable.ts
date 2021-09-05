@@ -24,4 +24,4 @@ source$.subscribe({
   next: value => console.log(`value: ${value}`),
   error: (error) => console.error(`error: ${error}`),
   complete: () => console.log(`complete`)
-})
+});
