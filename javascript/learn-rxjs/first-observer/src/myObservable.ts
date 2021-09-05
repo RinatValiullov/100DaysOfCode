@@ -4,20 +4,24 @@ import { scan, map, take } from 'rxjs/operators'
 const numbers = [1, 5, 6]
 let source$ = from(numbers);
 
-class MyObserver implements Observer<number> {
+// class MyObserver implements Observer<number> {
 
-  next(value) {
-    console.log(`value: ${value}`)
-  }
+//   next(value) {
+//     console.log(`value: ${value}`)
+//   }
 
-  error(err) {
-    console.error(`error: ${err}`)
-  }
+//   error(err) {
+//     console.error(`error: ${err}`)
+//   }
 
-  complete() {
-    console.info(`complete`)
-  }
+//   complete() {
+//     console.info(`complete`)
+//   }
 
-}
+// }
 
-source$.subscribe(new MyObserver())
+source$.subscribe({
+  next: value => console.log(`value: ${value}`),
+  error: (error) => console.error(`error: ${error}`),
+  complete: () => console.log(`complete`)
+})
