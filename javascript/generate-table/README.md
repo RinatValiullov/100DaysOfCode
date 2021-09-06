@@ -1,4 +1,4 @@
-## Generating the table with javascript
+## Generate the table with javascript
 
 There is the array of objects. Generate the table with data containing these objects
 
