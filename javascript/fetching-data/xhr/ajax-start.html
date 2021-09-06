@@ -59,7 +59,35 @@
 
   <pre></pre>
 
-  <script></script>
+  <script>
+    const verseChoose = document.querySelector('select');
+    const poemDisplay = document.querySelector('pre');
+
+    verseChoose.onchange = function () {
+      const verse = verseChoose.value;
+      updteDisplay(verse);
+    }
+
+    const updteDisplay = (verse) => {
+      verse = verse.replace(' ', '');
+      verse = verse.toLowerCase();
+      let url = `../data/${verse}.txt`;
+
+      let request = new XMLHttpRequest();
+
+      request.open('GET', url);
+      request.responseType = 'text';
+
+      request.onload = function () {
+        poemDisplay.textContent = request.response;
+      }
+
+      request.send();
+    }
+
+    updteDisplay('Verse 1');
+    verseChoose.value = 'Verse 1';
+  </script>
 </body>
 
 </html>
