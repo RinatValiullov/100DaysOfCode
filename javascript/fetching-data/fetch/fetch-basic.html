@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Basic XHR example</title>
+  <title>Ajax starting point</title>
 
   <style>
     html,
@@ -43,7 +43,7 @@
 </head>
 
 <body>
-  <h1>Basic XHR example</h1>
+  <h1>Fetch example</h1>
 
   <form>
     <label for="verse-choose">Choose a verse</label>
@@ -57,9 +57,7 @@
 
   <h2>The Conqueror Worm, <em>Edgar Allen Poe, 1843</em></h2>
 
-  <pre>
-
-    </pre>
+  <pre></pre>
 
   <script>
     const verseChoose = document.querySelector('select');
@@ -67,26 +65,23 @@
 
     verseChoose.onchange = function () {
       const verse = verseChoose.value;
-      updateDisplay(verse);
-    };
+      updteDisplay(verse);
+    }
 
-    function updateDisplay(verse) {
-      verse = verse.replace(" ", "");
+    const updteDisplay = (verse) => {
+      verse = verse.replace(' ', '');
       verse = verse.toLowerCase();
-      let url = verse + '.txt';
+      let url = `../data/${verse}.txt`;
 
-      let request = new XMLHttpRequest();
-      request.open('GET', url);
-      request.responseType = 'text';
+      fetch(url).then(response => {
+        response.text().then(text => {
+          poemDisplay.textContent = text;
+        })
+      })
 
-      request.onload = function () {
-        poemDisplay.textContent = request.response;
-      };
+    }
 
-      request.send();
-    };
-
-    updateDisplay('Verse 1');
+    updteDisplay('Verse 1');
     verseChoose.value = 'Verse 1';
   </script>
 </body>
