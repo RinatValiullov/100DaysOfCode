@@ -157,6 +157,7 @@ Projects:
 - [sound-board](javascript/sound-board)
 - [todo-app](javascript/todo-app)
 - [notes](javascript/notes)
+- [fetching-data](javascript/fetching-data)
 
 [Back &#8679;](#100daysofcode)
 
