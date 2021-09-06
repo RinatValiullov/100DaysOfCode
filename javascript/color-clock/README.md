@@ -1,1 +1,1 @@
-## Creating dynamic clock with dynamic changing background color
+## Create dynamic clock with dynamic changing background color
