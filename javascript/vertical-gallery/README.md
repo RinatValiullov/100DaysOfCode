@@ -1,3 +1,3 @@
 ## Create *vertical-gallery* project
 
-### Simple vertical gallery with expanding effect on hover
+### Simple vertical gallery with expanding effect on click
