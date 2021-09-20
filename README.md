@@ -158,6 +158,7 @@ Projects:
 - [todo-app](javascript/todo-app)
 - [notes](javascript/notes)
 - [fetching-data](javascript/fetching-data)
+- [vertical-gallery](javascript/vertical-gallery)
 
 [Back &#8679;](#100daysofcode)
 

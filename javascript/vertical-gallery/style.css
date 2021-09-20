@@ -1,0 +1,100 @@
+/* Font Mulish */
+@font-face {
+  font-family: 'Mulish';
+  src: url('fonts/Mulish-SemiBold.eot');
+  src: url('fonts/Mulish-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Mulish-SemiBold.woff2') format('woff2'),
+    url('fonts/Mulish-SemiBold.woff') format('woff'),
+    url('fonts/Mulish-SemiBold.ttf') format('truetype'),
+    url('fonts/Mulish-SemiBold.svg#Mulish-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('fonts/Mulish-Regular.eot');
+  src: url('fonts/Mulish-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Mulish-Regular.woff2') format('woff2'),
+    url('fonts/Mulish-Regular.woff') format('woff'),
+    url('fonts/Mulish-Regular.ttf') format('truetype'),
+    url('fonts/Mulish-Regular.svg#Mulish-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('fonts/Mulish-Medium.eot');
+  src: url('fonts/Mulish-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Mulish-Medium.woff2') format('woff2'),
+    url('fonts/Mulish-Medium.woff') format('woff'),
+    url('fonts/Mulish-Medium.ttf') format('truetype'),
+    url('fonts/Mulish-Medium.svg#Mulish-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  background-color: #456;
+  display: flex;
+  font-family: 'Mulish', sans-serif;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.slide {
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+  height: 80vh;
+  margin: 10px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide__picture {
+  border-radius: 20px;
+  height: inherit;
+}
+
+.slide__title {
+  bottom: 20px;
+  font-size: 22px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  text-shadow: 3px 3px 3px black;
+}
+
+.slide.active {
+  flex: 5;
+}
+
+.slide.active .slide__title {
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.4s;
+}
