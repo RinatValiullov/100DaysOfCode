@@ -1,3 +1,3 @@
-## Creating *fibonacci-memoization* project
+## Create *fibonacci-memoization* project
 
-Simple function calculating fibonacci sequence, but with some improvement as memoization
+### Simple function calculating fibonacci sequence, but with some improvement as memoization
