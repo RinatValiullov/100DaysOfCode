@@ -159,6 +159,7 @@ Projects:
 - [notes](javascript/notes)
 - [fetching-data](javascript/fetching-data)
 - [vertical-gallery](javascript/vertical-gallery)
+- [simple-trello](javascript/simple-trello)
 
 [Back &#8679;](#100daysofcode)
 
