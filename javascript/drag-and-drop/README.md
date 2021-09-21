@@ -1,3 +1,3 @@
 ## Create *drag-and-drop* project
 
-### Understan Drag'n'Drop API
+### Understand Drag'n'Drop API
