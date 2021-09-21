@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.header {
+  align-items: baseline;
+  background-color: rgb(204 54 54);
+  display: flex;
+  gap: 1.2rem;
+  padding: 0.8rem;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #eee;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0;
+  text-decoration: none;
+}
+
+.dropdown.active>.link,
+.link:hover {
+  color: #d0ff5f;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  padding: 0.7rem;
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  transition: opacity 0.15s ease-in-out, transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.dropdown.active>.link+.dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+
+.login-form>input {
+  margin-bottom: 0.5rem;
+}

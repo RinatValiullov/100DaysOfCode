@@ -160,6 +160,7 @@ Projects:
 - [fetching-data](javascript/fetching-data)
 - [vertical-gallery](javascript/vertical-gallery)
 - [simple-trello](javascript/simple-trello)
+- [dropdown-menu](javascript/dropdown-menu)
 
 [Back &#8679;](#100daysofcode)
 

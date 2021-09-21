@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="header">
+
+    <div class="dropdown" data-dropdown>
+      <button class="link" data-dropdown-button>Materials</button>
+
+      <div class="dropdown-menu info-grid">
+
+        <div>
+          <div class="dropdown-heading">Tutorials</div>
+          <div class="dropdown-links">
+            <a href="#" class="link">All</a>
+            <a href="#" class="link">Latest</a>
+            <a href="#" class="link">Popular</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="dropdown-heading">Courses</div>
+          <div class="dropdown-links">
+            <a href="#" class="link">CSS</a>
+            <a href="#" class="link">JavaScript</a>
+            <a href="#" class="link">Angular</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="dropdown-heading">Blog</div>
+          <div class="dropdown-links">
+            <a href="#" class="link">All</a>
+            <a href="#" class="link">Latest</a>
+            <a href="#" class="link">Popular</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="dropdown-heading">Blog</div>
+          <div class="dropdown-links">
+            <a href="#" class="link">All</a>
+            <a href="#" class="link">Latest</a>
+            <a href="#" class="link">Popular</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <a href="#" class="link">About</a>
+
+
+    <div class="dropdown" data-dropdown>
+      <button class="link" data-dropdown-button>Login Form</button>
+      <div class="dropdown-menu">
+        <form class="login-form">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="code.js"></script>
+</body>
+
+</html>
