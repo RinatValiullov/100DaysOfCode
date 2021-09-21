@@ -19,6 +19,7 @@ const slidesPlugin = (activeSlide = 0) => {
     slide.addEventListener("click", (ev) => {
       clearActiveClass();
       if (!slide.classList.contains("active")) {
+        // unnecessary check?
         slide.classList.add("active");
       }
     });
