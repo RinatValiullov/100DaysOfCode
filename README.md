@@ -161,6 +161,7 @@ Projects:
 - [vertical-gallery](javascript/vertical-gallery)
 - [simple-trello](javascript/simple-trello)
 - [dropdown-menu](javascript/dropdown-menu)
+- [vertical-slider](javascript/vertical-slider)
 
 [Back &#8679;](#100daysofcode)
 
