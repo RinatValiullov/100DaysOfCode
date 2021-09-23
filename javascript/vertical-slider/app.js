@@ -6,7 +6,6 @@ const mainSlide = document.querySelector(".main-slide");
 const slidesCount = mainSlide.childElementCount;
 
 sidebar.style.top = `-${(slidesCount - 1) * 100}vh`;
-// sidebar.style.top = 0;
 
 let activeSlideIndex = 0;
 
@@ -38,6 +37,14 @@ const changeSlide = (direction) => {
     activeSlideIndex * heightContainer
   }px)`;
 };
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowUp") {
+    changeSlide("up");
+  } else if (event.key === "ArrowDown") {
+    changeSlide("down");
+  }
+});
 
 upButton.addEventListener("click", () => {
   changeSlide("up");
