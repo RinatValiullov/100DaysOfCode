@@ -13,13 +13,15 @@ const getRandomColor = () => {
   return colors[randomIndex];
 };
 
-const setColor = (element) => {
+const setColor = (event) => {
+  const element = event.target;
   const randomColor = getRandomColor();
   element.style.backgroundColor = randomColor;
   element.style.boxShadow = `0px 0px 2px ${randomColor}, 0 0 10px ${randomColor}`;
 };
 
-const removeColor = (element) => {
+const removeColor = (event) => {
+  const element = event.target;
   element.style.backgroundColor = "#1d1d1d";
   element.style.boxShadow = `0 0 2px #000`;
 };
@@ -28,13 +30,9 @@ for (let index = 0; index < SQUARES_NUMBER; index++) {
   const square = document.createElement("DIV");
   square.classList.add("square");
 
-  square.addEventListener("mouseover", (event) => {
-    setColor(square);
-  });
+  square.addEventListener("mouseover", setColor);
 
-  square.addEventListener("mouseleave", (event) => {
-    removeColor(square);
-  });
+  square.addEventListener("mouseleave", removeColor);
 
   board.append(square);
 }
