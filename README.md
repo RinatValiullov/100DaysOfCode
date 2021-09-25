@@ -162,6 +162,7 @@ Projects:
 - [simple-trello](javascript/simple-trello)
 - [dropdown-menu](javascript/dropdown-menu)
 - [vertical-slider](javascript/vertical-slider)
+- [hover-board](javascript/hover-board)
 
 [Back &#8679;](#100daysofcode)
 
