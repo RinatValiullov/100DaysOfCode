@@ -133,6 +133,7 @@ Projects:
   - [use-scheduler](javascript/learn-rxjs/use-scheduler)
   - [search-app](javascript/learn-rxjs/search-app)
   - [first-observer](javascript/learn-rxjs/first-observer)
+  - [emit-async](javascript/learn-rxjs/emit-async)
 - [learn-promises](javascript/learn-promises)
   - [promise-all](javascript/learn-promises/promise-all)
   - [fetch-render](javascript/learn-promises/fetch-render)
