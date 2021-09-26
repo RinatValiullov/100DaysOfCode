@@ -26,7 +26,9 @@ const search$ = new Observable((observer) => {
 //   }
 // });
 
-search$.subscribe(
-  (value) => console.log(value),
-  (error) => console.log(error)
-);
+const searchObserver = {
+  next: (value) => console.log(value),
+  error: (error) => console.log(error)
+};
+
+search$.subscribe(searchObserver);
