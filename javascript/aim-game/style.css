@@ -14,8 +14,8 @@ body {
   color: #fff;
   font-family: 'Khula', sans-serif;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -33,19 +33,19 @@ a:hover {
 }
 
 h1 {
-  line-height: 1.4;
   font-size: 4rem;
+  line-height: 1.4;
 }
 
 .screen {
+  align-items: center;
+  background: linear-gradient(90deg, #29323C 0%, #485563 100%);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  width: 100vw;
+  justify-content: center;
   transition: margin 0.5s ease-out;
-  background: linear-gradient(90deg, #29323C 0%, #485563 100%);
+  width: 100vw;
 }
 
 .screen.up {
@@ -70,8 +70,8 @@ h1 {
   color: #fff;
   cursor: pointer;
   font-family: inherit;
-  padding: .5rem 1rem;
   font-size: 1.5rem;
+  padding: .5rem 1rem;
 }
 
 .time-btn:hover {
