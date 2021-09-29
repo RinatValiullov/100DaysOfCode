@@ -1,0 +1,27 @@
+{
+  "name": "template-dom",
+  "version": "1.0.0",
+  "description": "Simple template engine",
+  "main": "tmpl.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "watch": "webpack --watch"
+  },
+  "keywords": [
+    "template",
+    "engine",
+    "javascript",
+    "dom"
+  ],
+  "author": "4rontender <4rontender@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/cli": "^0.1.51",
+    "@swc/core": "^1.2.92",
+    "swc-loader": "^0.1.15",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  }
+}

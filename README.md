@@ -165,6 +165,7 @@ Projects:
 - [vertical-slider](javascript/vertical-slider)
 - [hover-board](javascript/hover-board)
 - [aim-game](javascript/aim-game)
+- [template-DOM](javascript/template-DOM)
 
 [Back &#8679;](#100daysofcode)
 
