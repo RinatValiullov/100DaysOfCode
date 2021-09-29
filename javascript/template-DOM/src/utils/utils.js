@@ -31,4 +31,7 @@ const renderButton = () => {
   return wrapper__button;
 };
 
-export { renderChat, renderButton };
+const list = renderChat();
+const button = renderButton();
+
+export { list, button };
