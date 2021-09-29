@@ -19,6 +19,8 @@
   "devDependencies": {
     "@swc/cli": "^0.1.51",
     "@swc/core": "^1.2.92",
+    "css-loader": "^6.3.0",
+    "style-loader": "^3.3.0",
     "swc-loader": "^0.1.15",
     "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0",

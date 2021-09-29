@@ -1,0 +1,52 @@
+:root {
+  --bg_btn: #456;
+  --bg_btn__hover: #2e4a66;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.chat__list {
+  margin-bottom: 20px;
+}
+
+.chat__item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.chat__button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #eee;
+  background: var(--bg_btn, #456);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.chat__button:hover {
+  background: var(--bg_btn__hover);
+}

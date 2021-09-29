@@ -1,3 +1,8 @@
-import { greet } from "./utils/utils.js";
+import "./style.css";
+import { renderChat, renderButton } from "./utils/utils.js";
 
-console.log(greet("Rinat"));
+const app = document.querySelector("#app");
+app.className = "chat__wrapper";
+
+app.appendChild(renderChat());
+app.appendChild(renderButton());
