@@ -1,8 +1,9 @@
 import "./style.css";
-import { list, button } from "./utils/utils.js";
+import { chatsMarkup } from "./utils/template";
+
+console.log(chatsMarkup);
 
 const app = document.querySelector("#app");
 app.className = "chat__wrapper";
 
-app.appendChild(list);
-app.appendChild(button);
+app.innerHTML = chatsMarkup;

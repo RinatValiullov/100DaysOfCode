@@ -1,6 +1,6 @@
 :root {
-  --bg_btn: #456;
-  --bg_btn__hover: #2e4a66;
+  --bg_btn: #c7d0d9;
+  --bg_btn__hover: #51789e;
 }
 
 html {
@@ -37,16 +37,18 @@ ul {
 }
 
 .chat__button {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: #eee;
   background: var(--bg_btn, #456);
-  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  color: #565272;
   cursor: pointer;
+  font-size: inherit;
+  padding: 10px 20px;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 
 .chat__button:hover {
   background: var(--bg_btn__hover);
+  color: #d0cde0;
 }
