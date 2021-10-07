@@ -134,6 +134,7 @@ Projects:
   - [search-app](javascript/learn-rxjs/search-app)
   - [first-observer](javascript/learn-rxjs/first-observer)
   - [emit-async](javascript/learn-rxjs/emit-async)
+  - [understand-observables](javascript/learn-rxjs/understand-observables)
 - [learn-promises](javascript/learn-promises)
   - [promise-all](javascript/learn-promises/promise-all)
   - [fetch-render](javascript/learn-promises/fetch-render)
