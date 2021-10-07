@@ -2,6 +2,8 @@ import { fromEvent, pipe } from "rxjs";
 import { map, filter } from "rxjs/operators";
 
 const init = () => {
+  let cursorPos = document.querySelector('.cursor-position') as HTMLDivElement;
+
   let source$ = fromEvent(document, "mousemove");
 
   const cursorPosition = source$.pipe(
@@ -14,8 +16,13 @@ const init = () => {
     filter(value => value.x < 500)
   );
 
+  const onNext = (value: { x: number, y: number }) => {
+    cursorPos.style.left = `${value.x}px`;
+    cursorPos.style.top = `${value.y}px`;
+  };
+
   const source$Observer = {
-    next: (value: { x: number, y: number }) => console.log(value),
+    next: onNext,
     error: (err: string) => console.error(err),
     complete: () => console.log("Complete")
   };
