@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  watch: true,
+  // watch: true,
   devtool: "eval-cheap-source-map",
   entry: "./src/main.ts",
   output: {
@@ -20,5 +20,12 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
+  },
+  devServer: {
+    port: 4327,
+    static: {
+      directory: path.join(__dirname, "dist"),
+      watch: true
+    }
   }
 };
