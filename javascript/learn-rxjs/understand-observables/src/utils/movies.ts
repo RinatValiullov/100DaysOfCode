@@ -1,4 +1,4 @@
-import { fromEvent, Observable } from "rxjs";
+import { fromEvent, Observable, from, defer } from "rxjs";
 import { mergeMap, retryWhen, delay, scan, takeWhile } from "rxjs/operators";
 import { Movie } from "./Movie";
 
@@ -33,6 +33,7 @@ const getMovies = () => {
 
   const click$ = fromEvent(getBtn, 'click');
 
+  // with `XMLHttpRequest`
   const load = (url: string) => {
 
     return new Observable(subscriber => {
@@ -57,10 +58,22 @@ const getMovies = () => {
 
   };
 
+  // with `fetch`
+  const loadWithFetch = (url: string) => {
+
+    return defer(() => {
+      return from(
+        fetch(url).then(response => response.json())
+      );
+    });
+
+  };
 
   const getMovies = click$.pipe(
-    mergeMap(e => load(moviesUrl))
+    mergeMap(e => loadWithFetch(moviesUrl))
   );
+
+  // loadWithFetch(moviesUrl).subscribe(renderMovies)
 
   const click$Observer = {
     next: (value) => renderMovies(value),
