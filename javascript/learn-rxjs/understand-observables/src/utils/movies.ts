@@ -1,5 +1,6 @@
-import { fromEvent, pipe } from "rxjs";
-import { map, filter } from "rxjs/operators";
+import { fromEvent, Observable, pipe } from "rxjs";
+import { mergeMap } from "rxjs/operators";
+import { Movie } from "./Movie";
 
 
 const getMovies = () => {
@@ -7,41 +8,53 @@ const getMovies = () => {
   const output = document.querySelector('.output');
   const getBtn = document.querySelector('.get');
 
-  interface Movie {
-    title: string;
-  }
+  const moviesUrl = "./movies.json";
+
+  const renderMovies = (movies) => {
+    movies.forEach((movie: Movie) => {
+      const div = document.createElement('DIV');
+      div.innerText = movie.title;
+      output.appendChild(div);
+    });
+  };
 
   const click$ = fromEvent(getBtn, 'click');
 
-  const moviesUrl = "./movies.json";
-
   const load = (url: string) => {
-    let xhr = new XMLHttpRequest();
 
-    xhr.addEventListener("load", () => {
-      if (xhr.status !== 200) {
-        console.error("Something went wrong", xhr.statusText);
-      } else {
-        let movies = JSON.parse(xhr.responseText);
-        movies.forEach((movie: Movie) => {
-          const div = document.createElement('DIV');
-          div.innerText = movie.title;
-          output.appendChild(div);
-        });
-      }
+    return new Observable(subscriber => {
+
+      let xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("load", () => {
+        if (xhr.status !== 200) {
+          console.error("Something went wrong", xhr.statusText);
+        } else {
+          const data = JSON.parse(xhr.responseText);
+          subscriber.next(data);
+          subscriber.complete();
+        }
+      });
+
+      xhr.open("GET", url);
+
+      xhr.send(null);
+
     });
-
-    xhr.open("GET", url);
-
-    xhr.send(null);
 
   };
 
-  click$.subscribe({
-    next: (value) => load(moviesUrl),
+  const getMovies = click$.pipe(
+    mergeMap(e => load(moviesUrl))
+  );
+
+  const click$Observer = {
+    next: (value) => renderMovies(value),
     error: err => console.error(err),
     complete: () => console.log('Complete'),
-  })
+  };
+
+  getMovies.subscribe(click$Observer);
 
 };
 
