@@ -1,5 +1,5 @@
-import { fromEvent, Observable, pipe } from "rxjs";
-import { mergeMap } from "rxjs/operators";
+import { fromEvent, Observable } from "rxjs";
+import { mergeMap, retryWhen, delay, scan, takeWhile } from "rxjs/operators";
 import { Movie } from "./Movie";
 
 
@@ -18,6 +18,19 @@ const getMovies = () => {
     });
   };
 
+  const retryStrategy = ({ attempts = 3, delayTime = 3000 }) => {
+    return (errors) => {
+      return errors.pipe(
+        scan((acc, value) => {
+          console.log(acc, value);
+          return acc + 1;
+        }, 0),
+        takeWhile(acc => acc < attempts),
+        delay(delayTime)
+      );
+    }
+  };
+
   const click$ = fromEvent(getBtn, 'click');
 
   const load = (url: string) => {
@@ -28,7 +41,7 @@ const getMovies = () => {
 
       xhr.addEventListener("load", () => {
         if (xhr.status !== 200) {
-          console.error("Something went wrong", xhr.statusText);
+          subscriber.error(xhr.statusText);
         } else {
           const data = JSON.parse(xhr.responseText);
           subscriber.next(data);
@@ -40,9 +53,10 @@ const getMovies = () => {
 
       xhr.send(null);
 
-    });
+    }).pipe(retryWhen(retryStrategy({ attempts: 4, delayTime: 1000 })));
 
   };
+
 
   const getMovies = click$.pipe(
     mergeMap(e => load(moviesUrl))
@@ -50,7 +64,7 @@ const getMovies = () => {
 
   const click$Observer = {
     next: (value) => renderMovies(value),
-    error: err => console.error(err),
+    error: err => console.error(`Error: ${err}`),
     complete: () => console.log('Complete'),
   };
 
