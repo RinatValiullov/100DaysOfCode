@@ -337,6 +337,7 @@ Projects:
 Projects:
 
 - [angular8-from-scratch](angular/angular8-from-scratch/angular-app)
+- [angularMaterial](angular/angularMaterial)
 
 [Back &#8679;](#100daysofcode)
 
