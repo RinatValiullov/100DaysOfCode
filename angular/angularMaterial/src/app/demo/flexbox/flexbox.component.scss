@@ -1,0 +1,24 @@
+.flex-container {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+@media all and (max-width: 800px) {
+  .flex-container {
+    justify-content: start;
+  }
+}
+
+.flex-item {
+  background-color: maroon;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  height: 150px;
+  line-height: 150px;
+  margin-top: 5px;
+  text-align: center;
+  width: 200px;
+}
