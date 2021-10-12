@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   { path: 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule) },
-  { path: '**', redirectTo: '/demo' }
+  { path: '**', redirectTo: 'demo' }
 ];
 
 @NgModule({
