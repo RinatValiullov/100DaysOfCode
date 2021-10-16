@@ -8,7 +8,9 @@
 
     <mat-nav-list>
       <mat-list-item *ngFor="let user of users | async">
-        <a matLine href="#">{{ user.name }}</a>
+        <a matLine href="#">
+          <mat-icon svgIcon="{{user.avatar}}"></mat-icon> {{ user.name }}
+        </a>
       </mat-list-item>
     </mat-nav-list>
 
