@@ -6,11 +6,11 @@
       Contacts
     </mat-toolbar>
 
-    <mat-list role="list">
-      <mat-list-item role="listitem">Item 1</mat-list-item>
-      <mat-list-item role="listitem">Item 2</mat-list-item>
-      <mat-list-item role="listitem">Item 3</mat-list-item>
-    </mat-list>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let user of users | async">
+        <a matLine href="#">{{ user.name }}</a>
+      </mat-list-item>
+    </mat-nav-list>
 
   </mat-sidenav>
 
