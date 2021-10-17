@@ -10,7 +10,7 @@ import { UserService } from '../../services/user.service';
 })
 export class MainContentComponent implements OnInit {
 
-  user!: User;
+  user!: User | undefined;
 
   constructor(private route: ActivatedRoute, private service: UserService) { }
 
