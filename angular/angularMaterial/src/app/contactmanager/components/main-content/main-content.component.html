@@ -1,4 +1,8 @@
-<mat-card>
-  <mat-card-title>Main content</mat-card-title>
-  <!-- <h1>Main content</h1> -->
-</mat-card>
+<div *ngIf="!user">
+  <mat-spinner></mat-spinner>
+</div>
+<div *ngIf="!user">
+  <mat-card>
+    <mat-card-title>Main content</mat-card-title>
+  </mat-card>
+</div>
