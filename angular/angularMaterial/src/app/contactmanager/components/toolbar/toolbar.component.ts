@@ -16,8 +16,12 @@ export class ToolbarComponent implements OnInit {
   }
 
   openAddContactDialog(): void {
-    this.dialog.open(NewContactDialogComponent, {
+    let dialogRef = this.dialog.open(NewContactDialogComponent, {
       width: '450px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed', result);
     });
   }
 
