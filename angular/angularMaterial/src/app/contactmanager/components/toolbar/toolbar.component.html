@@ -5,4 +5,13 @@
   </button>
 
   <span>Contact Manager</span>
+
+  <span class="example-spacer"></span>
+
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon aria-hidden="false" aria-label="Example user verified icon">more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>New Contact</button>
+  </mat-menu>
 </mat-toolbar>
