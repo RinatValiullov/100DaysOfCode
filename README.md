@@ -253,6 +253,7 @@ Projects:
 
 - [first-test](jest/container/first-test)
 - [learn-matchers](jest/container/learn-matchers)
+- [mock-functions](jest/container/mock-functions)
 
 [Back &#8679;](#100daysofcode)
 
