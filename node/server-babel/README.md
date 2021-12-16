@@ -1,3 +1,3 @@
-## Creating *server-babel* project
+## Create *server-babel* project
 
-### Creating server with node and babel
+### Create server with node and babel

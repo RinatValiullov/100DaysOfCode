@@ -1,3 +1,3 @@
-## Creating *event-delegation* project
+## Create *event-delegation* project
 
-### Learning `event delegation` mechanism in jQuery
+### Learn `event delegation` mechanism in jQuery

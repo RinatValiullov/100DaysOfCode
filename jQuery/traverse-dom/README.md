@@ -1,3 +1,3 @@
-## Creating *traverse-dom* project
+## Create *traverse-dom* project
 
 ### Learn jQuery methods for working with DOM (Traversing, CSS)

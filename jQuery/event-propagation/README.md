@@ -1,3 +1,3 @@
-## Creating *event-propagation* project
+## Create *event-propagation* project
 
-### Learning `event propagation` mechanism
+### Learn `event propagation` mechanism

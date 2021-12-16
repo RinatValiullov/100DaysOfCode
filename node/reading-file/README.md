@@ -1,3 +1,3 @@
-## Creating *reading-file* project
+## Create *reading-file* project
 
-### Understanding asynchronous vs synchronous
+### Understand asynchronous vs synchronous

@@ -1,3 +1,3 @@
-## Creating *html-render* project
+## Create *html-render* project
 
-### Understanding how to render html with node and external libs
+### Understand how to render html with node and external libs

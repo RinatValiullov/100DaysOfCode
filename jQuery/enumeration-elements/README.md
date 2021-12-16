@@ -1,3 +1,3 @@
-## Creating *enumeration-elements* project
+## Create *enumeration-elements* project
 
-### Learning collection manipulation `each` method
+### Learn collection manipulation `each` method

@@ -1,3 +1,3 @@
-## Creating *event-bubbling* project
+## Create *event-bubbling* project
 
-### Learning DOM level event model(event bubbling)
+### Learn DOM level event model(event bubbling)

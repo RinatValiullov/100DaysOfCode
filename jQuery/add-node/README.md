@@ -1,3 +1,3 @@
-## Creating *add-node* project
+## Create *add-node* project
 
-### Learning DOM insertion methods (`append, prepend, insertAfter, insertBefore`)
+### Learn DOM insertion methods (`append, prepend, insertAfter, insertBefore`)
