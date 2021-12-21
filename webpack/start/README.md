@@ -10,4 +10,6 @@
 
 `npx webpack --stats detailed`
 
-3. Add custom configuration file `webpack.config.js` and run cli command again (1)
+3. Add custom configuration file `webpack.config.js` and run cli command again (1)  
+
+4. Add npm script to compile files with `npm run build` command instead of (1)

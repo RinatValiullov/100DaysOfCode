@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Learn basics of webpack",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack"
+  },
   "keywords": [
     "webpack",
     "learn",
