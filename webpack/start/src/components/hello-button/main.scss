@@ -1,0 +1,15 @@
+$font-size: 24px;
+$bg-color: green;
+$text-color: #456;
+
+.hello-btn {
+  background-color: $bg-color;
+  color: #fff;
+  font-size: $font-size;
+  padding: 10px 15px;
+}
+
+.hello-paragraph {
+  color: $text-color;
+  font-weight: bold;
+}
