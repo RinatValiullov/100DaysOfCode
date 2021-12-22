@@ -12,7 +12,12 @@ module.exports = {
     rules: [
       {
         test: /\.(png|jpg)$/,
-        type: "asset/resource"
+        type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 32 * 1024 // If file is greater than 32 kilobytes, webpack will treat it as asset/resource
+          }
+        }
       }
     ]
   }
