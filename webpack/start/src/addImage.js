@@ -1,8 +1,9 @@
 import Adrian from "./adrian.jpg";
+import altText from "./altText.txt";
 
 const addImage = () => {
   const img = document.createElement("img");
-  img.alt = "adrian";
+  img.alt = altText;
   img.width = 300;
   img.src = Adrian;
 

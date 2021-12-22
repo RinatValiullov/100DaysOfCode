@@ -21,11 +21,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "addImage": () => (/* binding */ addImage)
 /* harmony export */ });
 /* harmony import */ var _adrian_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _altText_txt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
+
 
 
 const addImage = () => {
   const img = document.createElement("img");
-  img.alt = "adrian";
+  img.alt = _altText_txt__WEBPACK_IMPORTED_MODULE_1__;
   img.width = 300;
   img.src = _adrian_jpg__WEBPACK_IMPORTED_MODULE_0__;
 
@@ -41,6 +43,12 @@ const addImage = () => {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "6b61f3f1dd40df3d6e07.jpg";
+
+/***/ }),
+/* 4 */
+/***/ ((module) => {
+
+module.exports = "adrian alt text";
 
 /***/ })
 /******/ 	]);

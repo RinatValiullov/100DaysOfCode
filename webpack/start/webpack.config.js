@@ -18,6 +18,10 @@ module.exports = {
             maxSize: 32 * 1024 // If file is greater than 32 kilobytes, webpack will treat it as asset/resource
           }
         }
+      },
+      {
+        test: /\.txt/,
+        type: "asset/source"
       }
     ]
   }
