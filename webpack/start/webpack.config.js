@@ -45,6 +45,10 @@ module.exports = {
             plugins: ["@babel/plugin-proposal-class-properties"]
           }
         }
+      },
+      {
+        test: /\.hbs$/,
+        use: ["handlebars-loader"]
       }
     ]
   },
@@ -61,9 +65,8 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       title: "HelloWorld App",
-      meta: {
-        description: "Learn webpack basics"
-      }
+      template: "src/index.hbs",
+      description: "Learn webpack basics"
     })
   ]
 };
