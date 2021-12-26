@@ -4,7 +4,8 @@
   "description": "Learn basics of webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build:prod": "webpack --config webpack.production.config.js",
+    "build:dev": "webpack --config webpack.development.config.js"
   },
   "keywords": [
     "webpack",
