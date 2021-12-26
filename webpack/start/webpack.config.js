@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "none",
+  mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "bundle.[contenthash].js",
