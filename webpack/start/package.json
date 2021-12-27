@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:prod": "webpack --config webpack.production.config.js",
-    "build:dev": "webpack --config webpack.development.config.js"
+    "build:dev": "webpack serve --config webpack.development.config.js --hot"
   },
   "keywords": [
     "webpack",
@@ -29,7 +29,8 @@
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.0",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1"
   },
   "dependencies": {
     "handlebars": "^4.7.7"
