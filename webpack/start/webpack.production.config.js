@@ -12,7 +12,7 @@ module.exports = {
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "/static/"
+    publicPath: ""
   },
   module: {
     rules: [
@@ -65,9 +65,20 @@ module.exports = {
       ]
     }),
     new HTMLWebpackPlugin({
+      filename: "hello.html",
+      chunks: ["hello"],
       title: "HelloWorld App",
-      template: "src/index.hbs",
-      description: "Learn webpack basics"
+      template: "src/page-template.hbs",
+      description: "Hello Warld Page",
+      minify: false
+    }),
+    new HTMLWebpackPlugin({
+      filename: "adrian.html",
+      chunks: ["adrian"],
+      title: "Adrian App",
+      template: "src/page-template.hbs",
+      description: "Adrian Page",
+      minify: false
     })
   ]
 };
