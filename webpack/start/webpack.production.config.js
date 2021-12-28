@@ -5,9 +5,12 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.js",
+  entry: {
+    hello: "./src/hello.js",
+    adrian: "./src/adrian.js"
+  },
   output: {
-    filename: "bundle.[contenthash].js",
+    filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "./dist"),
     publicPath: "/static/"
   },
@@ -53,7 +56,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles.[contenthash].css"
+      filename: "[name].[contenthash].css"
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [
