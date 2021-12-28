@@ -5,6 +5,11 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "production",
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
+  },
   entry: {
     hello: "./src/hello.js",
     adrian: "./src/adrian.js"

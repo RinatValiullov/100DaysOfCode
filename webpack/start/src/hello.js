@@ -1,8 +1,9 @@
-import { HelloButton } from "./components/hello-button/hello-button";
-import { Heading } from "./components/heading/heading";
+import { HelloButton } from "./components/Hello-button/Hello-button";
+import { Heading } from "./components/Heading/Heading";
+import _ from "lodash";
 
 const heading = new Heading();
-heading.render();
+heading.render(_.upperFirst("hello"));
 const helloButton = new HelloButton();
 helloButton.render();
 
