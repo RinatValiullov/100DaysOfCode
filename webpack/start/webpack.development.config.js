@@ -14,9 +14,12 @@ module.exports = {
       writeToDisk: true
     }
   },
-  entry: "./src/index.js",
+  entry: {
+    hello: "./src/hello.js",
+    adrian: "./src/adrian.js"
+  },
   output: {
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "./dist"),
     publicPath: ""
   },
@@ -68,9 +71,18 @@ module.exports = {
       ]
     }),
     new HTMLWebpackPlugin({
+      filename: "hello.html",
+      chunks: ["hello"],
       title: "HelloWorld App",
-      template: "src/index.hbs",
-      description: "Learn webpack basics"
+      template: "src/page-template.hbs",
+      description: "HelloWorld Page"
+    }),
+    new HTMLWebpackPlugin({
+      filename: "adrian.html",
+      chunks: ["adrian"],
+      title: "Adrian App",
+      template: "src/page-template.hbs",
+      description: "Adrian Page"
     })
   ]
 };
