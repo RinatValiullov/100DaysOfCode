@@ -6,14 +6,14 @@ const app = express();
 
 const PORT = 4327;
 
-app.use("/static", express.static(path.resolve(__dirname, "../dist")));
-
 app.get("/", (req, res) => {
   const pathToIndexFile = path.resolve(__dirname, "../dist/index.html");
   const contentFromIndexFile = fs.readFileSync(pathToIndexFile, "utf-8");
   res.send(contentFromIndexFile);
   console.log(pathToIndexFile);
 });
+
+app.use("/static", express.static(path.resolve(__dirname, "../dist")));
 
 app.listen(PORT, () => {
   console.log(`Server is running on the port ${PORT}...`);
