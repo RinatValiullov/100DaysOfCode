@@ -3,3 +3,4 @@
 package-lock.json
 .env*
 .vscode/tasks.json
+dist/

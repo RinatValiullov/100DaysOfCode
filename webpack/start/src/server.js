@@ -6,8 +6,15 @@ const app = express();
 
 const PORT = 4327;
 
-app.get("/", (req, res) => {
-  const pathToIndexFile = path.resolve(__dirname, "../dist/index.html");
+app.get("/hello/", (req, res) => {
+  const pathToIndexFile = path.resolve(__dirname, "../dist/hello.html");
+  const contentFromIndexFile = fs.readFileSync(pathToIndexFile, "utf-8");
+  res.send(contentFromIndexFile);
+  console.log(pathToIndexFile);
+});
+
+app.get("/adrian/", (req, res) => {
+  const pathToIndexFile = path.resolve(__dirname, "../dist/adrian.html");
   const contentFromIndexFile = fs.readFileSync(pathToIndexFile, "utf-8");
   res.send(contentFromIndexFile);
   console.log(pathToIndexFile);
