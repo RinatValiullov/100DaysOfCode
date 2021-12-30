@@ -8,13 +8,18 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "http://localhost:9001/"
+    publicPath: "http://localhost:9000/"
   },
   mode: "development",
   devServer: {
-    contentBase: path.resolve(__dirname, "./dist"),
-    index: "hello-world.html",
-    port: 9000
+    static: {
+      directory: path.resolve(__dirname, "./dist")
+    },
+    port: 9000,
+    devMiddleware: {
+      index: "hello-world.html",
+      writeToDisk: true
+    }
   },
   module: {
     rules: [
