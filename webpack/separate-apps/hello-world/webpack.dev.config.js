@@ -8,14 +8,14 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "http://localhost:9000/"
+    publicPath: "http://localhost:9001/"
   },
   mode: "development",
   devServer: {
+    port: 9001,
     static: {
       directory: path.resolve(__dirname, "./dist")
     },
-    port: 9000,
     devMiddleware: {
       index: "hello-world.html",
       writeToDisk: true
@@ -57,7 +57,9 @@ module.exports = {
       filename: "remoteEntry.js",
       exposes: {
         "./HelloWorldButton":
-          "./src/components/hello-world-button/hello-world-button.js"
+          "./src/components/hello-world-button/hello-world-button.js",
+        "./HelloWorldPage":
+          "./src/components/hello-world-page/hello-world-page.js"
       }
     })
   ]

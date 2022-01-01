@@ -8,11 +8,11 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: ""
+    publicPath: "http://localhost:9002/"
   },
   mode: "development",
   devServer: {
-    port: 9001,
+    port: 9002,
     static: {
       directory: path.resolve(__dirname, "./dist")
     },
@@ -26,6 +26,10 @@ module.exports = {
       {
         test: /\.(png|jpg)$/,
         use: ["file-loader"]
+      },
+      {
+        test: /\.txt/,
+        type: "asset/source"
       },
       {
         test: /\.scss$/,
@@ -51,14 +55,15 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: "kiwi.html",
-      title: "Kiwi App",
-      description: "Kiwi Application",
+      title: "Kiwi",
+      description: "Kiwi",
       template: "src/page-template.hbs"
     }),
     new ModuleFederationPlugin({
       name: "KiwiApp",
-      remotes: {
-        HelloWorldApp: "HelloWorldApp@http://localhost:9000/remoteEntry.js"
+      filename: "remoteEntry.js",
+      exposes: {
+        "./KiwiPage": "./src/components/kiwi-page/kiwi-page.js"
       }
     })
   ]

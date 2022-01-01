@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "http://localhost:9001"
+    publicPath: "http://localhost:9001/"
   },
   mode: "production",
   optimization: {
@@ -58,7 +58,9 @@ module.exports = {
       filename: "remoteEntry.js",
       exposes: {
         "./HelloWorldButton":
-          "./src/components/hello-world-button/hello-world-button.js"
+          "./src/components/hello-world-button/hello-world-button.js",
+        "./HelloWorldPage":
+          "./src/components/hello-world-page/hello-world-page.js"
       }
     })
   ]
