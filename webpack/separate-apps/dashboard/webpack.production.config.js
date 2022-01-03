@@ -30,6 +30,10 @@ module.exports = {
             presets: ["@babel/env"]
           }
         }
+      },
+      {
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       }
     ]
   },
