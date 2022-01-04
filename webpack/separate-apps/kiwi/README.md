@@ -1,1 +1,1 @@
-This is a Readme file.
+All basic commands are in the file `package.json`
