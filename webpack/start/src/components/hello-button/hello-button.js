@@ -8,7 +8,7 @@ class HelloButton {
     button.classList.add(this.buttonCssClass);
     const body = document.querySelector("body");
 
-    button.addEventListener("click", (event) => {
+    button.addEventListener("click", () => {
       const p = document.createElement("p");
       p.innerHTML = "Hello, world!";
       p.classList.add("hello-paragraph");
