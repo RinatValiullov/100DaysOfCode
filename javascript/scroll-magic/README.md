@@ -1,3 +1,3 @@
-## Creating scroll-magic
+## Create scroll-magic
 
-Understanding Intersection Observer API
+### Understand *Intersection Observer API*
