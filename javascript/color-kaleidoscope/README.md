@@ -1,1 +1,1 @@
-## Creating simple project with async/await
+## Create simple project with async/await
