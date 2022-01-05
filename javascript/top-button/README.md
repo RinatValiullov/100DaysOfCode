@@ -1,1 +1,1 @@
-## Creating top button and understand scroll event (DOM Level 2)
+## Create top button and understand scroll event (DOM Level 2)
