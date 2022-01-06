@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: rgb(45, 58, 156);
+  height: 15vh;
+}
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  margin-inline-start: auto;
+  width: 50%;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.landing {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links li a {
+    font-size: 36px;
+  }
+
+  .line {
+    background-color: #fff;
+    height: 3px;
+    margin: 5px;
+    width: 30px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    background-color: rgb(45, 58, 156);
+    display: flex;
+    clip-path: circle(100px at 90% -10%);
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    pointer-events: none;
+    transition: clip-path 0.6s linear;
+    width: 100%;
+  }
+
+  .nav-links.open {
+    clip-path: circle(2000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: opacity 0.5s ease 0.2s;
+  }
+
+  .nav-links li:nth-child(2) {
+    transition: opacity 0.5s ease 0.4s;
+  }
+
+  .nav-links li:nth-child(3) {
+    transition: opacity 0.5s ease 0.6s;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+
+}
