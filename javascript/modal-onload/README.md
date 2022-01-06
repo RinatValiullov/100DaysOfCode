@@ -1,1 +1,1 @@
-## Creating a simple modal window displayed on load
+## Create a simple modal window displayed on load
