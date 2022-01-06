@@ -73,6 +73,7 @@ Projects:
 - [sticky-navigation](css/sticky-navigation)
 - [masonry-layout](css/masonry-layout)
 - [gradient-shadow](css/gradient-shadow)
+- [animated-navbar](css/animated-navbar)
 
 [Back &#8679;](#100daysofcode)
 
