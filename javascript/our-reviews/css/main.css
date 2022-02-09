@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.container {
+  max-width: 620px;
+  width: 80vw;
+}
+
+.title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.underline {
+  background: hsl(205, 78%, 60%);
+  height: 0.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5rem;
+}
+
+.review {
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.review:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+  border-radius: 50%;
+  height: 150px;
+  margin-bottom: 1.5rem;
+  margin: 0 auto;
+  position: relative;
+  width: 150px;
+}
+
+#person-img {
+  border-radius: 50%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.img-container::after {
+  background: hsl(205, 78%, 60%);
+  border-radius: 50%;
+  color: #fff;
+  content: "\f10e";
+  display: grid;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  height: 2.5rem;
+  left: 0;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  transform: translateY(25%);
+  width: 2.5rem;
+}
+
+.img-container::before {
+  background: hsl(205, 78%, 60%);
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: -0.5rem;
+  top: -0.25rem;
+  width: 100%;
+}
+
+#author {
+  margin-bottom: 0.25rem;
+}
+
+#job {
+  color: hsl(205, 78%, 60%);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+#info {
+  margin-bottom: 0.75rem;
+}
+
+.prev-btn,
+.next-btn {
+  background: transparent;
+  border-color: transparent;
+  color: hsl(205, 90%, 76%);
+  cursor: pointer;
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+
+.random-btn {
+  background: hsl(205, 100%, 96%);
+  border-color: hsl(205, 78%, 60%);
+  border-radius: 0.25rem;
+  color: hsl(205, 78%, 60%);
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+
+.random-btn:hover {
+  background: hsl(205, 78%, 60%);
+  color: hsl(205, 86%, 17%);
+}
