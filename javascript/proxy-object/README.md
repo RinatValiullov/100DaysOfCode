@@ -1,3 +1,3 @@
-## Creating *proxy-object* project
+## Create *proxy-object* project
 
-### Understanding proxies in JS
+### Understand proxies in JS
