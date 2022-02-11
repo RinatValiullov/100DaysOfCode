@@ -169,6 +169,7 @@ Projects:
 - [aim-game](javascript/aim-game)
 - [template-DOM](javascript/template-DOM)
 - [our-reviews](javascript/our-reviews)
+- [questions-accordion](javascript/questions-accordion)
 
 [Back &#8679;](#100daysofcode)
 
