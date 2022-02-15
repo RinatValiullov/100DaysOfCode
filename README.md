@@ -170,6 +170,7 @@ Projects:
 - [template-DOM](javascript/template-DOM)
 - [our-reviews](javascript/our-reviews)
 - [questions-accordion](javascript/questions-accordion)
+- [shopping-list](javascript/shopping-list)
 
 [Back &#8679;](#100daysofcode)
 
