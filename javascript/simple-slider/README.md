@@ -1,3 +1,3 @@
-## Creating *simple-slider* project
+## Create *simple-slider* project
 
-### Creating slider with library [Glide.js](https://glidejs.com)
+### Create slider with library [Glide.js](https://glidejs.com)
