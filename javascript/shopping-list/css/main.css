@@ -3,7 +3,9 @@
 :root {
   /* colors */
   --color-dark: rgba(27, 27, 27, 0.8);
+  --color-white: rgba(226, 212, 212, 0.8);
   --bd-color: rgb(128, 185, 219, 0.5);
+  --bg-color: rgba(107, 202, 323, 1);
   /* spacing */
   --letter-spacing1: 1px;
 }
@@ -30,6 +32,11 @@ h2 {
   font-weight: normal;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 main {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin: 20px auto;
@@ -39,7 +46,7 @@ main {
 }
 
 .page-top {
-  background-color: rgba(107, 202, 323, 1);
+  background-color: var(--bg-color);
   padding: 10px;
   text-align: center;
 }
@@ -71,4 +78,50 @@ main {
 
 .check input {
   margin: 0;
+}
+
+
+.add-item {
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.add-item>input {
+  border: 1px solid var(--bd-color);
+  font-size: inherit;
+  max-width: 350px;
+  padding: 10px;
+  width: 90%;
+}
+
+.add-item>button {
+  background-color: var(--bg-color);
+  border: 1px solid var(--bd-color);
+  color: var(--color-dark);
+  cursor: pointer;
+  font-size: inherit;
+  padding: 10px;
+  width: 100px;
+}
+
+.grocery-list {
+  margin: 2rem;
+}
+
+.grocery-list li {
+  align-items: center;
+  border-left: 2px solid aqua;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.grocery-list li .delete {
+  background-color: rgba(209, 32, 32, 1);
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 5px;
 }
