@@ -1,0 +1,74 @@
+/* variables */
+
+:root {
+  /* colors */
+  --color-dark: rgba(27, 27, 27, 0.8);
+  --bd-color: rgb(128, 185, 219, 0.5);
+  /* spacing */
+  --letter-spacing1: 1px;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  color: var(--color-dark, #000);
+  letter-spacing: var(--letter-spacing1);
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+main {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 0 0 20px;
+  width: 90%;
+}
+
+.page-top {
+  background-color: rgba(107, 202, 323, 1);
+  padding: 10px;
+  text-align: center;
+}
+
+.page-top .search {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-top .search>input {
+  border: 1px solid var(--bd-color);
+  font-size: 1rem;
+  margin-block-end: 10px;
+  max-width: 300px;
+  padding: 10px;
+  width: 90%;
+}
+
+.check {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.check label {
+  margin-inline-end: 10px;
+}
+
+.check input {
+  margin: 0;
+}
