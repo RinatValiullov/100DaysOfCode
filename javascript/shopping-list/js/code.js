@@ -1,5 +1,5 @@
+// Remove item
 /* old way */
-
 // const deleteButtons = document.querySelectorAll(".delete");
 
 // deleteButtons.forEach((deleteButton) => {
@@ -10,7 +10,6 @@
 // });
 
 /* New way */
-
 const groceryList = document.querySelector(".grocery-list ul");
 
 const removeItem = (event) => {
@@ -21,3 +20,31 @@ const removeItem = (event) => {
 };
 
 groceryList.addEventListener("click", removeItem);
+
+// Add item
+const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
+const createSpan = (classString, content) => {
+  const span = document.createElement("SPAN");
+  span.classList.add(classString);
+  span.innerHTML = content;
+  return span;
+};
+
+const addItem = document.querySelector(".add-item");
+
+addItem.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const value = addItem.querySelector("input").value;
+
+  const li = document.createElement("LI");
+
+  const spanGrocery = createSpan("item", capitalizeFirstLetter(value));
+  const spanDelete = createSpan("delete", "Delete");
+
+  li.append(spanGrocery, spanDelete);
+
+  groceryList.appendChild(li);
+});
