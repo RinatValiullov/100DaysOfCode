@@ -48,3 +48,15 @@ addItem.addEventListener("submit", (e) => {
 
   groceryList.appendChild(li);
 });
+
+// Hide list
+const hideCheckbox = document.querySelector("#hide");
+
+hideCheckbox.addEventListener("change", (event) => {
+  const groceryList = document.querySelector(".grocery-list");
+  if (event.target.checked) {
+    groceryList.style.display = "none";
+  } else {
+    groceryList.style.display = "block";
+  }
+});
