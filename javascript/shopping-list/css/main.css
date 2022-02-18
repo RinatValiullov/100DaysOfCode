@@ -125,3 +125,56 @@ main {
   cursor: pointer;
   padding: 5px;
 }
+
+/* Tabs */
+
+.tab-wrapper {
+  padding: 0 2rem;
+}
+
+.tab-wrapper ul li:hover {
+  background-color: rgb(197, 176, 108);
+  color: #fff;
+}
+
+.tab-wrapper li {
+  background: aqua;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.tab-wrapper li:first-of-type {
+  margin-right: 10px;
+}
+
+.tab-wrapper .panel {
+  border: 1px solid aqua;
+  border-radius: 3px;
+  display: none;
+  padding: 1rem;
+}
+
+.tab-wrapper .panel.active {
+  display: block;
+}
+
+.tab-wrapper .selected {
+  background-color: rgba(139, 139, 139, 1);
+}
+
+.show-answer {
+  background-color: rgba(139, 139, 139, 1);
+  border: none;
+  color: var(--color-dark);
+  padding: 0.5rem;
+}
+
+.show {
+  background-color: rgba(139, 139, 139, 1);
+  border: 1px solid aqua;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}

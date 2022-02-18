@@ -39,6 +39,9 @@ addItem.addEventListener("submit", (e) => {
   e.preventDefault();
   const value = addItem.querySelector("input").value;
 
+  // clear the input box
+  addItem.querySelector("input").value = null;
+
   const li = document.createElement("LI");
 
   const spanGrocery = createSpan("item", capitalizeFirstLetter(value));
@@ -80,3 +83,42 @@ SEARCH.addEventListener("keyup", (event) => {
     }
   });
 });
+
+// Tabs
+
+const heading = document.querySelector(".heading");
+const panels = document.querySelectorAll(".panel");
+
+let selectedPanel = null;
+
+heading.addEventListener("click", (event) => {
+  let dataAttribute = event.target.dataset.clicked;
+
+  if (event.target.tagName === "LI") {
+    if (selectedPanel !== null) {
+      selectedPanel.classList.toggle("selected");
+    }
+    selectedPanel = event.target;
+    selectedPanel.classList.toggle("selected");
+  }
+
+  let targetPanel = document.querySelector(dataAttribute);
+  panels.forEach((panel) => {
+    if (panel === targetPanel) {
+      panel.classList.add("active");
+    } else {
+      panel.classList.remove("active");
+    }
+  });
+});
+
+let answerButton = document.querySelector(".show-answer");
+
+const answer = () => {
+  const answerPar = document.querySelector(".answer");
+  answerPar.classList.add("show");
+  answerPar.textContent = "AN IMPASTA";
+  answerButton.style.display = "none";
+};
+
+answerButton.addEventListener("click", answer);
