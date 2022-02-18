@@ -60,3 +60,23 @@ hideCheckbox.addEventListener("change", (event) => {
     groceryList.style.display = "block";
   }
 });
+
+// Search for item
+
+const SEARCH = document.forms["search"].querySelector("input");
+
+SEARCH.addEventListener("keyup", (event) => {
+  let text = event.target.value.toLowerCase();
+
+  const groceryList = document.querySelector(".grocery-list ul");
+  const groceries = groceryList.querySelectorAll("li");
+  groceries.forEach((grocery) => {
+    let groceryName = grocery.firstElementChild.textContent;
+    let groceryNameLower = grocery.firstElementChild.textContent.toLowerCase();
+    if (groceryNameLower.indexOf(text) === -1) {
+      grocery.style.display = "none";
+    } else {
+      grocery.style.display = "flex";
+    }
+  });
+});
