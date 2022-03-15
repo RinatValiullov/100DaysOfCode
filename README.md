@@ -171,6 +171,7 @@ Projects:
 - [our-reviews](javascript/our-reviews)
 - [questions-accordion](javascript/questions-accordion)
 - [shopping-list](javascript/shopping-list)
+- [custom-promise](javascript/custom-promise)
 
 [Back &#8679;](#100daysofcode)
 
