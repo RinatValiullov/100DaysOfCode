@@ -50,8 +50,8 @@ class MyPromise {
 
 const promise = new MyPromise((resolve, reject) => {
   setTimeout(() => {
-    reject("Some error");
     resolve(2);
+    reject("Some error");
   }, 1000);
 });
 

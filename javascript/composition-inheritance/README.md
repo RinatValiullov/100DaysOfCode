@@ -1,3 +1,3 @@
-## Creating *composition-inheritance* project
+## Create *composition-inheritance* project
 
-### Understanding composition and inheritance
+### Understand composition and inheritance
