@@ -1,3 +1,3 @@
 ## Create *simple-animation* project
 
-### Making a simple animation with CSS `animation` property
+### Make a simple animation with CSS `animation` property

@@ -1,6 +1,6 @@
-## Creating *stash-commits* projects
+## Create *stash-commits* projects
 
-### Learning `git-stash` command
+### Learn `git-stash` command
 
 `git-stash` command lets you save local modifications away
 and reverts the working directory to match the `HEAD` commit

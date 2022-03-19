@@ -1,3 +1,3 @@
-## Creating dynamic clock with dynamic changing background color
+## Create dynamic clock with dynamic changing background color
 
-### Understanding Custom Elements API
+### Understand `Custom Elements API`

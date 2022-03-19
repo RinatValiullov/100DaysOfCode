@@ -1,3 +1,3 @@
-## Creating *first-glance* project
+## Create *first-glance* project
 
-### Learning `tailwindcss` framework
+### Learn `tailwindcss` framework

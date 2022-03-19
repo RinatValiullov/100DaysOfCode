@@ -1,3 +1,3 @@
-## Creating *multilevel-menu* project
+## Create *multilevel-menu* project
 
-### Practicing with common UI task (css+html+js)
+### Practice with common UI task (css+html+js)
