@@ -172,6 +172,7 @@ Projects:
 - [questions-accordion](javascript/questions-accordion)
 - [shopping-list](javascript/shopping-list)
 - [custom-promise](javascript/custom-promise)
+- [animated-element](javascript/animated-element)
 
 [Back &#8679;](#100daysofcode)
 

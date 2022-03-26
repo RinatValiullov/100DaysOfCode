@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(rgb(68, 85, 170), rgb(36, 45, 90));
+  display: flex;
+  color: #fff;
+  font-size: 1.5rem;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 50px 0 0;
+}
+
+section {
+  max-width: 800px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid currentColor;
+  border-radius: 5px;
+  color: #fff;
+  font-size: inherit;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #44a;
+  cursor: pointer;
+}
+
+ul {
+  color: rgb(188, 253, 61);
+  list-style-type: none;
+  padding: 0 0 0 20px;
+}
+
+li {
+  animation: fade 0.4s cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+
+  /* background-color: #45a; */
+  margin-block-end: 20px;
+  padding: 10px;
+
+  opacity: 0;
+  transform: rotateY(-90deg);
+  transform-origin: left center;
+}
+
+@keyframes fade {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
