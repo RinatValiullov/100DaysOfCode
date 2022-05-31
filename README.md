@@ -228,6 +228,7 @@ Projects:
 - [compile-sass](gulp/compile-sass)
 - [gulp-1.01](gulp/gulp-1.01)
 - [partial-imports](gulp/partial-imports)
+- [compress-images](gulp/compress-images)
 
 [Back &#8679;](#100daysofcode)
 ### [Webpack](webpack)
