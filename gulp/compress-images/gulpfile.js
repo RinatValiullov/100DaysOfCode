@@ -6,7 +6,7 @@ const autoPrefixer = require("gulp-autoprefixer");
 const compress = require("compress-images");
 const del = require("del");
 
-function bs(cb) {
+function serve(cb) {
   browserSync.init({
     server: {
       baseDir: "./src"
@@ -69,7 +69,11 @@ async function imagesCompress() {
   );
 }
 
-// Watch scripts, styles, html
+function cleanImages() {
+  return del("./src/dist/images/**/*", { force: true });
+}
+
+/* Watch scripts, styles, html */
 function startWatch() {
   watch("./src/scripts/**/*.js", scripts);
   watch(["./src/styles/**/*"], styles);
@@ -77,6 +81,10 @@ function startWatch() {
   watch("./src/assets/**/*", imagesCompress);
 }
 
+exports.serve = serve;
+exports.styles = styles;
+exports.scripts = scripts;
 exports.imagesImagemin = imagesImagemin;
 exports.imagesCompress = imagesCompress;
-exports.default = parallel(styles, scripts, bs, startWatch);
+exports.cleanImages = cleanImages;
+exports.default = parallel(styles, scripts, serve, startWatch);
