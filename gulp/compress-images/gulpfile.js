@@ -69,8 +69,22 @@ async function imagesCompress() {
   );
 }
 
+/* delete all compressed images */
 function cleanImages() {
   return del("./src/dist/images/**/*", { force: true });
+}
+
+/* build project in separate folder */
+function buildCopy() {
+  return src(
+    [
+      "src/dist/css/**/*.min.css",
+      "src/dist/js/**/*.min.js",
+      "src/dist/images/**/*",
+      "src/**/*.html"
+    ],
+    { base: "./" }
+  ).pipe(dest("build/"));
 }
 
 /* Watch scripts, styles, html */
@@ -87,4 +101,5 @@ exports.scripts = scripts;
 exports.imagesImagemin = imagesImagemin;
 exports.imagesCompress = imagesCompress;
 exports.cleanImages = cleanImages;
+exports.build = series(styles, scripts, imagesCompress, buildCopy);
 exports.default = parallel(styles, scripts, serve, startWatch);
