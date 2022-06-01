@@ -32,9 +32,18 @@ function styles(cb) {
     .pipe(browserSync.stream());
 }
 
+function scripts() {
+  return src("./src/scripts/main.js")
+    .pipe(concat("main.min.js"))
+    .pipe(dest("./src/dist/js/"))
+    .pipe(browserSync.stream());
+}
+
 function startWatch() {
   watch(["./src/styles/**/*"], styles);
+
+  watch("./src/**/*.html").on("change", browserSync.reload);
 }
 
 exports.styles = styles;
-exports.default = parallel(styles, bs, startWatch);
+exports.default = parallel(styles, scripts, bs, startWatch);

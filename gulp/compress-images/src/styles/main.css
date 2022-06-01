@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: "Bitter", serif;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
