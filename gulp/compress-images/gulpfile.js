@@ -73,8 +73,8 @@ async function imagesCompress() {
 function startWatch() {
   watch("./src/scripts/**/*.js", scripts);
   watch(["./src/styles/**/*"], styles);
-
   watch("./src/**/*.html").on("change", browserSync.reload);
+  watch("./src/assets/**/*", imagesCompress);
 }
 
 exports.imagesImagemin = imagesImagemin;
