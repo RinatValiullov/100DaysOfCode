@@ -3,6 +3,8 @@ const browserSync = require("browser-sync").create();
 const concat = require("gulp-concat");
 const cleancss = require("gulp-clean-css");
 const autoPrefixer = require("gulp-autoprefixer");
+const compress = require("compress-images");
+const del = require("del");
 
 function bs(cb) {
   browserSync.init({
@@ -39,7 +41,8 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
-async function images() {
+/* compress images with "gulp-imagemin" */
+async function imagesImagemin() {
   // https://github.com/imagemin/imagemin/issues/392#issuecomment-916160758
   imagemin = (await import("gulp-imagemin")).default;
   return src("./src/assets/**/*")
@@ -47,6 +50,26 @@ async function images() {
     .pipe(dest("./src/dist/images/"));
 }
 
+/* compress images with "compress-images" */
+async function imagesCompress() {
+  compress(
+    "./src/assets/**/*",
+    "./src/dist/images/",
+    { compress_force: false, statistic: true, autoupdate: true },
+    false,
+    { jpg: { engine: "mozjpeg", command: ["-quality", "75"] } },
+    { png: { engine: false, command: false } },
+    { svg: { engine: false, command: false } },
+    { gif: { engine: false, command: false } },
+    function (err, completed) {
+      if (completed === true) {
+        browserSync.reload();
+      }
+    }
+  );
+}
+
+// Watch scripts, styles, html
 function startWatch() {
   watch("./src/scripts/**/*.js", scripts);
   watch(["./src/styles/**/*"], styles);
@@ -54,5 +77,6 @@ function startWatch() {
   watch("./src/**/*.html").on("change", browserSync.reload);
 }
 
-exports.images = images;
+exports.imagesImagemin = imagesImagemin;
+exports.imagesCompress = imagesCompress;
 exports.default = parallel(styles, scripts, bs, startWatch);
