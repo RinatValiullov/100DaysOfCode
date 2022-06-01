@@ -87,6 +87,11 @@ function buildCopy() {
   ).pipe(dest("build/"));
 }
 
+/* clean build folder */
+function cleanBuild() {
+  return del("./build/**/*", { force: true });
+}
+
 /* Watch scripts, styles, html */
 function startWatch() {
   watch("./src/scripts/**/*.js", scripts);
@@ -101,5 +106,6 @@ exports.scripts = scripts;
 exports.imagesImagemin = imagesImagemin;
 exports.imagesCompress = imagesCompress;
 exports.cleanImages = cleanImages;
-exports.build = series(styles, scripts, imagesCompress, buildCopy);
+exports.cleanBuild = cleanBuild;
+exports.build = series(cleanBuild, styles, scripts, imagesCompress, buildCopy);
 exports.default = parallel(styles, scripts, serve, startWatch);
