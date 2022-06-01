@@ -14,5 +14,13 @@ body {
 
 .gallery {
   display: grid;
+  gap: 30px;
   grid-template-columns: repeat(auto-fill, 250px);
+  place-content: center;
+}
+
+.card {
+  background: rgba(20, 60, 100, 0.8);
+  color: #fefefe;
+  padding: 15px;
 }

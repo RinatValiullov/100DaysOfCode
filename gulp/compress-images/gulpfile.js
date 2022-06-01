@@ -10,7 +10,7 @@ function bs(cb) {
       baseDir: "./src"
     },
     notify: false,
-    online: true
+    online: false
   });
 }
 
@@ -39,11 +39,20 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
+async function images() {
+  // https://github.com/imagemin/imagemin/issues/392#issuecomment-916160758
+  imagemin = (await import("gulp-imagemin")).default;
+  return src("./src/assets/**/*")
+    .pipe(imagemin())
+    .pipe(dest("./src/dist/images/"));
+}
+
 function startWatch() {
+  watch("./src/scripts/**/*.js", scripts);
   watch(["./src/styles/**/*"], styles);
 
   watch("./src/**/*.html").on("change", browserSync.reload);
 }
 
-exports.styles = styles;
+exports.images = images;
 exports.default = parallel(styles, scripts, bs, startWatch);
