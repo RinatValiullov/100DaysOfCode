@@ -218,6 +218,7 @@ Projects:
 - [hide-envvars](node/hide-envvars)
 - [handle-errors](node/handle-errors)
 - [eslint-cliengine](node/eslint-cliengine)
+- [weatherapp-express](node/weatherapp-express)
 
 [Back &#8679;](#100daysofcode)
 
