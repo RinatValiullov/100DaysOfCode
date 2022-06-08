@@ -10,15 +10,20 @@ module.exports = async function (city = "") {
 
   try {
     const data = await axios.get(URL_API);
-    const temperature = ((data.data.main.temp - 32) * 5) / 9;
+    const CITYNAME = data.data.name;
+    const TEMPERATURE = ((data.data.main.temp - 32) * 5) / 9;
+
+    // console.log(data);
 
     return {
-      weather: `${data.data.name}: ${temperature.toFixed(0)}`,
+      cityName: `${CITYNAME}`,
+      cityTemperature: `${TEMPERATURE.toFixed(0)}`,
       error: null
     };
   } catch (error) {
     return {
-      weather: null,
+      cityName: null,
+      cityTemperature: null,
       error: error.message
     };
   }

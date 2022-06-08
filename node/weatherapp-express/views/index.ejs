@@ -11,7 +11,7 @@
 
 <body class="h-screen bg-slate-300 flex justify-center items-center font-bold">
   <section class="p-8 bg-slate-200 border border-zinc-400">
-    <form action="/" method="POST" class="">
+    <form action="/" method="POST" class="mb-5">
       <div class="flex flex-col mb-2">
         <label for="city" class="text-3xl mb-5 text-center">
           Enter the city
@@ -23,7 +23,19 @@
         class="w-full border border-blue-300 p-1 focus:outline-none focus:ring focus:ring-slate-300 hover:bg-slate-400">Get
         Weather</button>
     </form>
-    <output></output>
+    <output class="text-2xl text-center text-orange-500">
+      <% if (cityName) { %>
+      <p>In <%= cityName %>
+        <% } %>
+
+        <% if (cityTemperature) { %>
+        <%= cityTemperature %> &#8451; now</p>
+      <% } %>
+
+      <% if (error) { %>
+      <p class="error"><%=error%></p>
+      <% } %>
+    </output>
   </section>
 </body>
 
