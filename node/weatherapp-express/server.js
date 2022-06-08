@@ -1,5 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const getWeather = require("./request/weather");
+
 const app = express();
 
 const PORT = process.env.PORT || 4327;
@@ -12,10 +14,12 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.post("/", (req, res) => {
+app.post("/", async (req, res) => {
   const { city } = req.body;
 
-  console.log(city);
+  const { weather, error } = await getWeather(city);
+  console.log(weather);
+  console.log(error);
 
   res.render("index");
 });
