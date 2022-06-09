@@ -13,14 +13,13 @@ module.exports = async function (city = "") {
     const CITYNAME = data.data.name;
     const TEMPERATURE = ((data.data.main.temp - 32) * 5) / 9;
 
-    // console.log(data);
-
     return {
       cityName: `${CITYNAME}`,
       cityTemperature: `${TEMPERATURE.toFixed(0)}`,
       error: null
     };
   } catch (error) {
+    console.log(error);
     return {
       cityName: null,
       cityTemperature: null,

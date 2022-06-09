@@ -21,15 +21,15 @@
       </div>
       <button type="submit"
         class="w-full border border-blue-300 p-1 focus:outline-none focus:ring focus:ring-slate-300 hover:bg-slate-400">Get
-        Weather</button>
+        Temperature</button>
     </form>
-    <output class="text-2xl text-center text-orange-500">
+    <output class="text-2xl text-center text-yellow-600 font-normal">
       <% if (cityName) { %>
-      <p>In <%= cityName %>
-        <% } %>
+      <p>In <%= cityName %></p>
+      <% } %>
 
-        <% if (cityTemperature) { %>
-        <%= cityTemperature %> &#8451; now</p>
+      <% if (cityTemperature) { %>
+      <p><%= cityTemperature %>&#8451; now</p>
       <% } %>
 
       <% if (error) { %>

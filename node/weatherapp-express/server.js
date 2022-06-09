@@ -11,7 +11,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { cityName: null, cityTemperature: null, error: null });
 });
 
 app.post("/", async (req, res) => {
@@ -19,12 +19,10 @@ app.post("/", async (req, res) => {
 
   const { cityName, cityTemperature, error } = await getWeather(city);
 
-  console.log(cityName, cityTemperature);
-
   res.render("index", {
     cityName,
     cityTemperature,
-    error: error
+    error
   });
 });
 
