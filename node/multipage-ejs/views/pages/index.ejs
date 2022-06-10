@@ -9,7 +9,23 @@
 
   <%- include('../blocks/header', { title: 'index' }); %>
 
-  <main></main>
+  <main class="flex flex-col justify-center items-center flex-1">
+    <section class="text-center mb-5">
+      <h1 class="mb-5 text-3xl">Enter the city where you want to know the
+        weather</h1>
+      <form action="/" method="post" class="flex flex-col">
+        <input type="text" name="city" placeholder="city name..."
+          class="border border-1 border-slate-500 rounded-md block mb-5 p-2 text-center">
+        <button type="submit"
+          class="m-auto px-7 py-2 rounded-md bg-teal-700 text-cyan-100 hover:bg-teal-900">Get
+          weather</button>
+      </form>
+    </section>
+    <section class="p-4 bg-teal-100">
+      <output>
+      </output>
+    </section>
+  </main>
 
   <footer class="p-5 bg-teal-700">
     <%- include('../blocks/footer'); %>
