@@ -219,6 +219,7 @@ Projects:
 - [handle-errors](node/handle-errors)
 - [eslint-cliengine](node/eslint-cliengine)
 - [weatherapp-express](node/weatherapp-express)
+- [multipage-ejs](node/multipage-ejs)
 
 [Back &#8679;](#100daysofcode)
 
