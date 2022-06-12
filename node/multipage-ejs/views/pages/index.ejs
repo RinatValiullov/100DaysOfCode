@@ -23,6 +23,13 @@
     </section>
     <section class="p-4 bg-teal-100">
       <output>
+        <% if(cityName) { %>
+        <span><%= cityName %></span>
+        <% } %>
+
+        <% if(cityTemperature) { %>
+        <span> &mdash; <%= cityTemperature %>&#8451;</span>
+        <% } %>
       </output>
     </section>
   </main>

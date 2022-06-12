@@ -10,7 +10,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Index page
 app.get("/", (req, res) => {
-  res.render("pages/index");
+  res.render("pages/index", {
+    cityName: null,
+    cityTemperature: null,
+    error: null
+  });
 });
 
 // about page
@@ -18,12 +22,16 @@ app.get("/about", (req, res) => {
   res.render("pages/about");
 });
 
-app.post("/", (req, res) => {
+app.post("/", async (req, res) => {
   const { city } = req.body;
 
-  getWeather(city);
+  const { cityName, cityTemperature, error } = await getWeather(city);
 
-  res.render("pages/index");
+  res.render("pages/index", {
+    cityName,
+    cityTemperature,
+    error
+  });
 });
 
 app.listen(PORT, () => console.log(`Server is running on ${PORT} port...`));

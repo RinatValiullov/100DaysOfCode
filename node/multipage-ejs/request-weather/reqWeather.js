@@ -12,12 +12,14 @@ async function getWeather(city = "") {
     const data = await axios(URL);
     const {
       name: cityName,
-      main: { temp: cityTemperature }
+      main: { temp: cityImperialTemperature }
     } = data.data;
+
+    const cityTemperature = ((cityImperialTemperature - 32) * 5) / 9;
 
     return {
       cityName,
-      cityTemperature: `${cityTemperature}.toFixed(0)`,
+      cityTemperature: `${cityTemperature.toFixed(0)}`,
       error: null
     };
   } catch (error) {
