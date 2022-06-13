@@ -21,14 +21,18 @@
           weather</button>
       </form>
     </section>
-    <section class="p-4 bg-teal-100">
+    <section class="p-4">
       <output>
         <% if(cityName) { %>
-        <span><%= cityName %></span>
+        <span>In <%= cityName %></span>
         <% } %>
 
         <% if(cityTemperature) { %>
-        <span> &mdash; <%= cityTemperature %>&#8451;</span>
+        <span> <%= cityTemperature %>&#8451;</span>
+        <% } %>
+
+        <% if(cityDescription) { %>
+        <span>&#44; <%= cityDescription %></span>
         <% } %>
       </output>
     </section>

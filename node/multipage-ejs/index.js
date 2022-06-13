@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
   res.render("pages/index", {
     cityName: null,
     cityTemperature: null,
+    cityDescription: null,
     error: null
   });
 });
@@ -25,11 +26,13 @@ app.get("/about", (req, res) => {
 app.post("/", async (req, res) => {
   const { city } = req.body;
 
-  const { cityName, cityTemperature, error } = await getWeather(city);
+  const { cityName, cityTemperature, cityDescription, error } =
+    await getWeather(city);
 
   res.render("pages/index", {
     cityName,
     cityTemperature,
+    cityDescription,
     error
   });
 });

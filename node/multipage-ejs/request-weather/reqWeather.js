@@ -10,16 +10,21 @@ async function getWeather(city = "") {
 
   try {
     const data = await axios(URL);
+
     const {
       name: cityName,
-      main: { temp: cityImperialTemperature }
+      main: { temp: cityImperialTemperature },
+      weather: [{ description: cityDescription }]
     } = data.data;
+
+    console.log(cityDescription);
 
     const cityTemperature = ((cityImperialTemperature - 32) * 5) / 9;
 
     return {
       cityName,
       cityTemperature: `${cityTemperature.toFixed(0)}`,
+      cityDescription,
       error: null
     };
   } catch (error) {
@@ -27,6 +32,7 @@ async function getWeather(city = "") {
     return {
       cityname: null,
       cutyTemperature: null,
+      cityDescription: null,
       error: error.message
     };
   }
