@@ -17,8 +17,6 @@ async function getWeather(city = "") {
       weather: [{ description: cityDescription }]
     } = data.data;
 
-    console.log(cityDescription);
-
     const cityTemperature = ((cityImperialTemperature - 32) * 5) / 9;
 
     return {
@@ -28,7 +26,7 @@ async function getWeather(city = "") {
       error: null
     };
   } catch (error) {
-    console.error(error);
+    console.error(error.message);
     return {
       cityname: null,
       cutyTemperature: null,

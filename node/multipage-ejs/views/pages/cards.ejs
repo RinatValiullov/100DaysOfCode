@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('../layouts/head.ejs'); %>
+</head>
+
+<body class="text-2xl flex flex-col justify-between h-screen">
+
+  <%- include('../layouts/header.ejs', { title: 'about' }); %>
+
+  <main class="m-auto p-5">
+    <%- include('../layouts/card.ejs'); %>
+  </main>
+
+  <footer class="p-5 bg-teal-700">
+    <%- include('../layouts/footer.ejs'); %>
+  </footer>
+
+</body>
+
+</html>

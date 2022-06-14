@@ -18,9 +18,9 @@ app.get("/", (req, res) => {
   });
 });
 
-// about page
-app.get("/about", (req, res) => {
-  res.render("pages/about");
+// cards page
+app.get("/cards", (req, res) => {
+  res.render("pages/cards");
 });
 
 app.post("/", async (req, res) => {
