@@ -20,7 +20,20 @@ app.get("/", (req, res) => {
 
 // cards page
 app.get("/cards", (req, res) => {
-  res.render("pages/cards");
+  res.render("pages/cards", {
+    fields: [
+      "High Temp Low Temp",
+      "HighFeels like",
+      "Pressure",
+      "Humidty",
+      "UV Index",
+      "Precipitation",
+      "Dew Point",
+      "Wind speed and direction",
+      "Sunrise",
+      "Sunset"
+    ]
+  });
 });
 
 app.post("/", async (req, res) => {

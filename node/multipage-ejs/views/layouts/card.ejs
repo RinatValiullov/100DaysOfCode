@@ -1,22 +1,26 @@
-<article class="card flex flex-col gap-6 border border-1 p-8">
-  <header class="card__header">
-    <img src="https://openweathermap.org/img/wn/10d@4x.png" class=""
+<article class="card flex flex-col gap-6 border border-1">
+  <header class="card__header border-b">
+    <img src="https://openweathermap.org/img/wn/10d@4x.png" class="m-auto"
       alt="Weather description">
   </header>
-  <section class="card__body">
-    <p class="card-text">High Temp Low Temp</p>
-    <p class="card-text">HighFeels like</p>
-    <p class="card-text">Pressure</p>
-    <p class="card-text">Humidty</p>
-    <p class="card-text">UV Index</p>
-    <p class="card-text">Precipitation</p>
-    <p class="card-text">Dew Point</p>
-    <p class="card-text">Wind speed and direction</p>
-    <p class="card-text">Sunrise</p>
-    <p class="card-text">Sunset</p>
-  </section>
-  <footer class="card__footer text-center">
-    <a href="https://openweathermap.org/current#parameter"
-      target="_blank">Weather fields in API response</a>
+  <ul class="card__body p-5 border-b">
+    <% fields.forEach(function(field, idx){ -%>
+    <li><%= field %></li>
+    <% }); -%>
+
+    <!-- <li class="card-text">High Temp Low Temp</li>
+    <li class="card-text">HighFeels like</li>
+    <li class="card-text">Pressure</li>
+    <li class="card-text">Humidty</li>
+    <li class="card-text">UV Index</li>
+    <li class="card-text">Precipitation</li>
+    <li class="card-text">Dew Point</li>
+    <li class="card-text">Wind speed and direction</li>
+    <li class="card-text">Sunrise</li>
+    <li class="card-text">Sunset</li> -->
+  </ul>
+  <footer class="card__footer text-center p-5">
+    <a href="https://openweathermap.org/current#parameter" target="_blank"
+      class="underline">Weather fields in API response</a>
   </footer>
 </article>
