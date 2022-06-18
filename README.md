@@ -139,6 +139,7 @@ Projects:
 - [learn-promises](javascript/learn-promises)
   - [promise-all](javascript/learn-promises/promise-all)
   - [fetch-render](javascript/learn-promises/fetch-render)
+  - [custom-promise](javascript/custom-promise)
 - [learn-regexp](javascript/learn-regexp)
   - [whitespace_regex-js2019](javascript/learn-regexp/whitespace_regex-js2019)
   - [LookAhead-LookBehind](javascript/learn-regexp/LookAhead-LookBehind)
@@ -171,7 +172,6 @@ Projects:
 - [our-reviews](javascript/our-reviews)
 - [questions-accordion](javascript/questions-accordion)
 - [shopping-list](javascript/shopping-list)
-- [custom-promise](javascript/custom-promise)
 - [animated-element](javascript/animated-element)
 
 [Back &#8679;](#100daysofcode)
