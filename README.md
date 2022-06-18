@@ -139,7 +139,7 @@ Projects:
 - [learn-promises](javascript/learn-promises)
   - [promise-all](javascript/learn-promises/promise-all)
   - [fetch-render](javascript/learn-promises/fetch-render)
-  - [custom-promise](javascript/custom-promise)
+  - [custom-promise](javascript/learn-promises/custom-promise)
 - [learn-regexp](javascript/learn-regexp)
   - [whitespace_regex-js2019](javascript/learn-regexp/whitespace_regex-js2019)
   - [LookAhead-LookBehind](javascript/learn-regexp/LookAhead-LookBehind)
