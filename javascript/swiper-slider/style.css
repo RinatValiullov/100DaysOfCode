@@ -1,0 +1,16 @@
+.swiper {
+  background: hsl(220, 100%, 50%);
+  color: #eaea78;
+  height: 300px;
+  width: 768px;
+}
+
+.swiper-wrapper {
+  font-size: 3rem;
+}
+
+.swiper-slide {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
