@@ -221,6 +221,7 @@ Projects:
 - [eslint-cliengine](node/eslint-cliengine)
 - [weatherapp-express](node/weatherapp-express)
 - [multipage-ejs](node/multipage-ejs)
+- [file-sharing](node/file-sharing)
 
 [Back &#8679;](#100daysofcode)
 
