@@ -9,6 +9,45 @@
 </head>
 
 <body>
+  <style>
+    body {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    button {
+      font-size: inherit;
+      grid-column: span 2;
+    }
+  </style>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <div>
+      <label for="file">File:</label>
+      <input type="file" name="file" id="file" required>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password">
+    </div>
+
+    <button type="submit">Share</button>
+  </form>
 
 </body>
 
