@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #456;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+button {
+  all: unset;
+}
+
+.todo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.todo__input {
+  position: relative;
+}
+
+.todo__text {
+  padding: 10px;
+}
+
+.todo__add {
+  background-color: #8bc34a;
+  cursor: pointer;
+  height: 26px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.15s ease-in;
+  width: 26px;
+}
+
+.todo__add:hover {
+  background-color: #689f38;
+}
+
+.todo__add::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23fff' d='M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z' class=''%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+  height: 16px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: 16px;
+}
+
+.todo__text:disabled+.todo__add {
+  cursor: default;
+  background-color: #8bc34a;
+  opacity: 0.5;
+}
+
+.todo__options {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' fill='%23fff'%3E%3Cpath d='M0 0h24L12 12z'/%3E%3C/svg%3E") calc(100% - 10px) center no-repeat;
+  background-color: #8bc34a;
+  background-size: 10px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  max-width: 100%;
+  outline: none;
+  padding: 4px 30px 4px 15px;
+  width: 150px;
+}
+
+/* скрываем дефолтную стрелку в IE10 и IE11 */
+.todo__options::-ms-expand {
+  display: none;
+}
+
+.todo__options>option {
+  color: #212529;
+  background-color: #fff;
+}

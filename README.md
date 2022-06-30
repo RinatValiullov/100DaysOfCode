@@ -174,6 +174,7 @@ Projects:
 - [shopping-list](javascript/shopping-list)
 - [animated-element](javascript/animated-element)
 - [swiper-slider](javascript/swiper-slider)
+- [todo-list](javascript/todo-list)
 
 [Back &#8679;](#100daysofcode)
 

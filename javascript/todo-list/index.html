@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="todo">
+
+    <div class="todo__input">
+      <input type="text" class="todo__text">
+      <button class="todo__add"></button>
+    </div>
+
+    <select class="todo__options">
+      <option value="active">активные</option>
+      <option value="completed">завершённые</option>
+      <option value="deleted">удалённые</option>
+    </select>
+
+    <ul class="todo__items" data-todo-option="active"></ul>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
