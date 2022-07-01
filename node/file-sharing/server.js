@@ -1,8 +1,13 @@
+require("dotenv").config();
 const express = require("express");
 const multer = require("multer");
+const mongoose = require("mongoose");
+
 const app = express();
 
 const upload = multer({ dest: "uploads" });
+
+mongoose.connect(process.env.DB_URL);
 
 app.set("view engine", "ejs");
 
