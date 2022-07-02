@@ -19,6 +19,11 @@ button {
   all: unset;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .todo {
   display: flex;
   flex-wrap: wrap;
@@ -32,23 +37,35 @@ button {
 }
 
 .todo__text {
-  padding: 10px;
+  border: 1px solid hsl(88, 50%, 53%);
+  border-radius: 4px;
+  padding: 10px 30px 10px 10px;
+}
+
+.todo__text:focus-visible {
+  outline: 1px solid hsl(92, 58%, 22%);
+  /* border-radius: 4px; */
 }
 
 .todo__add {
-  background-color: #8bc34a;
+  background-color: hsl(88, 50%, 53%);
   cursor: pointer;
   height: 26px;
   position: absolute;
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
-  transition: background-color 0.15s ease-in;
+  transition: background-color 0.1s ease-in;
   width: 26px;
 }
 
 .todo__add:hover {
-  background-color: #689f38;
+  background-color: hsl(92, 58%, 22%);
+}
+
+.todo__add:focus-visible {
+  outline: none;
+  background-color: hsl(92, 58%, 32%);
 }
 
 .todo__add::before {
@@ -66,7 +83,7 @@ button {
 
 .todo__text:disabled+.todo__add {
   cursor: default;
-  background-color: #8bc34a;
+  background-color: hsl(88, 50%, 53%);
   opacity: 0.5;
 }
 
@@ -75,7 +92,7 @@ button {
   -webkit-appearance: none;
   appearance: none;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' fill='%23fff'%3E%3Cpath d='M0 0h24L12 12z'/%3E%3C/svg%3E") calc(100% - 10px) center no-repeat;
-  background-color: #8bc34a;
+  background-color: hsl(88, 50%, 53%);
   background-size: 10px;
   border-radius: 4px;
   border: none;
@@ -85,9 +102,14 @@ button {
   font-size: inherit;
   line-height: inherit;
   max-width: 100%;
-  outline: none;
   padding: 4px 30px 4px 15px;
-  width: 150px;
+  transition: background-color 0.1s ease-in;
+  width: 160px;
+}
+
+.todo__options:focus-visible {
+  background-color: hsl(92, 58%, 22%);
+  outline: none;
 }
 
 /* скрываем дефолтную стрелку в IE10 и IE11 */
@@ -98,4 +120,99 @@ button {
 .todo__options>option {
   color: #212529;
   background-color: #fff;
+}
+
+.todo__items {
+  width: 100%;
+}
+
+.todo__item {
+  background-color: hsla(230, 70%, 95%, 0.7);
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+.todo__item:not(:last-child) {
+  margin-block-end: 15px;
+}
+
+.todo__action {
+  background-color: hsl(88, 50%, 53%);
+  border-radius: 4px;
+  cursor: pointer;
+  height: 32px;
+  opacity: 0.7;
+  position: absolute;
+  right: 15px;
+  top: -20px;
+  transform: translateY(-50%);
+  transition: top 0.2s ease;
+  width: 32px;
+}
+
+.todo__action::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.todo__action_complete {
+  background-color: hsl(123, 38%, 57%);
+}
+
+.todo__action_delete {
+  background-color: hsl(0, 69%, 67%);
+  right: 56px;
+}
+
+.todo__item:hover .todo__action:hover {
+  opacity: 1;
+}
+
+.todo__action_restore::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.todo__action_complete::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.todo__action_delete::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23fff' d='M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.todo__item:hover .todo__action {
+  top: 50%;
+}
+
+[data-todo-state="active"] .todo__action_restore,
+[data-todo-state="completed"] .todo__action_complete,
+[data-todo-state="deleted"] .todo__action_complete {
+  display: none;
+}
+
+[data-todo-state="completed"] {
+  text-decoration: line-through;
+  background-color: hsl(98, 44%, 95%);
+}
+
+[data-todo-state="deleted"] .todo__task {
+  color: hsl(0, 0%, 62%);
+}
+
+[data-todo-state="deleted"] .todo__action_restore {
+  right: 15px;
+}
+
+[data-todo-option="active"] .todo__item:not([data-todo-state="active"]),
+[data-todo-option="completed"] .todo__item:not([data-todo-state="completed"]),
+[data-todo-option="deleted"] .todo__item:not([data-todo-state="deleted"]) {
+  display: none;
 }
