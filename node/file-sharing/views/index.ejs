@@ -23,7 +23,7 @@
       margin: 0 auto;
     }
 
-    div {
+    div.form-control {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -33,15 +33,26 @@
       font-size: inherit;
       grid-column: span 2;
     }
-  </style>
 
+    div.link {
+      margin-bottom: 1rem;
+    }
+  </style>
+  <% if(locals.fileLink != null) { %>
+  <div class="link">
+    Your file is uploaded
+    <a href="<%= locals.fileLink %>">
+      <%= locals.fileLink %>
+    </a>
+  </div>
+  <% } %>
   <form action="/upload" method="post" enctype="multipart/form-data">
-    <div>
+    <div class="form-control">
       <label for="file">File:</label>
       <input type="file" name="file" id="file" required>
     </div>
 
-    <div>
+    <div class="form-control">
       <label for="password">Password:</label>
       <input type="password" name="password" id="password">
     </div>
