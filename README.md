@@ -157,7 +157,7 @@ Projects:
 - [heart-rain](javascript/heart-rain)
 - [background-changer](javascript/background-changer)
 - [dark-mode](javascript/dark-mode)
-- [carousel](javascript/carousel)
+- [loop-carousel](javascript/loop-carousel)
 - [sound-board](javascript/sound-board)
 - [todo-app](javascript/todo-app)
 - [notes](javascript/notes)
@@ -175,6 +175,7 @@ Projects:
 - [animated-element](javascript/animated-element)
 - [swiper-slider](javascript/swiper-slider)
 - [todo-list](javascript/todo-list)
+- [color-flipper](javascript/color-flipper)
 
 [Back &#8679;](#100daysofcode)
 
