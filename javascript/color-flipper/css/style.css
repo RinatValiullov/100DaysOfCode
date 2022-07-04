@@ -91,6 +91,7 @@ body {
 
 .color-code {
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .btn {
