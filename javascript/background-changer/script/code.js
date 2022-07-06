@@ -2,7 +2,6 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
   document.body.style.backgroundColor = randomBg();
-  console.log(randomBg());
 });
 
 const randomBg = () => {

@@ -1,3 +1,3 @@
-## Creating *background-changer* project
+## Create *background-changer* project
 
-### Simple app for changing background by clicking a button
+### App to change background with the click of a button

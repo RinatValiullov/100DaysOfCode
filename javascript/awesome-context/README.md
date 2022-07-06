@@ -1,1 +1,1 @@
-## Understanding how context works in JS
+## Understand how context works in JS
