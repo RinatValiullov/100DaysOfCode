@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 0;
+}
+
+button {
+  background: rgba(100, 50, 200, 0.5);
+  border: none;
+  margin: 15px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background: rgba(100, 50, 200, 1);
+}
