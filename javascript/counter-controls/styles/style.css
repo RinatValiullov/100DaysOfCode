@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #afafff;
+  color: #336;
+  display: grid;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  place-content: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 15px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 50%;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #336;
+  color: #fff;
+}
+
+.counter-value {
+  font-size: 4rem;
+}

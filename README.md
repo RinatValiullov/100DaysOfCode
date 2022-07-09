@@ -176,6 +176,7 @@ Projects:
 - [swiper-slider](javascript/swiper-slider)
 - [todo-list](javascript/todo-list)
 - [color-flipper](javascript/color-flipper)
+- [counter-controls](javascript/counter-controls)
 
 [Back &#8679;](#100daysofcode)
 
