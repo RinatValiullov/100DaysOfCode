@@ -177,6 +177,7 @@ Projects:
 - [todo-list](javascript/todo-list)
 - [color-flipper](javascript/color-flipper)
 - [counter-controls](javascript/counter-controls)
+- [navbar-toggle](javascript/navbar-toggle)
 
 [Back &#8679;](#100daysofcode)
 
