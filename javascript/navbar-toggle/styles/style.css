@@ -60,12 +60,16 @@ Global Styles
 ===============
 */
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -202,7 +206,7 @@ nav {
 }
 
 .logo {
-  height: 40px;
+  height: 60px;
 }
 
 .links a {
@@ -226,9 +230,9 @@ nav {
 }
 
 .links {
-  /* height: 0;
+  height: 0;
   overflow: hidden;
-  transition: var(--transition); */
+  transition: var(--transition);
 }
 
 .show-links {
