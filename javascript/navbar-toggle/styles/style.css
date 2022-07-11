@@ -45,7 +45,7 @@ Variables
   --clr-black: #222;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
-  --transition: all 0.3s linear;
+  --transition: all 0.2s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -95,7 +95,7 @@ h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  margin-block-end: 0.75rem;
   font-family: var(--ff-primary);
 }
 
@@ -116,7 +116,7 @@ h4 {
 }
 
 p {
-  margin-bottom: 1.25rem;
+  margin-block-end: 1.25rem;
   color: var(--clr-grey-5);
 }
 
@@ -149,31 +149,6 @@ p {
   }
 }
 
-/*  global classes */
-
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
-
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
 /*
 ===============
 Navbar
@@ -192,21 +167,22 @@ nav {
 }
 
 .nav-toggle {
-  font-size: 1.5rem;
-  color: var(--clr-primary-5);
   background: transparent;
   border-color: transparent;
-  transition: var(--transition);
+  color: var(--clr-primary-5);
   cursor: pointer;
+  font-size: 1.5rem;
+  transition: var(--transition);
+  transform: scale(1);
 }
 
 .nav-toggle:hover {
   color: var(--clr-primary-1);
-  transform: rotate(90deg);
+  transform: scale(1.2);
 }
 
 .logo {
-  height: 60px;
+  height: 40px;
 }
 
 .links a {
@@ -226,17 +202,38 @@ nav {
 }
 
 .social-icons {
-  display: none;
+  align-items: center;
+  display: flex;
+  gap: 15px;
 }
 
-.links {
+.social-icons a {
+  color: var(--clr-primary-5);
+}
+
+.social-icons a i {
+  font-size: 1.4rem;
+}
+
+.links,
+.social-icons {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
 
+.social-icons {
+  transition-delay: 0.1s;
+}
+
 .show-links {
   height: 10rem;
+  margin-block-end: 15px;
+}
+
+.show-social {
+  height: 2rem;
+  margin: 0px 10px;
 }
 
 @media screen and (min-width: 800px) {
@@ -251,6 +248,10 @@ nav {
 
   .nav-header {
     padding: 0;
+  }
+
+  .logo {
+    height: 60px;
   }
 
   .nav-toggle {
@@ -274,6 +275,7 @@ nav {
 
   .social-icons {
     display: flex;
+    height: auto;
   }
 
   .social-icons a {
