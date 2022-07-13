@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <section class="section-title">
+    <h1 class="title">Beautiful Nature</h1>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Corrupti alias
+      excepturi doloremque suscipit at unde.</p>
+  </section>
+
+  <section class="about-center section-center">
+    <article class="about-image">
+      <img src="./assets/mountains.jpg" alt="mountains" class="fade-in">
+      <img src="./assets/forest.jpg" alt="forest">
+      <img src="./assets/lakes.jpg" alt="lakes">
+    </article>
+    <article class="about">
+      <div class="tabs">
+        <button class="tab active" data-id="mountains">mountains</button>
+        <button class="tab" data-id="forest">forest</button>
+        <button class="tab" data-id="lakes">lakes</button>
+      </div>
+      <div class="about-content">
+        <div class="content active" id="mountains">
+          <h4>Mountains</h4>
+          <p>
+            Mountains often serve as geographic features that define natural
+            borders of countries. Their height can influence weather patterns,
+            stalling storms that roll off the oceans and squeezing water from
+            the clouds. The other side is often much drier. The rugged
+            landscapes even provide refuge—and protection—for fleeing and
+            invading armies.
+          </p>
+        </div>
+        <div class="content" id="forest">
+          <h4>Forest</h4>
+          <p>
+            Forest ecosystems can be found in all regions capable of sustaining
+            tree growth, at altitudes up to the tree line, except where natural
+            fire frequency or other disturbance is too high, or where the
+            environment has been altered by human activity.
+          </p>
+        </div>
+        <div class="content" id="lakes">
+          <h4>Lakes</h4>
+          <p>
+            Hutchinson presented in his publication a comprehensive analysis of
+            the origin of lakes and proposed what is a widely accepted
+            classification of lakes according to their origin. This
+            classification recognizes 11 major lake types that are divided into
+            76 subtypes. The 3 of 11 major lake types are:
+          </p>
+          <ul>
+            <li type="disk">tectonic lakes</li>
+            <li type="disk">solution lakes</li>
+            <li type="disk">organic lakes</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+
+  <script src="scripts/code.js"></script>
+</body>
+
+</html>

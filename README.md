@@ -178,6 +178,7 @@ Projects:
 - [color-flipper](javascript/color-flipper)
 - [counter-controls](javascript/counter-controls)
 - [navbar-toggle](javascript/navbar-toggle)
+- [classic-tabs](javascript/classic-tabs)
 
 [Back &#8679;](#100daysofcode)
 
