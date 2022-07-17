@@ -179,6 +179,7 @@ Projects:
 - [counter-controls](javascript/counter-controls)
 - [navbar-toggle](javascript/navbar-toggle)
 - [classic-tabs](javascript/classic-tabs)
+- [throttle-click](javascript/throttle-click)
 
 [Back &#8679;](#100daysofcode)
 
