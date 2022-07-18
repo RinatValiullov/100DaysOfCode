@@ -180,6 +180,7 @@ Projects:
 - [navbar-toggle](javascript/navbar-toggle)
 - [classic-tabs](javascript/classic-tabs)
 - [throttle-click](javascript/throttle-click)
+- [debounce-click](javascript/debounce-click)
 
 [Back &#8679;](#100daysofcode)
 
