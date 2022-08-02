@@ -33,6 +33,7 @@
 - Days 120-140: [Angular](#Angular)
 - Days 140-160: [Markdown](#Markdown)
 - Days 140-160: [UI-UX](#UI-UX)
+- Days 160-180: [Pug](#Pug)
 
 ### [HTML](html)
 
@@ -381,6 +382,14 @@ Projects:
 Projects:
 
 - [put-buttons](UI-UX/put-buttons)
+
+[Back &#8679;](#100daysofcode)
+
+### [Pug](pug)
+
+Projects:
+
+- [pug-lp](pug-lp/)
 
 [Back &#8679;](#100daysofcode)
 

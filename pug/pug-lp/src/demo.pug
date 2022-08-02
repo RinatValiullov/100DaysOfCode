@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Hello, Pug!
+    link(rel="stylesheet", href="../../node_modules/bootstrap/dist/css/bootstrap.css")
+    script(defer src="../../node_modules/bootstrap/dist/js/bootstrap.js")
+    link(rel="stylesheet", href="main.css")
+  body
+    header.mb-3
+      nav.navbar.navbar-dark.navbar-expand-md.bg-dark
+        div.container-fluid
+          a(href="https://github.com/pugjs/pug" class="navbar-brand" target="_blank")
+            img(src="pug_logo.svg" width="50" height="50")
+          button(
+            class="navbar-toggler",
+            type="button",
+            data-bs-toggle="collapse",
+            data-bs-target="#navbarNav"
+            )
+            span(class="navbar-toggler-icon")
+          div(class="collapse navbar-collapse justify-content-end" id="navbarNav")
+            ul.navbar-nav
+              li.nav-item: a(href="#" class="nav-link active") Link
+              li.nav-item: a(href="#" class="nav-link") Link
+              li.nav-item: a(href="#" class="nav-link") Link
+              li.nav-item: a(href="#" class="nav-link") Link
+
+    main
+      section(class="container")
+        h1(class=["display-1", "text-center", "mb-5"]) Hello, Pug!
+        .cards
+          .row.mb-3.justify-content-around
+            .card(style={ "width": "45%" })
+              .card-body(class=["d-flex", "flex-column", "justify-content-between"])
+                h2(class="card-title") Filters
+                p(class="card-text") Filters let you use other languages in Pug templates. They take a block of plain text as an input.
+                a.btn.btn-primary(href="https://pugjs.org/language/filters.html" target="_blank") Learn more
+            .card(style={ "width": "45%" })
+              .card-body(class=["d-flex", "flex-column", "justify-content-between"])
+                h2(class="card-title") Interpolation
+                p(class="card-text") Pug provides operators for a variety of your different interpolative needs.
+                a.btn.btn-primary(href="https://pugjs.org/language/interpolation.html" target="_blank") Learn more
+          .row.justify-content-around
+            .card(style={ "width": "45%" })
+              .card-body(class=["d-flex", "flex-column", "justify-content-between"])
+                h2(class="card-title") Mixins
+                p(class="card-text") Mixins allow you to create reusable blocks of Pug.
+                a.btn.btn-primary(href="https://pugjs.org/language/mixins.html" target="_blank") Learn more
+            .card(style={ "width": "45%" })
+              .card-body(class=["d-flex", "flex-column", "justify-content-between"])
+                h2(class="card-title") Iteration
+                p(class="card-text") Pug supports two primary methods of iteration: #[code each] and #[code while].
+                a.btn.btn-primary(href="https://pugjs.org/language/iteration.html" target="_blank") Learn more
+
+    footer.footer.fixed-bottom.p-3.bg-dark
+      ul.footer__navigation.navigation.d-flex.justify-content-end.list-unstyled.gap-4.m-0
+        li.navigation__item: a(href="#" class="navigation__link text-white text-decoration-none") Link
+        li.navigation__item: a(href="#" class="navigation__link text-white text-decoration-none") Link
+        li.navigation__item: a(href="#" class="navigation__link text-white text-decoration-none") Link
