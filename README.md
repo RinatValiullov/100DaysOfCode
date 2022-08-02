@@ -389,7 +389,7 @@ Projects:
 
 Projects:
 
-- [pug-lp](pug-lp/)
+- [pug-lp](pug/pug-lp)
 
 [Back &#8679;](#100daysofcode)
 
