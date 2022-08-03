@@ -390,6 +390,7 @@ Projects:
 Projects:
 
 - [pug-lp](pug/pug-lp)
+- [pug-templates](pug/pug-templates)
 
 [Back &#8679;](#100daysofcode)
 

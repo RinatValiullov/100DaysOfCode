@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    block meta
+
+    title
+      block title
+
+    block styles
+      link(rel="stylesheet", href="styles/main.css")
+
+  body(class=["d-flex", "flex-column", "vh-100"])
+
+    include includes/_socialicons.pug
+
+    include includes/_header.pug
+
+    block content
+
+    include includes/_footer.pug
+
+    block scripts
+      script(src="scripts/main.js")
