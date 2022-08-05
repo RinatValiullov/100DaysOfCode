@@ -26,6 +26,21 @@ body {
   outline: 1px solid #555;
 }
 
+main.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.description {
+  text-align: justify;
+}
+
+img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .footer {
   font-family: 'Nunito', sans-serif;
 }

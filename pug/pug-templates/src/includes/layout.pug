@@ -1,4 +1,5 @@
-include _variables.pug
+block vars
+  include _variables.pug
 
 doctype html
 html(lang=language)
@@ -7,11 +8,12 @@ html(lang=language)
       meta(charset="UTF-8")
       meta(http-equiv="X-UA-Compatible", content="IE=edge")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      meta(name="description" content=docDescription)
 
     //- way 1
     //- title #{docTitle}
     //- way 2
-    title= docTitle
+    title Learn Pug | #{docTitle}
 
     block fonts
       if GoogleFonts
@@ -24,37 +26,42 @@ html(lang=language)
         link(rel="stylesheet", href="../../node_modules/bootstrap/dist/css/bootstrap.min.css")
       link(rel="stylesheet", href=`${PATHS.styles}/main.css`)
 
-  body(class=["d-flex", "flex-column", "vh-100"])
+  body(class=["d-flex", "flex-column", "min-vh-100"])
 
     include _socialicons.pug
 
     include _header.pug
 
-    block content
-      main.container.m-auto
-        div.btns.list-group.m-auto.w-75
-          button(
-            type="button"
-            class=["list-group-item", "list-group-item-action", "active"]
-            aria-current="true"
-          )= docTitle
-          button(
-            type="button"
-            class=["list-group-item", "list-group-item-action"]
-          ) A second button item
-          button(
-            type="button"
-            class=["list-group-item", "list-group-item-action"]
-          ) A third button item
-          button(
-            type="button"
-            class=["list-group-item", "list-group-item-action"]
-          ) A fourth button item
-          button(
-            type="button"
-            class=["list-group-item", "list-group-item-action"]
-            disabled
-          ) A disabled button item
+    main.container.m-auto.my-0
+      section
+        h1.text-center.mb-3= docTitle
+        block list-group
+          div.btns.list-group.m-auto.mb-3.w-100
+            a(
+              href="index.html"
+              type="button"
+              class=["list-group-item", "list-group-item-action", "active"]
+              aria-current="true"
+            ) Go to home page
+            a(
+              href="contact.html"
+              type="button"
+              class=["list-group-item", "list-group-item-action"]
+            ) Go to contact page
+            button(
+              type="button"
+              class=["list-group-item", "list-group-item-action"]
+            ) A third button item
+            button(
+              type="button"
+              class=["list-group-item", "list-group-item-action"]
+            ) A fourth button item
+            button(
+              type="button"
+              class=["list-group-item", "list-group-item-action"]
+              disabled
+            ) A disabled button item
+        block content
 
     include _footer.pug
 
