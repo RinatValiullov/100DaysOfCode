@@ -1,0 +1,64 @@
+include _variables.pug
+
+doctype html
+html(lang=language)
+  head
+    block meta
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    //- way 1
+    //- title #{docTitle}
+    //- way 2
+    title= docTitle
+
+    block fonts
+      if GoogleFonts
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet", href=`https://fonts.googleapis.com/css2?family=${GoogleFonts.familyLato}&family=${GoogleFonts.familyNunito}&display=swap`)
+
+    block styles
+      if Bootstrap
+        link(rel="stylesheet", href="../../node_modules/bootstrap/dist/css/bootstrap.min.css")
+      link(rel="stylesheet", href=`${PATHS.styles}/main.css`)
+
+  body(class=["d-flex", "flex-column", "vh-100"])
+
+    include _socialicons.pug
+
+    include _header.pug
+
+    block content
+      main.container.m-auto
+        div.btns.list-group.m-auto.w-75
+          button(
+            type="button"
+            class=["list-group-item", "list-group-item-action", "active"]
+            aria-current="true"
+          )= docTitle
+          button(
+            type="button"
+            class=["list-group-item", "list-group-item-action"]
+          ) A second button item
+          button(
+            type="button"
+            class=["list-group-item", "list-group-item-action"]
+          ) A third button item
+          button(
+            type="button"
+            class=["list-group-item", "list-group-item-action"]
+          ) A fourth button item
+          button(
+            type="button"
+            class=["list-group-item", "list-group-item-action"]
+            disabled
+          ) A disabled button item
+
+    include _footer.pug
+
+    block scripts
+      if Bootstrap
+        script(defer src="../../node_modules/bootstrap/dist/js/bootstrap.min.js")
+      script(src=`${PATHS.scripts}/main.js`)
