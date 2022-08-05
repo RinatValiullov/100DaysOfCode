@@ -1,13 +1,25 @@
+include includes/_variables.pug
+
 doctype html
 html(lang="en")
   head
     block meta
 
-    title
-      block title
+    //- way 1
+    //- title #{docTitle}
+    //- way 2
+    title= docTitle
+
+    block fonts
+      if GoogleFonts
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet", href=`https://fonts.googleapis.com/css2?family=${GoogleFonts.familyLato}&family=${GoogleFonts.familyNunito}&display=swap`)
 
     block styles
-      link(rel="stylesheet", href="styles/main.css")
+      if Bootstrap
+        link(rel="stylesheet", href="../../node_modules/bootstrap/dist/css/bootstrap.min.css")
+      link(rel="stylesheet", href=`${PATHS.styles}/main.css`)
 
   body(class=["d-flex", "flex-column", "vh-100"])
 
@@ -20,4 +32,6 @@ html(lang="en")
     include includes/_footer.pug
 
     block scripts
-      script(src="scripts/main.js")
+      if Bootstrap
+        script(defer src="../../node_modules/bootstrap/dist/js/bootstrap.min.js")
+      script(src=`${PATHS.scripts}/main.js`)
