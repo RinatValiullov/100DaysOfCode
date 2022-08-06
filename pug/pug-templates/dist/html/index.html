@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Nunito&amp;display=swap">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+      .description {
+        font-style: italic;
+      }
+      
+    </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
@@ -46,8 +52,8 @@
     <main class="container m-auto my-0">
       <section>
         <h1 class="text-center mb-3">Hello, 4rontender!</h1>
-        <div class="btns list-group m-auto mb-3 w-100"><a class="list-group-item list-group-item-action active" href="index.html" type="button" aria-current="true">Go to home page</a><a class="list-group-item list-group-item-action" href="contact.html" type="button">Go to contact page</a>
-          <button class="list-group-item list-group-item-action" type="button">A third button item</button>
+        <div class="btns list-group m-auto mb-3 w-100"><a class="list-group-item list-group-item-action active home-btn" href="index.html" type="button" aria-current="true">Go to home page</a><a class="list-group-item list-group-item-action contact-btn" href="contact.html" type="button">Go to contact page</a>
+          <button class="list-group-item list-group-item-action hide-paragraph" type="button">Hide paragraph below</button>
           <button class="list-group-item list-group-item-action" type="button">A fourth button item</button>
           <button class="list-group-item list-group-item-action" type="button" disabled>A disabled button item</button>
         </div>
@@ -78,5 +84,12 @@
     </footer>
     <script defer src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script>
+      const homeBtn = document.querySelector('.hide-paragraph');
+      const parDescr = document.querySelector('.description');
+      homeBtn.addEventListener('click', event => {
+        parDescr.remove();
+      });
+    </script>
   </body>
 </html>

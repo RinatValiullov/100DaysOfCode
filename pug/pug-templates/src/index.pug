@@ -3,6 +3,20 @@ extends includes/layout.pug
 append vars
   - docTitle = "Hello, 4rontender!"
 
+append styles
+  style.
+    .description {
+      font-style: italic;
+    }
+
 append content
   p.lead.description
     | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus explicabo hic enim odit expedita nobis, aliquid rem! Officia numquam facilis pariatur modi! Ad, minima doloribus?
+
+append scripts
+  script.
+    const homeBtn = document.querySelector('.hide-paragraph');
+    const parDescr = document.querySelector('.description');
+    homeBtn.addEventListener('click', event => {
+      parDescr.remove();
+    });
