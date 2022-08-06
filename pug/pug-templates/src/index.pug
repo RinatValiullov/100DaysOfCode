@@ -5,8 +5,8 @@ append vars
 
 append styles
   style.
-    .description {
-      font-style: italic;
+    .hide {
+      display: none;
     }
 
 append content
@@ -15,8 +15,16 @@ append content
 
 append scripts
   script.
-    const homeBtn = document.querySelector('.hide-paragraph');
+    const hideBtn = document.querySelector('.hide-paragraph');
     const parDescr = document.querySelector('.description');
-    homeBtn.addEventListener('click', event => {
-      parDescr.remove();
+    let parText = "Hide";
+    hideBtn.querySelector('span').innerHTML = parText;
+
+    hideBtn.addEventListener('click', event => {
+      console.log(event.currentTarget.dataset)
+      parText = parText === 'Hide' ? "Show" : "Hide";
+      event.currentTarget.querySelector('span').innerHTML = parText;
+      event.currentTarget.dataset.toggle = "Hide"
+
+      parDescr.classList.toggle('hide');
     });

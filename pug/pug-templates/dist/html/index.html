@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <style>
-      .description {
-        font-style: italic;
+      .hide {
+        display: none;
       }
       
     </style>
@@ -53,7 +53,7 @@
       <section>
         <h1 class="text-center mb-3">Hello, 4rontender!</h1>
         <div class="btns list-group m-auto mb-3 w-100"><a class="list-group-item list-group-item-action active home-btn" href="index.html" type="button" aria-current="true">Go to home page</a><a class="list-group-item list-group-item-action contact-btn" href="contact.html" type="button">Go to contact page</a>
-          <button class="list-group-item list-group-item-action hide-paragraph" type="button">Hide paragraph below</button>
+          <button class="list-group-item list-group-item-action hide-paragraph" type="button" data-toggle="Show"><span></span> paragraph below</button>
           <button class="list-group-item list-group-item-action" type="button">A fourth button item</button>
           <button class="list-group-item list-group-item-action" type="button" disabled>A disabled button item</button>
         </div>
@@ -85,10 +85,18 @@
     <script defer src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
     <script>
-      const homeBtn = document.querySelector('.hide-paragraph');
+      const hideBtn = document.querySelector('.hide-paragraph');
       const parDescr = document.querySelector('.description');
-      homeBtn.addEventListener('click', event => {
-        parDescr.remove();
+      let parText = "Hide";
+      hideBtn.querySelector('span').innerHTML = parText;
+      
+      hideBtn.addEventListener('click', event => {
+        console.log(event.currentTarget.dataset)
+        parText = parText === 'Hide' ? "Show" : "Hide";
+        event.currentTarget.querySelector('span').innerHTML = parText;
+        event.currentTarget.dataset.toggle = "Hide"
+      
+        parDescr.classList.toggle('hide');
       });
     </script>
   </body>
