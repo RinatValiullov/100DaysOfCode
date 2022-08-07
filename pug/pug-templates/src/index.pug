@@ -13,7 +13,7 @@ append content
   p.lead.description
     | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus explicabo hic enim odit expedita nobis, aliquid rem! Officia numquam facilis pariatur modi! Ad, minima doloribus?
 
-append scripts
+prepend scripts
   script.
     const hideBtn = document.querySelector('.hide-paragraph');
     const parDescr = document.querySelector('.description');
@@ -21,7 +21,7 @@ append scripts
     hideBtn.querySelector('span').innerHTML = parText;
 
     hideBtn.addEventListener('click', event => {
-      console.log(event.currentTarget.dataset)
+      //- console.log(event.currentTarget.dataset)
       parText = parText === 'Hide' ? "Show" : "Hide";
       event.currentTarget.querySelector('span').innerHTML = parText;
       event.currentTarget.dataset.toggle = "Hide"

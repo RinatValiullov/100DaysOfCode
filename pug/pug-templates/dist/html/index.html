@@ -82,8 +82,6 @@
         </ul>
       </div>
     </footer>
-    <script defer src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="scripts/main.js"></script>
     <script>
       const hideBtn = document.querySelector('.hide-paragraph');
       const parDescr = document.querySelector('.description');
@@ -91,7 +89,7 @@
       hideBtn.querySelector('span').innerHTML = parText;
       
       hideBtn.addEventListener('click', event => {
-        console.log(event.currentTarget.dataset)
+        //- console.log(event.currentTarget.dataset)
         parText = parText === 'Hide' ? "Show" : "Hide";
         event.currentTarget.querySelector('span').innerHTML = parText;
         event.currentTarget.dataset.toggle = "Hide"
@@ -99,5 +97,7 @@
         parDescr.classList.toggle('hide');
       });
     </script>
+    <script defer src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

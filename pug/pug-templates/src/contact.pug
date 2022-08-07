@@ -5,4 +5,16 @@ append vars
   - docDescription = "This is a contact page"
 
 append content
-  img(src="https://images.unsplash.com/photo-1659641926134-d80cb09ba024?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")
+  #carouselExampleControls.carousel.slide(data-rife="carousel")
+    .carousel-inner
+      +slider('https://images.unsplash.com/photo-1568242505676-8a22903aa01c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80', '')
+      +slider('https://images.unsplash.com/photo-1573496005828-adb22e525798?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80', '')
+      +slider('https://images.unsplash.com/photo-1638473032034-e225aa8a0685?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'active')
+    button.carousel-control-prev(type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev")
+      span(class="carousel-control-prev-icon" aria-hidden="true")
+      span(class="visually-hidden") Previous
+    button.carousel-control-next(type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next")
+      span.carousel-control-next-icon(aria-hidden="true")
+      span.visually-hidden Next
+
+  //- img(src="https://images.unsplash.com/photo-1659641926134-d80cb09ba024?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")

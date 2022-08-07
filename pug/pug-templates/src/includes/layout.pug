@@ -1,6 +1,12 @@
 block vars
   include _variables.pug
 
+  mixin slider(src, active='')
+    div(class=`carousel-item ${active}`)
+      img(src=src class="d-block w-100" alt="image")
+
+
+
 doctype html
 html(lang=language)
   head
