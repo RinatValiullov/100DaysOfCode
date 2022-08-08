@@ -1,1 +1,3 @@
-## Creating simple react project (rendering table from array)
+## Creat *table-rendering* project
+
+### Render a table from array data

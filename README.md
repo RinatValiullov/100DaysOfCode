@@ -22,7 +22,7 @@
 - Days 62–65: [Webpack](#Webpack)
 - Day 66: ESLint
 - Days 68–83: [React](#React)
-- Days 84–89: Redux
+- Days 84–89: [Redux](#Redux)
 - Days 90–94: [Jest](#Jest)
 - Days 95–97: [TypeScript](#TypeScript)
 - Days 98–100: NextJS
@@ -274,7 +274,7 @@ Projects:
 
 [Back &#8679;](#100daysofcode)
 
-### [Redux](redux)
+### [Redux](Redux)
 
 Projects:
 
