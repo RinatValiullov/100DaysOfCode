@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eef;
+  font-size: 2rem;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  border: 1px solid #456;
+  min-width: 100px;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+button:hover {
+  border: 1px solid transparent;
+  background-color: #ddd;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 5px;
+}
+
+.click {
+  align-items: center;
+  background-color: #ddd;
+  display: flex;
+  height: 15px;
+  font-weight: 700;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding: 30px;
+  width: 15px;
+}

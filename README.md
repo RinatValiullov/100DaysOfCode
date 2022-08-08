@@ -274,6 +274,14 @@ Projects:
 
 [Back &#8679;](#100daysofcode)
 
+### [Redux](redux)
+
+Projects:
+
+- [clicker](redux/clicker)
+
+[Back &#8679;](#100daysofcode)
+
 ### [Jest](Jest)
 
 Projects:
