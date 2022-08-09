@@ -4,17 +4,26 @@ append vars
   - docTitle = "Hello, 4rontender!"
 
 append styles
-  style.
-    .hide {
-      display: none;
-    }
+  style
+    :scss
+      .hide {
+        display: none;
+      }
+      .hide-paragraph {
+        background-color: hsl(200, 80%, 95%);
+
+        span {
+          font-weight: 700;
+        }
+      }
+
 
 append content
   p.lead.description
     | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus explicabo hic enim odit expedita nobis, aliquid rem! Officia numquam facilis pariatur modi! Ad, minima doloribus?
 
 prepend scripts
-  script.
+  script(type="module").
     const hideBtn = document.querySelector('.hide-paragraph');
     const parDescr = document.querySelector('.description');
     let parText = "Hide";

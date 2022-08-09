@@ -74,5 +74,5 @@ html(lang=language)
 
     block scripts
       if Bootstrap
-        script(defer src="../../node_modules/bootstrap/dist/js/bootstrap.min.js")
+        script(type="module" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js")
       script(src=`${PATHS.scripts}/main.js`)
