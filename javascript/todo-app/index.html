@@ -6,24 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Todo App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-  <section class="container">
-    <form>
-      <input type="text" class="todoInput">
-      <input type="submit" value="Add item">
+  <section class="todo">
+    <h1 class="todo__title">TODO LIST</h1>
+    <form class="todo__form">
+      <input type="text" class="todo__input" placeholder="What are the plans?">
+      <button type="submit" class="todo__add">Add</button>
     </form>
 
-    <ul class="todoList"></ul>
+    <ul class="todo__list"></ul>
   </section>
-  <section>
+
+  <section class="refresh">
     <button class="refreshUI">Reset UI</button>
   </section>
 
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

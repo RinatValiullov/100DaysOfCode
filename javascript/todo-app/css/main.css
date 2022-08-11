@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 *,
@@ -8,18 +9,68 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  margin: 20px 0;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+button {
+  background-color: hsl(200, 80%, 80%);
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: hsl(200, 100%, 70%);
+}
+
+input {
+  font-size: inherit;
+  padding: 10px 20px;
+}
+
 ul {
+  margin: 0;
   padding: 0;
 }
 
 li {
   list-style-type: none;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
 body {
+  align-items: center;
+  display: flex;
+  font-family: 'IBM Plex Sans', sans-serif;
+  flex-direction: column;
   margin: 0;
 }
 
-.container {
-  margin: 20px;
+.todo {
+  margin-block-end: 20px;
+  text-align: center;
+}
+
+.todo__title {
+  margin-block-end: 20px;
+}
+
+.todo__form {
+  align-items: stretch;
+  display: flex;
+  gap: 10px;
+}
+
+.todo__item {
+  background-color: hsl(200, 70%, 90%);
+  margin: 10px 0;
 }
