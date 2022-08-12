@@ -75,6 +75,7 @@ Projects:
 - [masonry-layout](css/masonry-layout)
 - [gradient-shadow](css/gradient-shadow)
 - [animated-navbar](css/animated-navbar)
+- [text-gradient-animation](css/text-gradient-animation)
 
 [Back &#8679;](#100daysofcode)
 

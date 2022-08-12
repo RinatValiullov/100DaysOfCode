@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  align-items: center;
+  background-image: linear-gradient(90deg,
+      hsl(50, 90%, 10%),
+      hsl(200, 90%, 10%));
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+p {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg,
+      hsl(180deg 100% 55%),
+      hsl(55deg 100% 60%),
+      hsl(100deg 100% 60%),
+      hsl(280deg 100% 60%),
+      hsl(180deg 100% 55%));
+  background-position: 0;
+  background-size: 200%;
+  color: transparent;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  animation: textGradient 3s infinite ease-out;
+}
+
+@keyframes textGradient {
+  from {
+    background-position: 100%;
+  }
+
+  to {
+    background-position: -100%;
+  }
+}
