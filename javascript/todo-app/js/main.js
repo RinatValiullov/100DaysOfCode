@@ -19,11 +19,12 @@ const addToLocalstorage = (value) => {
 
 const addTodoItem = (textNode) => {
   const LI = createElement("LI", "todo__item", textNode);
-  addToLocalstorage(textNode);
 
   todoList.appendChild(LI);
 
   todoInput.value = "";
+
+  addToLocalstorage(textNode);
 };
 
 todoForm.addEventListener("submit", (event) => {

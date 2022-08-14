@@ -21,7 +21,7 @@ input {
 }
 
 button {
-  background-color: hsl(200, 80%, 80%);
+  background-color: hsl(200deg 80% 80%);
   border: none;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -44,7 +44,6 @@ ul {
 li {
   list-style-type: none;
   padding: 10px;
-  text-transform: uppercase;
 }
 
 body {
@@ -57,6 +56,7 @@ body {
 
 .todo {
   margin-block-end: 20px;
+  min-width: 500px;
   text-align: center;
 }
 
@@ -68,9 +68,34 @@ body {
   align-items: stretch;
   display: flex;
   gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo__input {
+  width: 100%;
 }
 
 .todo__item {
-  background-color: hsl(200, 70%, 90%);
+  align-items: center;
+  background-color: hsl(200deg 70% 90%);
+  display: flex;
+  justify-content: space-around;
   margin: 10px 0;
+  padding: 15px 30px;
+}
+
+.todo__item-text {
+  margin-inline-end: auto;
+}
+
+.todo__item-delete {
+  background-color: hsl(330deg 65% 65%);
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+.todo__item-delete:hover {
+  background-color: hsl(330deg 65% 55%);
 }
