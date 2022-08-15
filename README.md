@@ -280,6 +280,7 @@ Projects:
 Projects:
 
 - [clicker](redux/clicker)
+- [todo](redux/todo)
 
 [Back &#8679;](#100daysofcode)
 
