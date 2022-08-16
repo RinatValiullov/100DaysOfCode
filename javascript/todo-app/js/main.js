@@ -4,6 +4,12 @@ const todoForm = document.querySelector(".todo__form");
 const todoInput = document.querySelector(".todo__input");
 const todoList = document.querySelector(".todo__list");
 const refreshUI = document.querySelector(".refreshUI");
+const todoAdd = document.querySelector(".todo__add");
+
+todoAdd.addEventListener("click", (event) => {
+  event.preventDefault();
+  addTodoItem(todoInput.value);
+});
 
 Object.entries(localStorage).forEach(([key, value]) => {
   if (/item-\d+?/.test(key)) {
@@ -27,10 +33,28 @@ const addTodoItem = (textNode) => {
   addToLocalstorage(textNode);
 };
 
-todoForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  addTodoItem(todoInput.value);
-});
+const removeLocalStorageItem = (event) => {
+  Object.entries(localStorage).forEach(([key, value]) => {
+    if (/item-\d+?/.test(key)) {
+      if (
+        JSON.parse(value) === event.target.parentElement.firstChild.textContent
+      ) {
+        localStorage.removeItem(key);
+      }
+    }
+  });
+};
+
+const removeTodoItem = () => {
+  const deleteButtons = document.querySelectorAll(".todo__item-delete");
+  deleteButtons.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      removeLocalStorageItem(event);
+      event.target.parentElement.remove();
+    });
+  });
+};
+removeTodoItem();
 
 refreshUI.addEventListener("click", (event) => {
   localStorage.clear();
