@@ -89,13 +89,29 @@ body {
   margin-inline-end: auto;
 }
 
-.todo__item-delete {
-  background-color: hsl(330deg 65% 65%);
+.btn {
   border-radius: 5px;
   font-size: 0.8rem;
   padding: 5px 10px;
 }
 
+.todo__item-complete {
+  background-color: hsl(300deg 75% 75%);
+  margin-inline-end: 5px;
+}
+
+.todo__item-complete:hover {
+  background-color: hsl(300deg 75% 65%);
+}
+
+.todo__item-delete {
+  background-color: hsl(330deg 65% 65%);
+}
+
 .todo__item-delete:hover {
   background-color: hsl(330deg 65% 55%);
+}
+
+.todo__item--completed .todo__item-text {
+  text-decoration: line-through;
 }

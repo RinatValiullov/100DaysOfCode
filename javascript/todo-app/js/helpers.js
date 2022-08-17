@@ -1,26 +1,36 @@
-const createAdditionalElement = (tag, text, className = "") => {
-  const addElement = document.createElement(tag);
-  addElement.classList.add(className);
+const createComponent = (tag, text, ...className) => {
+  const element = document.createElement(tag);
+  element.classList.add(...className);
   const textNode = document.createTextNode(text);
-  addElement.appendChild(textNode);
+  element.appendChild(textNode);
 
-  return addElement;
+  return element;
 };
 
-export const createElement = (tagName, tagClass = "", tagText = "tag text") => {
-  const elementTag = document.createElement(tagName);
-  elementTag.classList.add(tagClass);
-  // const elementText = document.createTextNode(tagText);
-  // elementTag.appendChild(elementText);
+const createItem = (tag, text, className) => {
+  const item = document.createElement(tag);
+  item.classList.add(className);
 
-  const spanText = createAdditionalElement("span", tagText, `${tagClass}-text`);
-  const btnDel = createAdditionalElement(
+  const span = createComponent("span", text, `${className}-text`);
+  const buttonComplete = createComponent(
+    "button",
+    "complete",
+    "btn",
+    `${className}-complete`
+  );
+  const buttonDelete = createComponent(
     "button",
     "delete",
-    `${tagClass}-delete`
+    "btn",
+    `${className}-delete`
   );
 
-  elementTag.append(spanText, btnDel);
+  item.append(span, buttonComplete, buttonDelete);
 
-  return elementTag;
+  return item;
 };
+
+// Validate input value
+const isEmpty = (value) => !value.trim().length;
+
+export { createItem, isEmpty };
