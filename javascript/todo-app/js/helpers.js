@@ -33,4 +33,9 @@ const createItem = (tag, text, className) => {
 // Validate input value
 const isEmpty = (value) => !value.trim().length;
 
-export { createItem, isEmpty };
+// Unique id
+const uniqueId = () => {
+  return Date.now();
+};
+
+export { createItem, isEmpty, uniqueId };
