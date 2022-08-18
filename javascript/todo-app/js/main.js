@@ -6,18 +6,13 @@ const todoList = document.querySelector(".todo__list");
 const refreshUI = document.querySelector(".refreshUI");
 // const todoAdd = document.querySelector(".todo__add");
 
-const todos = [];
+let todos = [];
 
 todoForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const inputValue = todoInput.value;
-  addTodoItem(inputValue);
+  addTodoItem(inputValue, "todos");
 });
-
-// const addToLocalstorage = (value) => {
-//   const key = `item-${Date.now()}`;
-//   localStorage.setItem(key, JSON.stringify(value));
-// };
 
 // delete todo
 const deleteTodoItem = (item, button) => {
@@ -28,15 +23,31 @@ const deleteTodoItem = (item, button) => {
   });
 };
 
+// change localStorage "done" property
+const changeItemDone = (array, item) => {
+  array.map((element) => {
+    if (element.id === item.dataset.id) {
+      element.done = !element.done;
+    }
+  });
+};
+
 // complete todo
-const completeTodoItem = (item, button) => {
+const completeTodoItem = (item, button, key) => {
   button.addEventListener("click", (event) => {
+    todos = JSON.parse(localStorage.getItem(key));
     item.classList.toggle("todo__item--completed");
+    changeItemDone(todos, item);
+
+    localStorage.setItem(key, JSON.stringify(todos));
+
+    JSON.parse(localStorage.getItem(key)).forEach((e) => console.log(e.done));
   });
 };
 
 // add new todo
 const addTodoItem = (textNode, key = "todos") => {
+  const keyLocalStorage = key;
   const todoItem = createItem("LI", textNode, "todo__item");
   todoItem.setAttribute("data-id", `todoItem-${uniqueId()}`);
 
@@ -46,7 +57,11 @@ const addTodoItem = (textNode, key = "todos") => {
     return;
   }
 
-  completeTodoItem(todoItem, todoItem.querySelector(".todo__item-complete"));
+  completeTodoItem(
+    todoItem,
+    todoItem.querySelector(".todo__item-complete"),
+    (key = keyLocalStorage)
+  );
   deleteTodoItem(todoItem, todoItem.querySelector(".todo__item-delete"));
 
   const createItemObject = (array) => {
