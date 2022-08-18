@@ -14,7 +14,7 @@ todoForm.addEventListener("submit", (event) => {
   addTodoItem(inputValue, "todos");
 });
 
-/*== Delete logic */
+/*== DELETE LOGIC */
 
 // delete todo from localStorage
 const removeItem = (array, item) => {
@@ -40,9 +40,9 @@ const deleteTodoItem = (item, button, key) => {
   });
 };
 
-/* Delete logic ==*/
+/* DELETE LOGIC ==*/
 
-/*== Complete logic */
+/*== COMPLETE LOGIC */
 
 // change localStorage "done" property
 const changeItemDone = (array, item) => {
@@ -61,12 +61,10 @@ const completeTodoItem = (item, button, key) => {
     changeItemDone(todos, item);
 
     localStorage.setItem(key, JSON.stringify(todos));
-
-    JSON.parse(localStorage.getItem(key)).forEach((e) => console.log(e.done));
   });
 };
 
-/* Complete logic ==*/
+/* COMPLETE LOGIC ==*/
 
 // add new todo
 const addTodoItem = (textNode, key = "todos") => {
@@ -91,6 +89,14 @@ const addTodoItem = (textNode, key = "todos") => {
     (key = keyLocalStorage)
   );
 
+  let realLocalStorage = localStorage.getItem(key);
+
+  if (realLocalStorage === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(realLocalStorage);
+  }
+
   const createItemObject = (array) => {
     const itemObject = {};
     itemObject.title = todoInput.value;
@@ -104,8 +110,6 @@ const addTodoItem = (textNode, key = "todos") => {
 
   todoList.appendChild(todoItem);
   todoInput.value = "";
-
-  // addToLocalstorage(textNode);
 };
 
 // clear localStorage and UI
