@@ -14,14 +14,35 @@ todoForm.addEventListener("submit", (event) => {
   addTodoItem(inputValue, "todos");
 });
 
+/*== Delete logic */
+
+// delete todo from localStorage
+const removeItem = (array, item) => {
+  const filteredArray = array.filter((element) => {
+    return element.id !== item.dataset.id;
+  });
+
+  return filteredArray;
+};
+
 // delete todo
-const deleteTodoItem = (item, button) => {
+const deleteTodoItem = (item, button, key) => {
   button.addEventListener("click", (event) => {
     if (confirm("Are you sure you want to delete todo?")) {
+      todos = JSON.parse(localStorage.getItem(key));
+
+      const updatedTodos = removeItem(todos, item);
+
+      localStorage.setItem(key, JSON.stringify(updatedTodos));
+
       item.remove();
     }
   });
 };
+
+/* Delete logic ==*/
+
+/*== Complete logic */
 
 // change localStorage "done" property
 const changeItemDone = (array, item) => {
@@ -45,6 +66,8 @@ const completeTodoItem = (item, button, key) => {
   });
 };
 
+/* Complete logic ==*/
+
 // add new todo
 const addTodoItem = (textNode, key = "todos") => {
   const keyLocalStorage = key;
@@ -62,7 +85,11 @@ const addTodoItem = (textNode, key = "todos") => {
     todoItem.querySelector(".todo__item-complete"),
     (key = keyLocalStorage)
   );
-  deleteTodoItem(todoItem, todoItem.querySelector(".todo__item-delete"));
+  deleteTodoItem(
+    todoItem,
+    todoItem.querySelector(".todo__item-delete"),
+    (key = keyLocalStorage)
+  );
 
   const createItemObject = (array) => {
     const itemObject = {};
