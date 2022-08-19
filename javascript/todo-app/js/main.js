@@ -66,10 +66,38 @@ const completeTodoItem = (item, button, key) => {
 
 /* COMPLETE LOGIC ==*/
 
+if (localStorage.getItem("todos")) {
+  todos = JSON.parse(localStorage.getItem("todos"));
+
+  for (const todo of todos) {
+    const wrapItem = createItem("LI", todoInput.value, "todo__item");
+    const todoItem = wrapItem.item;
+
+    todoItem.children[0].textContent = todo.title;
+    todoItem.dataset.id = todo.id;
+
+    if (todo.done == true) {
+      todoItem.classList.add("todo__item--completed");
+    } else {
+      todoItem.classList.remove("todo__item--completed");
+    }
+
+    const btnComplete = wrapItem.buttonComplete;
+    const btnDelete = wrapItem.buttonDelete;
+
+    completeTodoItem(todoItem, btnComplete, "todos");
+    deleteTodoItem(todoItem, btnDelete, "todos");
+
+    todoList.append(todoItem);
+    todoItem.append(btnComplete, btnDelete);
+  }
+}
+
 // add new todo
 const addTodoItem = (textNode, key = "todos") => {
   const keyLocalStorage = key;
-  const todoItem = createItem("LI", textNode, "todo__item");
+  const wrapItem = createItem("LI", todoInput.value, "todo__item");
+  const todoItem = wrapItem.item;
   todoItem.setAttribute("data-id", `todoItem-${uniqueId()}`);
 
   if (isEmpty(todoInput.value)) {
@@ -78,16 +106,11 @@ const addTodoItem = (textNode, key = "todos") => {
     return;
   }
 
-  completeTodoItem(
-    todoItem,
-    todoItem.querySelector(".todo__item-complete"),
-    (key = keyLocalStorage)
-  );
-  deleteTodoItem(
-    todoItem,
-    todoItem.querySelector(".todo__item-delete"),
-    (key = keyLocalStorage)
-  );
+  const btnComplete = wrapItem.buttonComplete;
+  const btnDelete = wrapItem.buttonDelete;
+
+  completeTodoItem(todoItem, btnComplete, (key = keyLocalStorage));
+  deleteTodoItem(todoItem, btnDelete, (key = keyLocalStorage));
 
   let realLocalStorage = localStorage.getItem(key);
 

@@ -27,7 +27,7 @@ const createItem = (tag, text, className) => {
 
   item.append(span, buttonComplete, buttonDelete);
 
-  return item;
+  return { item, span, buttonComplete, buttonDelete };
 };
 
 // Validate input value
