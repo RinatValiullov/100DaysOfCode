@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "run-p pug:compile serve ",
+    "start": "run-p pug:compile serve",
     "pug:compile": "gulp",
     "serve": "parcel dist/html/index.html"
   },

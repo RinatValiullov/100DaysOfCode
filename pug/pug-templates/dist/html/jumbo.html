@@ -5,23 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My site with Pug template engine">
-    <title>Learn Pug | Hello, 4rontender!</title>
+    <title>Learn Pug | Learn Pug template engine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Nunito&amp;display=swap">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <style>.hide {
-  display: none;
-}
-
-.hide-paragraph {
-  background-color: hsl(200deg, 80%, 95%);
-}
-.hide-paragraph span {
-  font-weight: 700;
-}
-    </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
@@ -56,12 +45,21 @@
     </header>
     <main class="container m-auto my-0">
       <section>
-        <h1 class="text-center mb-3">Hello, 4rontender!</h1>
+        <h1 class="text-center mb-3">Learn Pug template engine</h1>
         <div class="btns list-group m-auto mb-3 w-100"><a class="list-group-item list-group-item-action active home-btn" href="index.html" type="button" aria-current="true">Go to home page</a><a class="list-group-item list-group-item-action contact-btn" href="contacts.html" type="button">Go to contacts page</a>
           <button class="list-group-item list-group-item-action hide-paragraph" type="button" data-toggle="Show"><span></span> paragraph below</button><a class="list-group-item list-group-item-action" href="jumbo.html" type="button">Go to jumbo</a>
           <button class="list-group-item list-group-item-action" type="button" disabled>A disabled button item</button>
-        </div>
-        <p class="lead description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus explicabo hic enim odit expedita nobis, aliquid rem! Officia numquam facilis pariatur modi! Ad, minima doloribus?</p>
+        </div><div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+    <p class="col-md-8 fs-4">Using a series of utilities, you can create this
+      jumbotron, just like the one in previous versions of Bootstrap. Check out
+      the examples below for how you can remix and restyle it to your liking.
+    </p>
+    <button class="btn btn-primary btn-lg" type="button">Example button</button>
+  </div>
+</div>
+
       </section>
     </main>
     <footer class="footer mt-auto bg-light p-4">
@@ -86,21 +84,6 @@
         </ul>
       </div>
     </footer>
-    <script type="module">
-      const hideBtn = document.querySelector('.hide-paragraph');
-      const parDescr = document.querySelector('.description');
-      let parText = "Hide";
-      hideBtn.querySelector('span').innerHTML = parText;
-      
-      hideBtn.addEventListener('click', event => {
-        //- console.log(event.currentTarget.dataset)
-        parText = parText === 'Hide' ? "Show" : "Hide";
-        event.currentTarget.querySelector('span').innerHTML = parText;
-        event.currentTarget.dataset.toggle = "Hide"
-      
-        parDescr.classList.toggle('hide');
-      });
-    </script>
     <script type="module" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
   </body>
