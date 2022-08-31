@@ -1,0 +1,77 @@
+/*
+font-family: 'Bitter', serif;
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Nunito', sans-serif;
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: currentColor;
+}
+
+body {
+  display: flex;
+  font-size: 1.2rem;
+  height: 100vh;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.storage-container {
+  background-color: hsl(240deg 90% 90%);
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.storage-container.event {
+  max-width: 700px;
+}
+
+.storage-container.event div {
+  background-color: hsl(240deg 90% 95%);
+  margin-block-end: 15px;
+}
+
+form div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 15px;
+}
+
+select {
+  border: none;
+  border-radius: 5px;
+  font-size: inherit;
+  padding: 5px;
+}
+
+.event-page {
+  margin-block-end: 50px;
+}
+
+.output {
+  display: flex;
+  gap: 10px;
+}
+
+.output__text {
+  min-height: 250px;
+  margin: 0;
+}

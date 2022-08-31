@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter&family=JetBrains+Mono&family=Nunito&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+  <section class="storage-container">
+    <form>
+      <div class="color-type">
+        <label for="colorType">Change color</label>
+        <input type="color" id="colorType" value="#FFFF00">
+      </div>
+      <div class="font-type">
+        <label for="fontType">Change font</label>
+        <select id="fontType">
+          <option value="'Bitter', serif" selected>Bitter</option>
+          <option value="'JetBrains Mono', monospace">JetBrains Mono</option>
+          <option value="'Nunito', sans-serif">Nunito</option>
+        </select>
+      </div>
+      <div class="image-type">
+        <label for="imageType">Change image</label>
+        <select id="imageType">
+          <option value="assets/images/predator.jpg" selected>predator</option>
+          <option value="assets/images/alien.jpg">alien</option>
+          <option value="assets/images/robocop.jpg">robocop</option>
+        </select>
+      </div>
+    </form>
+    <div class="event-page">
+      <a href="event.html" target="_blank">Go to event page and watch storage
+        changes</a>
+    </div>
+    <div class="output">
+      <p class="output__text">What do they got in there? King Kong? Must go
+        faster. Do you have any
+        idea how long it takes those cups to decompose. Must go faster. So you
+        two dig up, dig up dinosaurs? Jaguar shark! So tell me - does it really
+        exist? Hey, take a look at the earthlings. Goodbye!</p>
+      <img src="./assets/images/predator.jpg" alt="cinema monster"
+        class="output__image">
+    </div>
+  </section>
+
+
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

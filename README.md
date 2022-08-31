@@ -183,6 +183,7 @@ Projects:
 - [classic-tabs](javascript/classic-tabs)
 - [throttle-click](javascript/throttle-click)
 - [debounce-click](javascript/debounce-click)
+- [web-storage](javascript/web-storage)
 
 [Back &#8679;](#100daysofcode)
 
